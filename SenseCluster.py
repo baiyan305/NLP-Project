@@ -30,6 +30,10 @@ class SenseCluster:
             words[index] = instance.split()
             index = index + 1
 
+        #strip words in blacklist
+        for i in range(len(words)):
+            words[i] = self._strip_words_inblacklist(words[i])
+
         #calculate similarities of each pair of instances
         size = len(words)
         for source in range(size):
@@ -121,14 +125,29 @@ class SenseCluster:
         delset = string.punctuation
         return str.translate(None, delset)
 
+    def _strip_words_inblacklist(self, list_of_words):
+        blacklist = ["and", "or", "no", "yes", "in", "at", "that", "the", "to", "for", "if", "while", "until", "it", "i",
+                     "he", "you", "his", "they", "this", "that", "she", "her", "we", "all", "which", "their", "what", "my"
+                     "him", "me", "who", "them", "some", "other", "your", "its", "our", "these", "any", "more", "many",
+                     "such", "those", "us", "how", "another", "where", "something", "each", "both", "last", "every", "one",
+                     "much", "few", "why", "once", "none", "youll", "thats", "as", "a", "are", "of", "be", "is", "on", "into",
+                     "but", "did", "was", "were", "when", "out", "so", "an", "by", "from", "before", "about", "very", "has",
+                     "been", "then", "with", "not", "will", "had", "not", "soon", "got", "never", "dont", "him", "up", "down",
+                     "just", "than", "went"]
+        new_list = []
+        for word in list_of_words:
+            if(word.lower() not in blacklist):
+                new_list.append(word)
 
-#with open("/Users/Yan/IdeaProjects/WordSense/src/data.txt", "r") as f:
-#    instances = f.readlines()
-#    senseCluster = SenseCluster()
-#    senseCluster.cluster(instances)
-#    for cluster in senseCluster.get_groups():
-#        print cluster
-#    for commonwords in senseCluster.get_commonwords():
-#        print commonwords
+        return new_list
+
+with open("/Users/Yan/IdeaProjects/WordSense/src/data.txt", "r") as f:
+    instances = f.readlines()
+    senseCluster = SenseCluster()
+    senseCluster.cluster(instances)
+    #for cluster in senseCluster.get_groups():
+    print senseCluster.get_groups()
+    #for commonwords in senseCluster.get_commonwords():
+    print senseCluster.get_commonwords()
 
 f.closed
