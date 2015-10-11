@@ -122,13 +122,13 @@ class SenseCluster:
         return str.translate(None, delset)
 
 
-with open("/Users/Yan/IdeaProjects/WordSense/src/data.txt", "r") as f:
-    instances = f.readlines()
-    senseCluster = SenseCluster()
-    senseCluster.cluster(instances)
-    for cluster in senseCluster.get_groups():
-        print cluster
-    for commonwords in senseCluster.get_commonwords():
-        print commonwords
+#with open("/Users/Yan/IdeaProjects/WordSense/src/data.txt", "r") as f:
+#    instances = f.readlines()
+#    senseCluster = SenseCluster()
+#    senseCluster.cluster(instances)
+#    for cluster in senseCluster.get_groups():
+#        print cluster
+#    for commonwords in senseCluster.get_commonwords():
+#        print commonwords
 
 f.closed
