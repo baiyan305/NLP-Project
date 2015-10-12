@@ -8,9 +8,11 @@ class SenseCluster:
     similarities = []  #store similarities matrix
     commonwords = []   #store common words matrix
 
+    #return group of sense
     def get_groups(self):
         return self.groups
 
+    #return common words
     def get_commonwords(self):
         return self.groups_commonwords
 
@@ -60,37 +62,29 @@ class SenseCluster:
         for i in range(size):
             group = []
             group_commonword = []
+            group_size = 0;
+
             if(i not in processed):
                 group.append(best_matchs[i][0])
                 group.append(best_matchs[i][1])
                 group_commonword.append(self.commonwords[best_matchs[i][0]][best_matchs[i][1]])
-                #forward
-                for j in range(size):
-                    if( (i != j) and (j not in processed) ):
-                        if( (best_matchs[j][0] in group) and (best_matchs[j][1] in group) ):
-                            processed.append(j)
-                        if( (best_matchs[j][0] in group) and (best_matchs[j][1] not in group)):
-                            group.append(best_matchs[j][1])
-                            group_commonword[0].extend(self.commonwords[best_matchs[j][0]][best_matchs[j][1]])
-                            processed.append(j)
-                        elif( (best_matchs[j][1] in group) and (best_matchs[j][0] not in group)):
-                            group.append(best_matchs[j][0])
-                            group_commonword[0].extend(self.commonwords[best_matchs[j][1]][best_matchs[j][0]])
-                            processed.append(j)
 
-                #backward
-                for j in range(size-1, 0, -1):
-                    if( (i != j) and (j not in processed) ):
-                        if( (best_matchs[j][0] in group) and (best_matchs[j][1] in group) ):
-                            processed.append(j)
-                        if( (best_matchs[j][0] in group) and (best_matchs[j][1] not in group)):
-                            group.append(best_matchs[j][1])
-                            group_commonword[0].extend(self.commonwords[best_matchs[j][0]][best_matchs[j][1]])
-                            processed.append(j)
-                        elif( (best_matchs[j][1] in group) and (best_matchs[j][0] not in group)):
-                            group.append(best_matchs[j][0])
-                            group_commonword[0].extend(self.commonwords[best_matchs[j][1]][best_matchs[j][0]])
-                            processed.append(j)
+                #forward
+                while(group_size != len(group)):
+                    group_size = len(group)
+                    for j in range(size):
+                        if( (i != j) and (j not in processed) ):
+                            if( (best_matchs[j][0] in group) and (best_matchs[j][1] in group) ):
+                                processed.append(j)
+                            if( (best_matchs[j][0] in group) and (best_matchs[j][1] not in group)):
+                                group.append(best_matchs[j][1])
+                                group_commonword[0].extend(self.commonwords[best_matchs[j][0]][best_matchs[j][1]])
+                                processed.append(j)
+                            elif( (best_matchs[j][1] in group) and (best_matchs[j][0] not in group)):
+                                group.append(best_matchs[j][0])
+                                group_commonword[0].extend(self.commonwords[best_matchs[j][1]][best_matchs[j][0]])
+                                processed.append(j)
+
             if(len(group) > 0):
                 self.groups.append(group)
                 self.groups_commonwords.append(group_commonword)
@@ -141,13 +135,10 @@ class SenseCluster:
 
         return new_list
 
-with open("/Users/Yan/IdeaProjects/WordSense/src/data.txt", "r") as f:
-    instances = f.readlines()
-    senseCluster = SenseCluster()
-    senseCluster.cluster(instances)
-    #for cluster in senseCluster.get_groups():
-    print senseCluster.get_groups()
-    #for commonwords in senseCluster.get_commonwords():
-    print senseCluster.get_commonwords()
-
-f.closed
+#with open("/Users/Yan/IdeaProjects/WordSense/src/data.txt", "r") as f:
+#    instances = f.readlines()
+#    senseCluster = SenseCluster()
+#    senseCluster.cluster(instances)
+#    print senseCluster.get_groups()
+#    print senseCluster.get_commonwords()
+#f.closed

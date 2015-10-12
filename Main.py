@@ -1,15 +1,30 @@
-import SensevalParser
-import SenseCluster
+from XMLParser import XMLParser
+from SenseCluster import SenseCluster
+from SenseGenerator import SenseGenerator
 
+input = "/Users/Yan/IdeaProjects/WordSense/src/charged.xml"
 
-input = "/Users/Yan/IdeaProjects/WordSense/src/model/xml"
+#parse XML to get all instances
+xmlparser = XMLParser()
+xmlparser.parse(input)
+instances_raw = xmlparser.get_raw_text()
+instances_clean = xmlparser.get_clean_text()
 
-parser = SensevalParser()
-parser.parse(input)
-
+#cluster instances
 sense_cluster = SenseCluster()
-sense_cluster.parse(parser.get_clean_instance)
-group = sense_cluster.get_group()
-sense_cluster.get_commonwords()
+sense_cluster.cluster(instances_clean)
+groups = sense_cluster.get_groups() #all clusters
+common_words = sense_cluster.get_commonwords() #common words for each cluster
 
+#generate sense
+senseGenerator = SenseGenerator()
+examples = senseGenerator.generate_example(groups)
+#print examples
 
+commonwords= senseGenerator.collect_topWords(senseGenerator.simplify_lists(common_words))
+#print commonwords
+
+definitions=senseGenerator.generate_definition(commonwords)
+#print definitions
+
+senseGenerator.display_results(examples, definitions)
