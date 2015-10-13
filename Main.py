@@ -2,8 +2,9 @@ from XMLParser import XMLParser
 from SenseCluster import SenseCluster
 from SenseGenerator import SenseGenerator
 
-input = "/Users/Yan/IdeaProjects/WordSense/src/charged.xml"
-
+#input = "charged.xml"
+input = "model.xml"
+#input = "world-people-baixx195.xml"
 #parse XML to get all instances
 xmlparser = XMLParser()
 xmlparser.parse(input)
@@ -15,6 +16,9 @@ sense_cluster = SenseCluster()
 sense_cluster.cluster(instances_clean)
 groups = sense_cluster.get_groups() #all clusters
 common_words = sense_cluster.get_commonwords() #common words for each cluster
+
+print(groups)
+print(common_words)
 
 #generate sense
 senseGenerator = SenseGenerator()

@@ -19,10 +19,10 @@ class SenseCluster:
     def cluster(self, instances):
 
         #strip punctuation first
-        index = 0
-        for instance in instances:
-            instances[index] = self._strip_puctuation(instance)
-            index = index + 1
+        #index = 0
+        #for instance in instances:
+        #    instances[index] = self._strip_puctuation(instance)
+        #    index = index + 1
 
         #divide every instance to words and save to list
         index = 0
@@ -108,8 +108,6 @@ class SenseCluster:
             similarities.append(num_of_common)
             commonwords.append(common_words)
 
-            #print(common_words)
-
         else:
             similarities.append(0);
             commonwords.append([]);
@@ -128,11 +126,12 @@ class SenseCluster:
                      "but", "did", "was", "were", "when", "out", "so", "an", "by", "from", "before", "about", "very", "has",
                      "been", "then", "with", "not", "will", "had", "not", "soon", "got", "never", "dont", "him", "up", "down",
                      "just", "than", "went"]
+        prog = re.compile("<head>.*<head>")
         new_list = []
         for word in list_of_words:
-            if(word.lower() not in blacklist):
+            if( (word.lower() not in blacklist) and not (prog.match(word)) ):
                 new_list.append(word)
-
+        
         return new_list
 
 #with open("/Users/Yan/IdeaProjects/WordSense/src/data.txt", "r") as f:

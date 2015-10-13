@@ -45,6 +45,5 @@ class SenseGenerator:
     #display_results: displays results in the form of a dictinary
     def display_results(self, list4, list5):
         for items in range(len(list4)):
-            print "sense: %s" %items
             print "definition: "+list5[items]
             print "example: %s" %list4[items]
