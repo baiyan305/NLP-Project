@@ -1,14 +1,28 @@
+# author: Yan Bai
+# 
+# this class cluster instances and pick common words shared by instances in same cluster.
+# common words will be used to generate sense.
+#
+# the general idea of clustering is based on common words among instances.
+
 import string
 import re
 
 class SenseCluster:
 
+    #store clusters. It is a list of lists. Each list indicates a cluster.
     groups = []
-    groups_commonwords = []
-    similarities = []  #store similarities matrix
-    commonwords = []   #store common words matrix
 
-    #return group of sense
+    #store common words of cluters. We use common words of instances in a cluster to generate sense.
+    groups_commonwords = []
+
+    #A matrix to store similarities of each instance pair. Similarity in this context is a number of common words of 2 instaces.
+    similarities = []
+
+    #A matrix to store common words of each instance pair.
+    commonwords = []
+
+    #return clusters
     def get_groups(self):
         return self.groups
 
@@ -16,14 +30,9 @@ class SenseCluster:
     def get_commonwords(self):
         return self.groups_commonwords
 
+    #cluster instances
     def cluster(self, instances):
-
-        #strip punctuation first
-        #index = 0
-        #for instance in instances:
-        #    instances[index] = self._strip_puctuation(instance)
-        #    index = index + 1
-
+        
         #divide every instance to words and save to list
         index = 0
         words = []  #store all words of all instances
@@ -46,6 +55,7 @@ class SenseCluster:
             self.similarities.append(similarities_row)
             self.commonwords.append(commonwords_row)
 
+        #after get similarities, pick best match for each instance.
         best_matchs = []
         index = 0
         for similarity in self.similarities:
@@ -58,6 +68,7 @@ class SenseCluster:
             best_matchs.append(best_match)
             index = index + 1
 
+        #generate clusters based on best match
         processed = []
         for i in range(size):
             group = []
@@ -69,7 +80,6 @@ class SenseCluster:
                 group.append(best_matchs[i][1])
                 group_commonword.append(self.commonwords[best_matchs[i][0]][best_matchs[i][1]])
 
-                #forward
                 while(group_size != len(group)):
                     group_size = len(group)
                     for j in range(size):
@@ -117,6 +127,7 @@ class SenseCluster:
         delset = string.punctuation
         return str.translate(None, delset)
 
+    #skip words in blacklist when compare words between 2 instances. Because these word can not help generate sense.
     def _strip_words_inblacklist(self, list_of_words):
         blacklist = ["and", "or", "no", "yes", "in", "at", "that", "the", "to", "for", "if", "while", "until", "it", "i",
                      "he", "you", "his", "they", "this", "that", "she", "her", "we", "all", "which", "their", "what", "my"
@@ -126,7 +137,7 @@ class SenseCluster:
                      "but", "did", "was", "were", "when", "out", "so", "an", "by", "from", "before", "about", "very", "has",
                      "been", "then", "with", "not", "will", "had", "not", "soon", "got", "never", "dont", "him", "up", "down",
                      "just", "than", "went"]
-        prog = re.compile("<head>.*<head>")
+        prog = re.compile("<head>.*<head>")  #skip target word
         new_list = []
         for word in list_of_words:
             if( (word.lower() not in blacklist) and not (prog.match(word)) ):
