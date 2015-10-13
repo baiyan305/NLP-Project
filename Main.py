@@ -1,3 +1,6 @@
+#Author Bharath Kumar Bommana
+#Main.py is the file that has all the function calls and ensure the sequential flow of data through the system,
+
 from XMLParser import XMLParser
 from SenseCluster import SenseCluster
 from SenseGenerator import SenseGenerator
@@ -6,11 +9,18 @@ import subprocess
 import sys
 import os
 import time
+#subprocess is used to keep the linux commands waited until all the required files are generated(command1 at the bottom of this file)
+#os is used to execute to linux commands from python script
+#sys for commandline args
+
 
 num_of_argv = len(sys.argv)
 inputpath = sys.argv[1]
 targetword = None
 
+#our program takes either two or 3 commands based on the number of target words in the input file
+#to run name_conflate pair - we will have 3 arguments: input_file-name targetword1 targetword2
+#to run noun/verb file - we have two arguments: input_file-name targetword
 if(num_of_argv == 3):
     targetword = sys.argv[2]
 elif(num_of_argv == 4):
@@ -20,8 +30,12 @@ elif(num_of_argv == 4):
 xmlparser = XMLParser()
 xmlparser.parse(inputpath, targetword)
 instances_raw = xmlparser.get_raw_text()
+#instances_raw contains the (context)entire text between context tags in xml file
 instances_clean = xmlparser.get_clean_text()
+#instances_clean contains the text between context tags in xml file but this text is cleaned-> extra symbols are removed
 instances_data_old = xmlparser.get_instances_data()
+#instances_data_old-> contains [instance id, senseid]. This list can be used to generate .key file for the target word in question.
+
 
 #cluster instances
 sense_cluster = SenseCluster()
@@ -32,8 +46,13 @@ common_words = sense_cluster.get_commonwords() #common words for each cluster
 #generate sense
 senseGenerator = SenseGenerator()
 examples = senseGenerator.generate_example(groups, instances_data_old)
+#list of examples picked for each cluster
 commonwords = senseGenerator.collect_topWords(senseGenerator.simplify_lists(common_words))
 definitions = senseGenerator.generate_definition(commonwords)
+#generated definitions for each cluster
+
+
+#All the output files will be stored in ./out directory
 
 #output definitions and examples
 Util.generate_answer_file(targetword, definitions, examples, "./out/", targetword+".answer.txt")
@@ -51,7 +70,12 @@ Util.generate_key_file(instances_data_new , targetword, "./out/", targetword+".n
 #call sensecluster_score.sh
 command1 = "./senseclusters_scorer.sh" +  " ../out/"+targetword+".new.key" + " ../out/"+targetword+".old.key"
 
+#to make sure the execution of command1 waits until writing into the files is finished. 
 while not (os.path.exists("./out/"+targetword+".old.key") or os.path.exists("./out/"+targetword+".new.key")):
     time.sleep(10)
+#change directory
 os.chdir(os.getcwd()+"/senseclusters_scorer/")
+#run sensecluster_scorer program
 os.system(command1)
+
+
