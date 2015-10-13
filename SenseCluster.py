@@ -105,9 +105,6 @@ class SenseCluster:
             words_of_source = set(words[source])
             words_of_dest = set(words[dest])
 
-            #print words_of_source
-            #print words_of_dest
-
             num_of_common = 0
             common_words = []
             for word_source in words_of_source:

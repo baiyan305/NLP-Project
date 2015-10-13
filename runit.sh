@@ -1,3 +1,5 @@
+#author : swetha
+#
 #! /bin/sh
 #
 #This script receives input data file path, 1 or 2 target words. Then start Main.py.
