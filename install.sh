@@ -1,6 +1,6 @@
-#author: swetha
+#author swetha
 #
-#This script install necessary packages need for the running of our program.
+#This script installs necessary packages needed for the running of our system.
 #
 #1.Python 3.
 #2.lxml. It is a external library for parsing XML file. It is stronger than Python built-in XML parser.

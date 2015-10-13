@@ -1,6 +1,6 @@
 # author: Yan Bai
 # 
-# this class cluster instances and pick common words shared by instances in same cluster.
+# this class clusters instances and picks common words shared by instances in same cluster.
 # common words will be used to generate sense.
 #
 # the general idea of clustering is based on common words among instances.

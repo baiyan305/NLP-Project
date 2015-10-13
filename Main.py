@@ -1,4 +1,4 @@
-#Author Bharath Kumar Bommana
+#Author: Bharath Kumar Bommana
 #Main.py is the file that has all the function calls and ensure the sequential flow of data through the system,
 
 from XMLParser import XMLParser

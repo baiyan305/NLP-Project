@@ -1,4 +1,4 @@
-#author : swetha
+#author swetha
 #
 #! /bin/sh
 #

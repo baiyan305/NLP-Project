@@ -1,4 +1,4 @@
-#Author- Bharath Kumar Bommana
+#Author: Bharath Kumar Bommana
 #...............................
 #SenseGenerator class selects an example for every cluster
 #and generates meaning for each cluster in the clusters(groups) obtained from SenseCluster.py class
