@@ -50,14 +50,8 @@ Util.generate_key_file(instances_data_new , targetword, "./out/", targetword+".n
 
 #call sensecluster_score.sh
 command1 = "./senseclusters_scorer.sh" +  " ../out/"+targetword+".new.key" + " ../out/"+targetword+".old.key"
-command2 = "cp report.out ../out/"+targetword+".report.out"
 
 while not (os.path.exists("./out/"+targetword+".old.key") or os.path.exists("./out/"+targetword+".new.key")):
-    print("key files not found, sleep 10 seconds!")
     time.sleep(10)
 
-os.chdir(os.getcwd()+"/senseclusters_scorer")
 os.system(command1)
-os.system(command2)
-os.system("rm *.cluto.out")
-os.system("rm * sc.out")
