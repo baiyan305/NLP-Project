@@ -1,5 +1,5 @@
 import random
-
+#output from sensecluster
 class SenseGenerator:
    
  
