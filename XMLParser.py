@@ -63,7 +63,7 @@ class XMLParser:
             answer = children[0]
             context = children[1]
             sense_id = answer.get("senseid")        #extract sense id
-            context_in_string = etree.tostringlist(context,encoding="us-ascii",method="xml")[0]
+            context_in_string = etree.tostringlist(context,encoding="utf-8",method="xml")[0]
             context_raw_text = context_in_string[10:-11]        #extract instance text
             context_fine_text = self._strip_punctuation(context_raw_text)       #instance text without punctuation
             instance_data = []
