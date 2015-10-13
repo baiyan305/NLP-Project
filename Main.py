@@ -9,10 +9,13 @@ import subprocess
 import sys
 import os
 import time
+import shutil
 #subprocess is used to keep the linux commands waited until all the required files are generated(command1 at the bottom of this file)
 #os is used to execute to linux commands from python script
 #sys for commandline args
 
+#delete output folder
+shutil.rmtree("out", ignore_errors=True)
 
 num_of_argv = len(sys.argv)
 inputpath = sys.argv[1]
@@ -26,7 +29,7 @@ if(num_of_argv == 3):
 elif(num_of_argv == 4):
     targetword = (sys.argv[2])[0] + "_" + (sys.argv[3])[0]
 
-print("========Process start==========")
+print("===================Process start==================")
 print("input file: " + inputpath)
 print("target word: " + targetword)
 
@@ -65,19 +68,19 @@ definitions = senseGenerator.generate_definition(commonwords)
 
 #All the output files will be stored in ./out directory
 
-print("write defitions and example to "+"./out/"+targetword+".answer.txt")
+print("write defitions and example to "+"/out/"+targetword+".answer.txt")
 #output definitions and examples
 Util.generate_answer_file(targetword, definitions, examples, "./out/", targetword+".answer.txt")
 
-print("write instances to "+"./out/"+targetword+"_Semeval2.xml")
+print("write instances to "+"/out/"+targetword+"_Semeval2.xml")
 #output senseval-2
 Util.generate_SemEval2Format(instances_raw, groups, "./out/", targetword+"_Semeval2.xml");
 
-print("write key file of input to "+"./out/"+targetword+".old.key")
+print("write key file of input to "+"/out/"+targetword+".old.key")
 #output original key file
 Util.generate_key_file(instances_data_old , targetword, "./out/", targetword+".old.key")
 
-print("write key file of ouput to "+"./out/"+targetword+".new.key")
+print("write key file of ouput to "+"/out/"+targetword+".new.key")
 #output new key file
 instances_data_new = senseGenerator.generate_instance_sense_pairs(groups)
 Util.generate_key_file(instances_data_new , targetword, "./out/", targetword+".new.key")
@@ -94,4 +97,4 @@ os.chdir(os.getcwd()+"/senseclusters_scorer/")
 #run sensecluster_scorer program
 os.system(command1)
 
-print("==============Done==============")
+print("========================Done======================")
