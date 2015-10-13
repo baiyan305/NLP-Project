@@ -53,5 +53,5 @@ command1 = "./senseclusters_scorer.sh" +  " ../out/"+targetword+".new.key" + " .
 
 while not (os.path.exists("./out/"+targetword+".old.key") or os.path.exists("./out/"+targetword+".new.key")):
     time.sleep(10)
-
+os.chdir(os.getcwd()+"/senseclusters_scorer/")
 os.system(command1)

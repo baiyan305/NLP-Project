@@ -133,11 +133,3 @@ class SenseCluster:
                 new_list.append(word)
         
         return new_list
-
-#with open("/Users/Yan/IdeaProjects/WordSense/src/data.txt", "r") as f:
-#    instances = f.readlines()
-#    senseCluster = SenseCluster()
-#    senseCluster.cluster(instances)
-#    print senseCluster.get_groups()
-#    print senseCluster.get_commonwords()
-#f.closed

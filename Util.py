@@ -39,6 +39,8 @@ class Util:
 
     @staticmethod
     def generate_answer_file(word, definition, example, directory, name):
+        print("size of example: "+str(len(example)))
+        print("size of definition: "+str(len(definition)))
         if not os.path.exists(directory):
             os.makedirs(directory)
         f = open(directory+name, "w")
