@@ -1,0 +1,104 @@
+model
+
+sense id: 0
+definition: actress said women time reserved
+example:
+Mobbed The girls are just as popular as the guys. Scorpio, a former school high jump champ, gymnast and one time Miss Isle of Man said:' We couldn't believe it. We were mobbed wherever we went. The 5ft 9in <head>model</head> and actress with a 38-23-36 figure said it made a change for women to be seen as tough and strong.' Most of the action you see on TV is reserved for tough guys like Sylvester Stallone.' Women are usually the weak ones who get rescued all the time.
+
+
+sense id: 1
+definition: look Ill my men birth
+example:
+And' what did my daddy look like?' And' why did he go away and leave me?' All too many women like you are deserted even before their babies' birth. Some are forced into single-parenthood by a man who walks out on his wife or partner, often for a younger <head>model</head> and a quiet life away from nursery squalls. I daresay that as a result of your letter and my few words, I'll have an angry response from men who'll say,' what about the women who abandon their children for other men?' True, there are some of those, but there aren't droves of them.
+
+
+sense id: 2
+definition: have get own company work
+example:
+This photofit may amount to 1 in 10,000 or 1 in 100,000. At the moment CATCHEM is the baby of Derbyshire police force who bear the cost of its operation. It is hoped that in the future the computerised detective will be used as a <head>model</head> for a national profiling scheme. In January this year the Home Office promised 350,000 to help set up an offender profiling unit which will record not only child murders but serial killings and rapes. It will emulate the FBI's behavioural science unit which describes its work as an odd mixture of detective work and psychology.
+
+
+sense id: 3
+definition: between after political six year
+example:
+Cooling The ash cloud has been moving around the earth at 75 mph at an altitude of about 15 miles up in the stratosphere. Because there is little wind that high to split the particles up, it could stay there for years. So the cloud absorbs sunlight, heating the stratosphere up but stopping warmth from reaching the Earth. Now the NASA experts have recorded an average cooling of 0.2C already and their computer <head>model</head> predicts that will increase to 0.5C by the end of the year. And they claim that the knock-on effect is that weather patterns change. They point to statistics which show that six to 18 months after volcanic eruptions, eastern American states and most of North West Europe have lousy summers.
+
+
+sense id: 4
+definition: years have would said over
+example:
+says it's gotten way out of hand. John McKenzie explains why. JOHN MCKENZIE: Donald Trump, it is said, is a man with more than a billion dollars to his name, a man who likes seeing his name on his airline, his office buildings, his casinos. Married to Ivana, a former <head>model</head>, Donald went looking for the limelight and found it. But what happens when after 12 years of marriage this public man walks out on his wife? Headline news. This story has taken New York by storm as the media here scrambled for any scrap of news or gossip about the couple's breakup.
+
+
+sense id: 5
+definition: would paper get happen exactly
+example:
+they even wrote a sophomoric screenplay together about a perfect crime. It begins with the son murdering his wealthy parents. Nor did the Menendezes' troubles stop in Calabasas. Lyle was suspended from Princeton for cheating on a paper. Jose immediately flew back to try to get him reinstated. on camera So Lyle and Erik were not exactly <head>model</head> kids. Still, those kinds of family problems are hardly evidence of a desire or motive for murder. But what about the motive given by the prosecution- financial gain? voice-over The wills left by Jose and Kitty bequeathed their $14 million estate to the boys
+
+
+sense id: 6
+definition: also through put most became
+example:
+"Let them also pick up the bums. " Although a few exiled felons were apprehended by U.S. immigration officials, most were not. " The conditions were too crowded, " says U.S. Army Col. Juan Armando Montes, who coordinated the reception. At the peak in early summer, he says, some 3,500 people were arriving every day. # As a result, within months of the boatlift's end in September, some Mariel refugees had committed murders, burglaries or hijackings. Yet many others became <head>model</head> citizens. Indeed, says Lisandro Perez, chairman of sociology and anthropology at Miami's Florida International University and himself a 1960 Cuban refugee, Mariels were driven less by politics than by economics: " They wanted to get ahead, make money and put their kids through college. "
+
+
+sense id: 7
+definition: through also can could competitive
+example:
+and general courses which by their nature and structure attract the unemployed. The MSC courses in 1985 included a Pre-Tops' Breakthrough' course, a Business Skills Workshop, New Skills courses, and Adult Preparation Training (funded through the Adult Training Strategy and using a modular approach). Unfortunately, many non-waged people are unable to benefit from these MSC courses since they are only available for those with UB40 cards. The courses are obviously based on a training <head>model</head>, and all colleges running such courses should evaluate longitudinally whether participants do in fact secure subsequent employment or further education and training. It is also important to evaluate other outcomes of these courses. Do they lead to increased self-confidence, and if so
+
+
+sense id: 8
+definition: same contrast first within here
+example:
+All the same, however, it is at least tempting to think that' why?' here demands a switch of attention from rules to the intentions and motives of the agent. Weber makes the switch by applying a microeconomic <head>model</head> of rational action in order to understand action which is a calculated means to an end. Action occurs within a framework of shared meanings -- rules and collective values -- but is not dictated by that framework. In the style of economists, we are to reconstruct the agents' choices, given their preferences and information sets, assuming that they are rational agents.
+
+
+sense id: 9
+definition: clear rather responsibilities between evidence
+example:
+The distribution of responsibilities between local, national, public and voluntary sectors has also become less rather than more clear, which reduces the possibilities of accountability. # Another interpretation of the changes would see them as part of a longer-term shift towards new relationships between government and the wider political economy. # Like Cockburn, Hoggett stresses the links between changes in the organization of local government and those of capitalist management. But the <head>model</head> he develops tends to distort the past in order to exaggerate the extent of change. It remains unclear why the changes he identifies have taken place and what the implications are. # There is some evidence that relationships between local government and business interests have become closer and more institutionalized, and this seems to support an interpretation which identifies a significant shift (or structural change) between the late 1960s and the late 1980s.
+
+
+sense id: 10
+definition: can may have there previous
+example:
+A mood of total defeatism had set in. Many of the party leaders appeared to have given up Rocked by an interminable succession of scandals, shamed by its inability to stop the inexorable rise of unemployment to a record three million, and increasingly alienated from ordinary people after more than a decade in power, the Socialist Party was no longer simply ailing; it was moribund. The latest scandal, this time involving the Prime Minister himself, Pierre Beregovoy, hitherto regarded as the very <head>model</head> of honesty and integrity, seemed like the last straw. M Beregovoy may claim that he has nothing to reproach himself with, but his acceptance of an interest-free million franc (125,000) loan from a shady businessman looks suspicious to say the least.
+
+
+sense id: 11
+definition: nature political party dominance government
+example:
+the Conservatives would have had roughly 285 seats (and not 397), Labour 180 and the Alliance 160, resulting in a hung, three-party, parliament and a scramble to form a coalition. Two-party dominance was at its greatest in the period between 1945 and 1970 when the Conservative and Labour Parties won all but 8 per cent of the vote and 2 per cent of the seats. The <head>model</head> of responsible party government was born of this experience and it tended to elevate the politics of the moment into a law of nature that has distracted attention from the more fluid aspects of Britain's political experience.
+
+
+sense id: 12
+definition: car back does service alarm
+example:
+MOTORIST Janet Glover put her new 10,000 Toyota Corolla in for its first service -- and got it back with an unwanted extra. A sunroof. Blundering mechanics had got it mixed up with an identical <head>model</head> parked next to it in the workshop. Janet, of Denmead, Hants, said yesterday:' It was lovely and streamlined before -- now it looks awful. The sunroof looks cheap and nasty. The local firm, Hampshire Car Sales, offered a free car alarm and servicing in compensation.
+
+
+sense id: 13
+definition: new Ford most now engine
+example:
+WITHOUT going as far as opponents Ford, Vauxhall has said that airbags will be available as standard or as an option on most of its cars for 1994. Airbags are already standard on every Cavalier and Calibra, while half of the Astra range has one fitted. The same airbag system will be offered as an option from now on in new Corsas. Meanwhile, as part of the <head>model</head> year package of improvements, a new bhp 16-valve 1. litre engine becomes available for the Vauxhall Astra. On the Vauxhall Cavalier range, there's a new 1. litre economy engine, similar to the Corsa's Eco unit, which produces close to miles per gallon at a constant mph. Most of Vauxhall's changes come on the Cavalier and Calibra ranges.
+
+
+sense id: 14
+definition: have over However two able
+example:
+Here is a beast of impeccable breeding, and with reputation all-important in the used car market, you can't get a much higher image than the BeeEm. It's a proven symbol of success. The test car was a cool looking two litre multivalve <head>model</head> in glacier blue, first registered in October 1990 and supplied by Georgesons of Breck Road, Anfield. # Motorway magic It was a delightful car to drive, purring effortlessly round town, but at its best on the open road. There's no strain on the ears as you heap on the gas. It's swift and easy acceleration-60 in fractionally under 10 seconds and creamy smooth all the way to the red line.
+
+
+sense id: 15
+definition: attempt vehicle readily would fit
+example:
+So here is an attempt to try to answer some of those questions by direct substitution or with a small amount of modification. After all, with time, money and patience, but no sense, it would be possible to fit a V12 Jaguar engine into an 80 inch! Rover's policy of utilising parts which were already in production for a different <head>model</head> when building a new vehicle is particularly useful in places where spares are not as readily available. These lists are not exhaustive -- if they were they would fill the entire book -- but work on the principle of: if it looks as if it will fit, then it probably will
+
+
+sense id: 16
+definition: learn too time make little
+example:
+Many of the programmes do little to stimulate the mind and sitting in a chair staring at a screen is not too good for the body either. Think of how you could be spending your time instead; you could go swimming, make <head>model</head> aeroplanes or learn to yodel -- it doesn't matter what you do as long as it is fun! Legs came before cars, mind and hands before videos and computers. Try using them more often and you will get more enjoyment out of life and be healthier too.
+
+

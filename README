@@ -109,6 +109,7 @@ Note: runit.sh can be run only from the directory in which it is located.
 	for the input file: government-year-bomma008.xml: ./runit.sh government-year-bomma008.xml government year
 	for the input file: world-people-baixx195.xml:    ./runit.sh world-people-baixx195.xml world people
 
+Note: Outputs for team data are kept in ./teamresult directory.
 
 In both the cases, all the output will be stored in ./out directory. 
 -----------------------------------------

@@ -1,0 +1,140 @@
+charged
+
+sense id: 0
+definition: police driving 400 64 lane
+example:
+Turns out, it wasn&#8217;t the fault of either driver when two trucks plunged from I-285 to Ga. 400, causing a crash that stopped traffic at the busy interchange for five hours, police said Thursday. Instead, it was the driver of a 2014 Kia Sorento who allegedly sparked the wreck when he left his lane, driving into the path of a tractor-trailer, according to Sandy Springs police. Howard Silverstein, 64, was <head>charged</head> with failure to maintain lane in the Friday crash. &#8220;Silverstein entered into the path and lane on 285 eastbound already occupied by the Publix tractor-trailer,&#8221; Sandy Springs police said in an emailed statement. &#8220;The right front tire of the Kia Sorento struck the left front tire and rim of the tractor-trailer causing the Kia&#8217;s tire to go flat.&#8221;
+
+
+sense id: 1
+definition: County office count stated against
+example:
+Prosecutors added a new perjury count and other criminal charges Thursday against Pennsylvania's attorney general, saying they found a signed document that contradicts her claims she never agreed to maintain secrecy of a grand jury investigation in 2009, before she took office. The Montgomery County district attorney <head>charged</head> Kathleen Kane with felony perjury and two misdemeanors &#8212; false swearing and obstruction &#8212; based on a signed secrecy oath she signed shortly after taking office in early 2013. Kane, the first woman and first Democrat elected attorney general in Pennsylvania,
+
+
+sense id: 2
+definition: said after police counts two
+example:
+Deng was a student from New York trying to get into the Pi Delta Psi fraternity and authorities say he was badly beaten during a hazing ritual called the "glass ceiling." He died at the hospital shortly after. It happened at a home the frat was renting near Long Pond in 2013. This is the second wave of fraternity brothers to be <head>charged</head> in connection with Deng's death. They're facing charges for allegedly concealing evidence, giving cops false information, criminal conspiracy, and hazing. Police say these men were some of the least involved in Deng's death.  Those accused of the actual homicide will be
+
+
+sense id: 3
+definition: during felony said count assault
+example:
+A 26-year-old man appeared in court Thursday to face charges in the hit-and-run death of a teen skateboarder who was struck while crossing the street last month in Echo Park. Sang Won Jung has been <head>charged</head> with one count each of felony hit-and-run resulting in death or injury and misdemeanor vehicular manslaughter, the Los Angeles County District Attorney&#8217;s Office announced. He entered a not guilty plea during an appearance at the Foltz Criminal Justice Center in downtown L.A.
+
+
+sense id: 4
+definition: said also Office Department statement
+example:
+The investigation, dubbed Operation Kids Count, began a year-and-a-half ago when the Minnesota Department of Human Services' Office of Inspector General noticed unusually high billings from Minnesota Child Care Services, 2500 Minnehaha Ave., Minneapolis, to the Child Care Assistance Program. "Each of the child care facilities <head>charged</head> have been involved in a common theme of billing the government for child care services and then not providing them. These centers do provide legitimate support and services, but they also bill the government anywhere from 15-30 percent for kids who weren't there," said Hennepin County Attorney Mike Freeman. "If there were 200 kids in the center, they would bill the government for 300."
+
+
+sense id: 5
+definition: violence felony counts malice plea
+example:
+LGBT activist by strangling her, before gouging out his cell mate&#8217;s eyeballs in a violent attack in a Georgia jail. Donte Lamar Wyatt, 33, has been accused of waging the gruesome violence on two separate occasions in April and July this year. In two separate indictments, Wyatt was <head>charged</head> with 14 felonies, including two counts of malice murder, two counts of felony murder and four counts of aggravated assault. Wyatt&#8217;s attorney entered a not guilty plea on his behalf in DeKalb County courtroom, reported AJC.com. &#8220;The allegations really are gruesome in this case,&#8221; said DeKalb County District Attorney Robert James.
+
+
+sense id: 6
+definition: records according copying MedStar couple
+example:
+According to the suit, patients in D.C. are entitled to a copy of their medical records within 30 days for a reasonable fee. Federal law allows a provider to charge for the cost of labor for copying and preparing a summary, the cost of the paper and electronic media and postage. No other fee may be <head>charged</head>. The couple, according to the lawsuit, requested an electronic copy of their child's birth record from MedStar Georgetown. The other patient requested an electronic health record for treatment he received.  The lawsuit alleges that the couple and the individual patient were
+
+
+sense id: 7
+definition: violence Abdurahman imprisonment covered Tadesse
+example:
+Deputies found the woman locked in the shed on Sept. 22 after getting reports of someone screaming. When they opened the shed, deputies described the woman as frail, malnourished and covered with wounds, prosecutors said. The woman's brother, 61-year-old Elias Abdurahman, and his girlfriend, 50-year-old Sara Kebede Tadesse, were arrested and <head>charged</head> with false imprisonment by violence, torture, assault with a deadly weapon, and abuse of a dependent adult causing great bodily injury. The deadly weapon that investigators allege was used is a cane. Abdurahman had not yet been assigned an attorney, and it was unclear whether Tadesse's case had been assigned.
+
+
+sense id: 8
+definition: according police release promoting two
+example:
+with promoting prostitution. She was taken to the Middlesex County jail on $30,000 bail. When police searched Orange Sun Therapy, they found three female employees and two male customers, according to a news release. One of the employees had allegedly solicited an undercover officer earlier in the month, police said. She was arrested and <head>charged</head> with engaging in prostitution, police said. The employee did not have proper identification and was held in the Middlesex County jail as "Jane Doe," police said. A man inside the business, Milton Baker is accused of being a driver for the business, police said. Baker, 73, was
+
+
+sense id: 9
+definition: can interest public have also
+example:
+People can face felony murder under a variety of circumstances. Texas prosecutors, for example, have used the statute against repeat drunk drivers to upgrade manslaughter charges to murder. The charge has also been given to individuals who are far more tangentially involved. In 2011, a Florida prosecutor <head>charged</head> shoplifter Mervin Bettis with felony murder after a Target security guard collapsed and later died after struggling to handcuff him. Bettis pleaded guilty to third-degree murder in 2013 in exchange for a five-year sentence.
+
+
+sense id: 10
+definition: may still can have there
+example:
+adjusted at local levels to reflect national possibilities. For governments, logic would suggest a simple sequence of thought and action. Starting from a recognition of the constraints and opportunities set by human and natural resource endowments, one might assume that they then define a broad set of goals for the future. These set the sights of ambition, often embodied in a series of national plans, what we called national intent in chapter 1. These goals form the basis of both macro-level policies for industry. National institutions and agencies, each responsible for one agenda, are <head>charged</head> with administering specific policies for each sector and each group of multi-nationals. Trouble arises at this point, for no country can ensure that all its ministries and agencies manage everything in a wholly co-ordinated way. There are dilemmas at every level of concern; different interest groups hold different priorities. Thus it is common for policies to be announced but not implemented fully or consistently. Where a country espouses outward-looking policies, it may continue to behave in many important respects as though it were still domestically focused. Dilemma
+
+
+sense id: 11
+definition: night door didnt fact spot
+example:
+Alex Ferguson last night insisted his men had been mugged in Moscow following Manchester United's disastrous UEFA Cup exit. The Old Trafford side lost out in a dramatic penalty shoot-out with Torpedo Moscow when Steve Bruce, Brian McClair and Gary Pallister all failed from the spot. But bitter Ferguson refused to blame individuals for United's continental calamity and said:' We let them in the back door and they stole the game. 'England defender Pallister was <head>charged</head> with keeping United alive, against a dour Moscow side, once the shoot-out went to sudden death. He found the nerve-racking task too much. Ferguson admitted, 'Even when Paul Ince and Denis Irwin had scored to put us 2-0 ahead, I still wasn't counting my chickens.' In fact, when the match moved into the shoot-out, I didn't really fancy our chances. 'The fact that striker Mark Hughes was dismissed in the 88th minute for a second bookable offence was almost forgotten as Ferguson
+
+
+sense id: 12
+definition: local case undertaking damages enforcement
+example:
+output of private presses, which was growing much faster than that of the party and the state, had to be monitored, and surpassed in quality by party organs.' The rising gutter literature', as the private press was called, appealed especially to wayward youth. In this connection the whole of the local Komsomol press was ordered to put itself under the leadership of the party guberniia committees. In view of the unorthodox behaviour of the Komsomol that we have noted in the provinces, such a move was overdue. Finally, guberniia executive committees were <head>charged</head> with the resurrection of village reading-rooms, most of which had gone under in the changed economic conditions of NEP. Mere words could do little in the short term to reverse the chaotic situation. Saratov guberniia, admittedly a troubled area, reduced its press network from twenty-five organs in mid-1921 to two by the spring of 1922. Petrograd, still the cultural centre of the whole country, had been spared the cut-back of January 1922, but due to financial pressures four papers merged into two in order to save
+
+
+sense id: 13
+definition: under case give full may
+example:
+may be transferred, and binding promises may be made to an infant, but in general he is unable to make a binding disposition of his property or to make binding promises to others. As regards property, it should be noticed that law and practice, to a large extent, make it unlikely that property of any considerable value will come into the direct ownership of an infant. When property passes on death, it will go in the first instance to the executor appointed by will, or the administrator appointed by the court, who are <head>charged</head> with the duty of dealing with it and transferring it to the persons entitled (see p. 114). Similarly, under the settlements which people of property commonly make, the property will be in the hands of trustees. The infant can not give a receipt which executors, administrators or trustees can safely take. They must therefore retain the property to which an infant is entitled till he attains full age, and meanwhile deal with it under the directions of the will or settlement or under the orders
+
+
+sense id: 14
+definition: unless eg act weeks facts
+example:
+If you want to change any details of your booking (e.g. transfer to a different holiday, departure date or airport), we will do our best to help. We charge an Amendment Fee of 12 per person named on the booking for each detail of the booking changed. However, if within 6 weeks of departure you change your booking to a later date, the cancellation charges will apply as shown in paragraph 4 unless the new holiday departs on or before the original departure date, when the normal fee of 12 per person will be <head>charged</head>. Where the price varies depending on the number of persons booked into the accommodation and you wish to change that number of persons, the price will be restored on the basis of the new party size as shown in the price panel. Any increase in price per person payable as a result of a part cancellation is not a Cancellation Charge and so is not covered by Norwich Union Insurance. A separate Cancellation Charge will be levied in respect of bookings cancelled in accordance with paragraph 4.
+
+
+sense id: 15
+definition: local authority health Health existing
+example:
+in respect of both types of system. Culyer et al. (1988) stress that' care will have to be exercised to ensure that very sick and elderly patients are not treated or cared for long distances away from their homes and families'. Possibly one of the most dramatic implications is the effect of the two different systems on health (care) planning. Type I systems, because they allocate funds to a health authority, which is <head>charged</head> with responsibility for the health (care) of its (geographically defined) population, will not only ensure, but will require, an important planning role for the health authority, to ensure that local needs and priorities are pursued. However, the Type I system is not without problems. As discussed below, the problems of letting contracts, controlling payments and maintaining quality would be immense in the more radical proposals. In addition, individual health authorities would enter the' Internal Markets' with different historical
+
+
+sense id: 16
+definition: Commission main contributed have effect
+example:
+This of course is a value judgement which a government is entitled to make, but it is one which some economists would argue is not fully justified by the evidence, on the basis of which there have been calls for much more stringent control. The main arguments for a tightening up of merger policy, along with suggestions as to how this could be achieved, are considered by George (1989). One suggestion that is favoured by a number of commentators would be to alter the onus of proof. At present the Monopolies and Mergers Commission is <head>charged</head> with determining whether a proposed merger is contrary to the public interest. This means that many mergers for which there have been no demonstrable advantages, but which have not been found to be overtly anti-competitive, have been allowed through, and thus contributed to the general increase in industrial concentration. This consequence of existing policy is particularly important in periods of high merger activity when there is a bandwagon effect with more and more firms seeking to engage in takeover activity.
+
+
+sense id: 17
+definition: terms course have future take
+example:
+course of action is followed a further 140 will need to be spent to rectify the faults. Answer guide: This question needs to be split up into its constituent parts in order to take the student through the progression logically. First of all the sale needs to be dealt with. If we assume that the customer has paid for the goods then the first entries would have been to increase the bank by 600 and include in the profit and 1088 account sales of 600. We would also have reduced the asset for goods in stock by 400 and <head>charged</head> this amount to the profit and loss account as an expense for the period. We can now examine what should happen in the alternative situations outlined above. In this case we need to reduce the bank by 100 and reduce the profit and loss by 100. Whether the latter is put through as a reduction in sales or a rebate should be discussed in terms of the effects of these alternatives on the usefulness of the profit and loss account as a guide to the future.
+
+
+sense id: 18
+definition: C AG National general Auditor
+example:
+Audit is an ex post event and improvements in this important function may be of little long-term value if they are not coupled with more general reforms of the accountability of government. The expanded audit mandates discussed in chapter 6 mean that auditors are no longer solely concerned with fiscal compliance; rather they are now <head>charged</head> with assessing and reporting on management's efforts to develop effective programmes as efficiently as possible. One consequence of the National Audit Act 1983 is that the Comptroller and Auditor General (C ; AG) has adopted a new publishing policy. These reports are now published separately and not, as previously, treated as appendices to the reports of the Public Accounts Committee or the Appropriation Accounts. The intention behind this policy is to reach a wider audience, with consequently greater publicity and public awareness of the investigations undertaken
+
+
+sense id: 19
+definition: following payment terms month effect
+example:
+For letters and packages up to a weight limit of 2kg you can simply pay 1.95 in addition to the normal airmail postage for the weight and destination and affix a red SWIFTAIR sticker to each item. Alternatively, for items up to 150g, you can buy pre-paid SWIFTPACKS which come in three different sizes at the following prices: These prices are fully pre-paid to anywhere in the world for items up to the weight limits designated above. If you wish to send an item that exceeds the weight limit on your pre-paid SWIFTPACK the excess is <head>charged</head> at normal airmail rates. Simply calculate the extra weight and add the correct value of stamps for that particular weight and destination. SWIFTAIR stickers and SWIFTPACKS are both available at your local post office. SWIFTPACKS can also be purchased by mail order from the address given in this leaflet. Companies with a regular collection can include SWIFTAIR items in their post if they are separated from other mail by an elastic band. Larger users can take advantage of an account facility.
+
+
+sense id: 20
+definition: service night follow require available
+example:
+Chef Jeremy Ashpool will arouse your tastebuds with 6 course haute cuisine feast amongst flaming tarts, comedians, falling angels, dancers, and string quartets. 24hr information line Dial 0891 600 305 anytime, day or night, for recorded information on Festival events and ticket availability. This line is voice activated and enables the caller to select which information they require. Easy to follow instructions on how to use this service are given by ringing the above number. Calls are <head>charged</head> at 36p min. off peak and 48p at all other times. A Festival information point is situated in central Brighton at 111 Church Street, open daily during Festival, 10am-5pm. Information is also available at the Tourist Information Centre, Marlborough House, on the Old Steine, 9am-5 pm Mon-Sat, and at TICs throughout the region.
+
+
+sense id: 21
+definition: have would concessionary income taxpayers
+example:
+The words' in connection with' have the widest connotation and I can not see how they are to be restricted in the absence of some context permitting such restriction. The strongest argument in favour of the taxpayers is the anomaly which would arise if the employer's business were running at a loss or was subsidised by endowment. As I have explained, in such a case the adoption of the literal meaning of the statutory words would lead to a result whereby the taxpayer is assessed at an amount greater than that <head>charged</head> by the employer to the public for the same service. The Crown have no answer to this anomaly as such. But there are other anomalies which arise if the taxpayer's argument is correct. For example if, unlike the present case, the school could have been filled with boys paying the full fee, the school would have lost the fee income from the places occupied by the children of the taxpayers for whom only the concessionary fee was payable. Without deciding the point, it seems to me
+
+
+sense id: 22
+definition: consumer price would extra used
+example:
+is that the consumer, in economically difficult times, is more likely to be attracted by the opportunity to save money than by incidental free offers or competitions. Price promotions are predominantly used by fast-moving consumer goods producers, especially in the grocery trade. Premium offers are marketing techniques which give extra value to goods or services in the short term as part of a promotional package. Under this category are the following. An offer of merchandise is communicated to the customer in, on or off the pack. The price <head>charged</head> to the customer covers the cost of the item to the promoter. The promoter is able to purchase such merchandise in bulk and thereby pass savings on to the customers who feel that they are getting good value for money. Such promotions are usually linked with the necessity to collect labels or cut out tokens, etc., from a number of purchases of the same, or same range of, products. Thus the premium need not necessarily be connected with the product that carried the premium; the idea is
+
+
