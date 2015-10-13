@@ -18,4 +18,7 @@ sudo apt-get install build-essential
 echo "===================================="
 echo "===========install Munkres=========="
 echo "===================================="
-perl ./Algorithm-Munkres-0.08/Makefile.PL 
+cd Algorithm-Munkres-0.08
+sudo perl Makefile.PL
+sudo make
+sudo make install 
