@@ -15,4 +15,7 @@ echo "===================================="
 echo "============install make============"
 echo "===================================="
 sudo apt-get install build-essential
-sudo cpan > install Algorithm::Munkres
+echo "===================================="
+echo "===========install Munkres=========="
+echo "===================================="
+perl ./Algorithm-Munkres-0.08/Makefile.pl 
