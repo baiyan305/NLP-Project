@@ -5,10 +5,14 @@
 #
 # the general idea of clustering is based on common words among instances.
 
+from collections import Counter
 import string
 import re
+import operator
 
 class SenseCluster:
+
+
 
     #store clusters. It is a list of lists. Each list indicates a cluster.
     groups = []
@@ -22,6 +26,38 @@ class SenseCluster:
     #A matrix to store common words of each instance pair.
     commonwords = []
 
+    wordcount={}
+    wordvector=[]
+    def print_instance(self, instances):
+
+        index = 0
+        words = []  #store all words of all instances
+        for instance in instances:
+            words.append([])
+            words[index] = instance.split()
+            index = index + 1
+
+        #strip words in blacklist
+        for i in range(len(words)):
+            words[i] = self._strip_words_inblacklist(words[i])
+
+        for context in words:
+            for word in context:
+                if word not in self.wordcount:
+                    self.wordcount[word] = 1
+                else:
+                    self.wordcount[word] += 1
+
+        c = Counter(self.wordcount)
+        topwords = c.most_common()
+        #print(topwords)
+        for index in range(0, 99):
+            self.wordvector.append(topwords[index])
+
+        for dimension in self.wordvector:
+            print(dimension)
+               
+	
     #return clusters
     def get_groups(self):
         return self.groups
@@ -133,7 +169,9 @@ class SenseCluster:
                      "much", "few", "why", "once", "none", "youll", "thats", "as", "a", "are", "of", "be", "is", "on", "into",
                      "but", "did", "was", "were", "when", "out", "so", "an", "by", "from", "before", "about", "very", "has",
                      "been", "then", "with", "not", "will", "had", "not", "soon", "got", "never", "dont", "him", "up", "down",
-                     "just", "than", "went"]
+                     "just", "than", "went", "himself", "herself", "itself", "themselves", "have", "has", "had", "except", 
+                     "thought", "do", "does", "does", "doing", "done", "Mr", "Mrs", "others", "down", "should", "shall", 
+                     "whose", "now", "later", "seen", "too", "also", "will", "would"]
         prog = re.compile("<head>.*<head>")  #skip target word
         new_list = []
         for word in list_of_words:

@@ -50,51 +50,52 @@ print("Clustering instances...")
 
 #cluster instances
 sense_cluster = SenseCluster()
-sense_cluster.cluster(instances_clean)
-groups = sense_cluster.get_groups() #all clusters
-common_words = sense_cluster.get_commonwords() #common words for each cluster
+sense_cluster.print_instance(instances_clean)
+#sense_cluster.cluster(instances_clean)
+#groups = sense_cluster.get_groups() #all clusters
+#common_words = sense_cluster.get_commonwords() #common words for each cluster
 
-print( str(len(groups)) + " clusters created.")
-print("Generating definitions and examples...")
+#print( str(len(groups)) + " clusters created.")
+#print("Generating definitions and examples...")
 
 #generate sense
-senseGenerator = SenseGenerator()
-examples = senseGenerator.generate_example(groups, instances_data_old)
+#senseGenerator = SenseGenerator()
+#examples = senseGenerator.generate_example(groups, instances_data_old)
 #list of examples picked for each cluster
-commonwords = senseGenerator.collect_topWords(senseGenerator.simplify_lists(common_words))
-definitions = senseGenerator.generate_definition(commonwords)
+#commonwords = senseGenerator.collect_topWords(senseGenerator.simplify_lists(common_words))
+#definitions = senseGenerator.generate_definition(commonwords)
 #generated definitions for each cluster
 
 
 #All the output files will be stored in ./out directory
 
-print("write defitions and example to "+"/out/"+targetword+".answer.txt")
+#print("write defitions and example to "+"/out/"+targetword+".answer.txt")
 #output definitions and examples
-Util.generate_answer_file(targetword, definitions, examples, "./out/", targetword+".answer.txt")
+#Util.generate_answer_file(targetword, definitions, examples, "./out/", targetword+".answer.txt")
 
-print("write instances to "+"/out/"+targetword+"_Semeval2.xml")
+#print("write instances to "+"/out/"+targetword+"_Semeval2.xml")
 #output senseval-2
-Util.generate_SemEval2Format(instances_raw, groups, "./out/", targetword+"_Semeval2.xml");
+#Util.generate_SemEval2Format(instances_raw, groups, "./out/", targetword+"_Semeval2.xml");
 
 print("write key file of input to "+"/out/"+targetword+".old.key")
 #output original key file
-Util.generate_key_file(instances_data_old , targetword, "./out/", targetword+".old.key")
+#Util.generate_key_file(instances_data_old , targetword, "./out/", targetword+".old.key")
 
-print("write key file of ouput to "+"/out/"+targetword+".new.key")
+#print("write key file of ouput to "+"/out/"+targetword+".new.key")
 #output new key file
-instances_data_new = senseGenerator.generate_instance_sense_pairs(groups)
-Util.generate_key_file(instances_data_new , targetword, "./out/", targetword+".new.key")
+#instances_data_new = senseGenerator.generate_instance_sense_pairs(groups)
+#Util.generate_key_file(instances_data_new , targetword, "./out/", targetword+".new.key")
 
-print("sensecluters_scorer.sh in running...")
+#print("sensecluters_scorer.sh in running...")
 #call sensecluster_score.sh
-command1 = "./senseclusters_scorer.sh" +  " ../out/"+targetword+".new.key" + " ../out/"+targetword+".old.key"
+#command1 = "./senseclusters_scorer.sh" +  " ../out/"+targetword+".new.key" + " ../out/"+targetword+".old.key"
 
 #to make sure the execution of command1 waits until writing into the files is finished. 
-while not (os.path.exists("./out/"+targetword+".old.key") or os.path.exists("./out/"+targetword+".new.key")):
-    time.sleep(10)
+#while not (os.path.exists("./out/"+targetword+".old.key") or os.path.exists("./out/"+targetword+".new.key")):
+#    time.sleep(10)
 #change directory
-os.chdir(os.getcwd()+"/senseclusters_scorer/")
+#os.chdir(os.getcwd()+"/senseclusters_scorer/")
 #run sensecluster_scorer program
-os.system(command1)
+#os.system(command1)
 
-print("========================Done======================")
+#print("========================Done======================")
