@@ -10,9 +10,9 @@ Project Introduction:
 Our system attempts to create a dictionary from an inputfile. This system automatically clusters the instances based on the sense in which the
 target word is being used in a particular instance. Ideally, our system clusters all the instances in which the target word is used in the same
 sense into a single cluster. For each of these clusters, we generate the sense for the target word along with 
-an example( picked from the instances in the cluster). So if we have n clusters, we will have n senses and n examples in the output.
+an example(picked from the instances in the cluster). So if we have n clusters, we will have n senses and n examples in the output.
 
-Input:  inputfile is a bunch of Instances of target word in semeval2 format
+Input:  inputfile contains Instances of target word in semeval2 format
 output: dictionary for this target word
 		(lists out all the senses for the target word along with an example)
 		
@@ -20,62 +20,54 @@ output: dictionary for this target word
 
 		Suppose our target word is 'charged' and our system has identified 3 clusters among the instances, output would be as follows.
 
+		Expected Output:
 		########
 		charged
 
 		Sense = 0 # corresponding to cluster 1
 
-		Definition: accused
+		Definition: an action similar to accused
 
 		Example: Dallas police say a former Texas A&M wide receiver will be <head>charged</head> with murder for randomly hacking a jogger to death in a Dallas park Monday. 
 
 		Sense = 1 # corresponding to cluster 2
 
-		Definition: demand for payment
+		Definition: an action similar to demand for payment
 
 		Example: According to the circular, women customers, who typically get a subsidised rate, would be <head>charged</head> 20 basis points above the base rate, resulting in an actual interest rate of 9.5 per cent Monday onwards.
 
 
 		Sense = 3 # corresponding to cluster 2
 
-		Definition: assign responsibility
+		Definition: an action similar to assign responsibility
 
 		Example: After Congress proposes an amendment, the Archivist of the United States, who heads the National Archives and Records Administration, is <head>charged</head> with responsibility for administering the ratification process under the provisions of 1 U.S.C. 106b.
 
 
-******************************
-Our Approach:
-*****************************
-
-Our system is based on the fact that words of of the sense will be surrounded by similar words in most of the instances.
-
-For this, we generated similarity matrix for the instances and clustered
-those instances that have the maximum similarity. We defined degree of similarity as the count of occurences of similar(same) words in the instances. 
-
-for our example (charged): 
-	1. He was charged with a murder. The police arrested him.
-	2. Harper was taken to police headquarters for questioning before police charged him with a murder. Police cordoned off the entrance to the building, which was closed to tenants for hours.
-
-In the above two examples, the targetword 'charged' is surrounded by similar words.(police, murder,with,)
+*********************************
+Files and Authors
+*********************************
 
 We have divided the project into the following tasks
 
 Task1 : Parsing the inputfile and storing the useful information for future processing.
 Task2 : Generating clusters and common words among instances in each cluster.
-Task3 : Generate definition  and example for each cluster 
-Task4 : Writing output into the required files.
-Task5 : Calling Mechanism for the above classes (Main.py)
+Task3 : Generate definition
+Task4 : identifying example for each cluster
+Task5 : Writing output into the required files.
+Task6 : Calling Mechanism for the above classes (Main.py)
 
 
 The python classes, in the code, corresponding to the above tasks with the Authors are listed below:
 
 
-1. Task 1 -  		XMLParse.py 		 -Yan Bai
-2. Task 2 - 		SenseCluster.py 	 -Yan Bai
-3. Task 3 - 		SenseGenerator.py    -Bharath Bommana
-4. Task 4 - 		Util.py  			 -Swetha Naidu
-5. Task 5 -         Main.py 			 -Bharath Bommana
-6. Task 6 -         runit.sh, install.sh -Swetha naidu
+1. Task 1 -  	XMLParse.py 		     -Yan Bai
+2. Task 2 - 	SenseCluster.py 	     -Yan Bai
+3. Task 3 - 	DefinitionGeneration.py     -Bharath Bommana
+4. Task 4 -    ExampleGenerator.py         -Swetha Naidu
+4. Task 5 - 	Util.py  		     -Swetha Naidu
+5. Task 6 -    Main.py 	             -Bharath Bommana
+6. Env tasks - runit.sh, install.sh        -Swetha Naidu
 
 
 
@@ -88,30 +80,23 @@ Our system uses the following programs. install.sh installs these programs for y
 2. lxml
 3. csh
 4. build-essential
-5. Algorithm Mankress 
+5. Algorithm Mankress
 
 
 our system can be run using runit.sh script in two ways.
 Note: runit.sh can be run only from the directory in which it is located.
 
-1 	If the input file has only one target word (like the verb and noun instances in our project data)
-	
-	./runit.sh input_file_name target_word
+If the name of input file is input_file_name
 
-	for the input file: charged-verb-bomma008.xml:  ./runit.sh charged-verb-bomma008.xml charged 	
-	for the input file: orange-noun-bomma008.xml :  ./runit.sh orange-noun-bomma008.xml orange
+	./runit.sh input_file_name
 
-2 	If the input file has two target words(as in nameconflate pair instances)
-	
-	./runit.sh input_file_name target_word1 target_word2
+	for the input file: charged-verb-bomma008.xml:  ./runit.sh charged-verb-bomma008.xml
+	for the input file: orange-noun-bomma008.xml :  ./runit.sh orange-noun-bomma008.xml
 
-
-	for the input file: government-year-bomma008.xml: ./runit.sh government-year-bomma008.xml government year
-	for the input file: world-people-baixx195.xml:    ./runit.sh world-people-baixx195.xml world people
 
 Note: Outputs for team data are kept in ./teamresult directory.
 
-In both the cases, all the output will be stored in ./out directory. 
+All the output will be stored in ./out directory.
 -----------------------------------------
 The contents of ./out directory will be: 
 ------------------------------------------
@@ -119,7 +104,6 @@ The contents of ./out directory will be:
 2.semeval2.xml
 3.inputkey.key
 4.outputkey.key
-
 5. report.out(in ./senseclusters_scorer directory)
 
 We run senseclusters_scorer on the  outputkey.key and inputkey.key files and the resultant report.out will be in ./senseclusters_scorer directory
@@ -130,18 +114,18 @@ We run senseclusters_scorer on the  outputkey.key and inputkey.key files and the
 		charged
 
 		sense id: 5
-		definition: violence felony counts malice plea
+		definition: refers to an action similar to violence AND/OR felony
 		example:
 		LGBT activist by strangling her, before gouging out his cell mate&#8217;s eyeballs in a violent attack in a Georgia jail. Donte Lamar Wyatt, 33, has been accused of waging the gruesome violence on two separate occasions in April and July this year. In two separate indictments, Wyatt was <head>charged</head> with 14 felonies, including two counts of malice murder, two counts of felony murder and four counts of aggravated assault. Wyatt&#8217;s attorney entered a not guilty plea on his behalf in DeKalb County courtroom, reported AJC.com. &#8220;The allegations really are gruesome in this case,&#8221; said DeKalb County District Attorney Robert James.
 
 		sense id: 15
-		definition: local authority health Health existing
+		definition: refers to an action similar toauthority AND/OR Health
 		example:
 		in respect of both types of system. Culyer et al. (1988) stress that' care will have to be exercised to ensure that very sick and elderly patients are not treated or cared for long distances away from their homes and families'. Possibly one of the most dramatic implications is the effect of the two different systems on health (care) planning. Type I systems, because they allocate funds to a health authority, which is <head>charged</head> with responsibility for the health (care) of its (geographically defined) population, will not only ensure, but will require, an important planning role for the health authority, to ensure that local needs and priorities are pursued. However, the Type I system is not without problems. As discussed below, the problems of letting contracts, controlling payments and maintaining quality would be immense in the more radical proposals. In addition, individual health authorities would enter the' Internal Markets' with different historical
 
 
 		sense id: 22
-		definition: consumer price would extra used
+		definition: refers to an action similar to consumer AND/OR price
 		example:
 		is that the consumer, in economically difficult times, is more likely to be attracted by the opportunity to save money than by incidental free offers or competitions. Price promotions are predominantly used by fast-moving consumer goods producers, especially in the grocery trade. Premium offers are marketing techniques which give extra value to goods or services in the short term as part of a promotional package. Under this category are the following. An offer of merchandise is communicated to the customer in, on or off the pack. The price <head>charged</head> to the customer covers the cost of the item to the promoter. The promoter is able to purchase such merchandise in bulk and thereby pass savings on to the customers who feel that they are getting good value for money. Such promotions are usually linked with the necessity to collect labels or cut out tokens, etc., from a number of purchases of the same, or same range of, products. Thus the premium need not necessarily be connected with the product that carried the premium; the idea is
 
@@ -246,13 +230,152 @@ We run senseclusters_scorer on the  outputkey.key and inputkey.key files and the
 
 
 *****************************************************************************************************************
-DETAILED OUTLINE OF THE SOLUTION WITH EXAMPLES
+DETAILED EXPLANATION OF THE SOLUTION WITH EXAMPLES
 ******************************************************************************************************************
 
+Reading the xml input files is done by XMLParser.py class. And the useful information stored include the following.
+	
+	instances_data = []      #store instance information including instance id, sense id and instance text
+    	raw_text = []            #store raw text of instances without cleaning i.e text between <context> **** </context> tags in XML file.
+    	clean_text = []          #store text of instances without punctuation. This clean instances are used in calculating the similarity of two instances.
+    
+
+Once we parse the XML input files and collect the required data, there are 3 main tasks in this project.
+1. Clustering of senses
+2. Generating Definitions
+3. Selecting Example.
+
+---------------------------------------------------------
+1. CLUSTERING OF SENSES: 
+--------------------------------------------------------
+This part is done by SenseCluster.py class in the code.
+
+
+As stated in the brief description of our approach, our solution is based on the idea that a word, when used in same sense in different instances, will be surrounded by similar words. In other words, when a word is used in same sense in two instances, these two instances will have a few shared words. Based on the number of words shared by two instances, we measure the degree of similarity of two instances.
+
+Consider the following 4 senstences(A,B,C,D) with 'ORANGE' as the target word.
+
+A. <head>Orange</head> juice is the go-to drink of the morning in most American homes. It's what we reach for to get a dose of vitamin C when we feel a cold coming on. It is also really good for health.
+
+B. Antioxidants keep the DNA of healthy cells from mutating into cancerous cells, so antioxidants like vitamin C are the first line of defense for cancer and other serious diseases. Along with vitamin C, <head>orange</head> juice also contains the antioxidant hesperidin, which has been connected to reducing tumor growth and even stimulating apoptosis, or programmed cell death, in cancerous cells.
+
+C.<head>Orange</head> has a major Middle-Eastern community in proportion to its population, notably Armenians, Iranians and Arab peoples including Arab-Americans, who have bought homes and own some businesses in the city, and their business strips can be found along Tustin Avenue between Lincoln and Katella avenues.
+
+D.<head>Orange</head> has an estimated local government area population of 40,869 and an estimated city population of 39,226 with 25000 homes, making the city a major provincial centre. According to the 2011 Census, the key industries include health care & social assistance, retail and the education & training sector.
+
+After reading these 4 sentences/instaces, human will be able to understand that, in the instances A and B, the word orange is used in 'the fruit' sense and in instances C and D, orange is used in 'the name of a place' sense.
+
+But for the computer to identify the senses and similarity of two instances, we are relying on the neighboring words of the target word 'orange'. Our approach is as follows. we are ignoring stop words when calculating the similarty of two instances.
+
+	1. A and B have shared words - juice, Vitamin, C, (count- 3)
+	2. A and C have shared words - homes (count- 1)
+	3. A and D have shared words - health (count- 1)
+
+	-->C and D have shared words - population, city, major, homes (count- 4)
+
+1. Take instance 1, and find the number of words common to the other instances (A-B, A-C, A-D). and make a note in the table
+2. repeat the process for the other instances. We get a similarity matrix.
+
+
+------------------------------------------------------------------------------
+     |	  A 	|	B 		|	C 		|		D 		|	Comments
+------------------------------------------------------------------------------
+  A  |	-----	|	3		|	1		|		1		|  A is similar to B
+-------------------------------------------------------------------------------
+  B  |			|	-----	|			|				| (This will not be calculated since we already know that B is similar to A- from above row)
+-------------------------------------------------------------------------------
+  C  |	1		|	0		|	-----	|		4		|	C is similar to D
+-------------------------------------------------------------------------------
+  D  |			|			|			|	-------		|(This will not be calculated since we already know that D is similar to C- from above row)
+-------------------------------------------------------------------------------
+
+ 
+ This clustering will be stopped once we cluster all the senstences. In this example, clustering will be stopped once we are done clustering D.
+
+ To recall, A and B are put into a cluster and have the shared words - juice, Vitamin, C.
+ 			C and D are put into second cluster and have the shared words - population, city, major, homes.
+
+ We will be using this list of shared words in generating a definition for each sense.
+
+---------------------------------------------------------------------------------------------
+ 2. Generating Definition
+---------------------------------------------------------------------------------------------
+
+Our idea is very loosely based on the idea discussed in this paper: Word Sense Induction Using Graphs of Collocations
+link : http://dl.acm.org/citation.cfm?id=1567349
+
+The idea is that the definitions of a word in a context depends on the collocated words
+
+In each cluster, we collect the 5 words present on either side of the target word in the context and form a list of all collocated words
+
+From the list of collocated words, we pick the top 2 most repeated words and use them in the definition generation.
+
+Once we have the top2 words for each cluster, Our initial idea was to POS_TAG those two words and then use appropriate template to generate a
+easily readable complete sentence.
+We were able to use this feature during development stage
+
+    # Unfortunately we ran into issues with NLTK installation on a clean ubuntu machine and hence, we had to let go of it in the final solution.
+	we are not using in our final submission.
+
+So, as a last resort, we are randomly choosing the template and generating definitions.
+
+for this we are using a pool of 3 choices out of which one will be chosen at random and is appended to the words to get complete sentence.
+	
+	str1 =  "refers to an action similar to "
+	str2 = "refers to name of an entity, place or quality similar to "
+	str3 = "refers to the property or quality similar to "
+
+	
+	input:  1. clusters - list of lists
+#          	example : [[1,3,7], [2,6,8]]
+#
+#       	2. cleaned_instances - list of lists
+#           	example : [['word1', 'word2','word3'], ['word4','word1', 'word3',], ['word1', 'word2','word3', 'word5']....]
+
+#       	intermediate results:
+#       	
+		collocatedWords = [[word1, word2, word2, word1, word3, word4, word5], ['word4','word1', 'word3',word3, word4] ]
+#       	topWords = [[word1, word2], [word3,word4]]
+#
+#      output: Definitions- a list
+#          	 example : [refers to an action similar to word1 AND/OR word2, refers to the name of a place, entity or quality similar to word3 AND/OR word4]
+
+
+
+----------------------------------------------------------------------------------------------------
+3. Picking an Example:
+----------------------------------------------------------------------------------------------------
+This task is done in SenseGenerator.py class.
+
+The clusters generated in SenseClusters.py are passed to SenseGenerator.py class as a list.
+
+Lets consider the two clusters we have formed above: cluster 1- [A,B,E,F] and 
+													 cluster 2 -	[C,D]
+A,B, C, D, E, F are instances.
+
+We need to pick an example for each sense(each cluster).
+
+So among A, B, E, F in cluster 1, one of them can be picked and be used as an example for cluster 1.
+similarly among C and D in cluster 2, one of them can be picked and be used as an example for cluster 2.
+
+In our solution, we pick one random instance in each cluster as the example for that cluster.
+
+So in cluster1, among A,B,E,F an instance is randomly picked and is used as example for cluster 1.
+
+Python allows us to pick a random entity in a list- we are using this in our example picking.
+
+**************************************************************************************************************************
+
+Detailed description of code components with examples:
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+**************************************************************************************************************************
 ***************************
 COMPONENT 1 - XMLparser.py
 Author: Yan Bai
 ***************************
+Objective: The main objective of this class is to parse the XML input file and populate the useful info into python data structures.
+
+
 
 input:  charged-verb-bomma008.xml file (intances in semeval2 format)
 
@@ -265,6 +388,8 @@ output: instances_data = []         #store instance information including instan
 COMPONENT 2 - SenseClusters.py
 Author:  Yan Bai
 *****************************************************************
+
+Objective: The objective of this class is to categorize the instances into clusters.
 
 input: clean_text[]  #to make clusters
 
@@ -283,33 +408,27 @@ output: groups = []			#store clusters. It is a list of lists. Each list indicate
 	In the above example, for cluster 1, the commonly repeated words are eat, dog, eat, apple, juice, taste, fruit, fruit, taste, juice, taste....., sweet
 
 **********************************
-Component 3 - SenseGenerator.py
+Component 3 - DefinitionGeneration.py
 Author: Bharath Kumar Bommana
 **********************************
+Objective: generate definitions
 
-SenseGenerator class processes the output from SenseClusters Class as described below.
+input:  	clusters[]
+		cleaned_instances[]
 
-SenseGenerator class randomly selects one instance from each cluster and gives it out as the example for that cluster(sense).
+output:		
+		definitions[]	 #a list to store one definition for each cluster
 
-SenseGenerator class finds the top 5 most repeated words in commonwords[] list and constructs a definition out of those 5 words and returns this definition as the sense for this cluster.
-
-input:  groups[]
-		commonWords[]
-
-output:		examples[] 		 #a list to store one example for each cluster
-			definitions[]	 #a list to store one definition for each cluster, top5 words from commonwords is picked for each cluster
-
-sample output (for groups and commonwords described in component2):
+sample output (for clusters and cleaned_instances described in component2):
 		
-		examples= ['c1', 'c2', [c3]]  ---->c(i) represents example context for cluster i
-		definitions: [eat apple juice fruit taste, ipad laptop company ipod iphone, tree orchard farm grow seed]
+		definitions: [refers to an action similar to word1 AND/OR word2, refers to the name of a place, entity or quality similar to word3 AND/OR word4]
 
 *********************************************
 COMPONENT 4 - Util.py
 Author: Swetha Naidu
 *********************************************
 
-This class uses a bunch of data from all the previous components and generates output files as described in "instructions to run" section.
+The main objective of this class is to process the output generated in all the previous components and format into output files as described in "instructions to run" section.
 1.asnwers.txt
 2.semeval2.xml
 3.inputkey.key
