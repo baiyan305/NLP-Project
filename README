@@ -88,6 +88,10 @@ Our system uses the following programs. install.sh installs these programs for y
 our system can be run using runit.sh script in two ways.
 Note: runit.sh can be run only from the directory in which it is located.
 
+To run our system on data with more than 10000 instaces, atleast 4 GB memory is required- 8GB is preferred.
+We tested our system on a VM with 4GB on pmss data(10000 instances) and it took around 25 mins. 
+We also tested it on VM with 1GB and 2GB and we encountered memory issues.
+
 If the name of input file is input_file_name
 
 	./runit.sh input_file_name
@@ -327,7 +331,7 @@ This gives the edge weight for two words i and j.
 Finally a graph is constructed and each edge represents the connection between two pairs of instances.
 Finally, a rank is given to each vertex which indicates its SimilarityWeight. We pick the vertex that has the maximum SimilarityWeight as the best example.
 
-#We also tried to take add frequency_similarity score(the count of the number of top common words present in a instance) to the computed similarity weight for each instance. Due, to some issues, we could not accomplish that part. 
+We tried to  add frequency_similarity score(the count of the number of top common words present in a instance) to the computed similarity weight for each instance. Due, to some issues, we could not accomplish that part. 
 
 # input:
 #       1. clusters - list of lists
