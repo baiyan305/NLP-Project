@@ -1,0 +1,34 @@
+**************************************
+Example Generation
+**************************************
+
+  The baseline approach is based on selecting a random instance from all the instances.
+  Our new aproach is based on "Text Summarization using Text Rank Approch". It has been outlined in the paper : http://www.aclweb.org/anthology/P04-3020
+Step 1:
+  Firstly, the data is preprocessed and all the punctuations and stop-words are removed. This becomes the input for the example generation part.
+
+Step 2:
+  According to this method, we follow a graph-based approch to address the problem of selecting a best example.
+  In this approach each instance is represented as a vertex and a similarity coefficient is associated for every pair of vertices. For this we have used a two-dimensional matrix to represnt the instances.
+  The similarity coefficient is calculated based on the lexical similarity between the two instances i.e the number of common words between every pair of instances.
+      
+         Similarity(Si,Sj)=(|Wk|Wk belongs to both Si and Sj)/log(|Si|)+log(|Sj|)
+    here 
+        
+          >>Si    - represents sentence i.
+          >>Sj    - represents sentence j.
+          >>Wk    - represents work k.
+          >>|Si|  - reprents length of Si
+          >>|Sj|  - represents length of Sj
+          
+  This similarity coefficient represents the edge weight between every pair of indices in the graph.
+  
+Step 3:
+  After calculating the similarity coefficient, the next step is to assign a similairty weight for every vertex in the graph that has been constructed.
+  This is done by summing the similarity coefficients for the current vertex with every other vertex. This becomes the similarity weight for the vertex. In this manner, we compute similarity weights for every vertex in the graph.
+  We finally select a vertex with the maximum similarity weight.
+  
+#Initially, we thought of implementing stemming before calculating the similarity coefficients. However, due to issues with NLTK, we did not accomplish that part.
+#Another idea we had was to add frequency_score which is the count of the frequency of the most common words in the given instance to the similarity weight. But we had some issues which we could not fix.
+  
+  
