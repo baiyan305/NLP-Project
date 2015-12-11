@@ -318,24 +318,33 @@ for this we are using a pool of 3 choices out of which one will be chosen at ran
 ----------------------------------------------------------------------------------------------------
 3. Picking an Example:
 ----------------------------------------------------------------------------------------------------
-This task is done in SenseGenerator.py class.
+The task is done in the ExampleGenerator.py class
+The approach that is followed is outlined the following paper
+		http://www.aclweb.org/anthology/P04-3020
+		
+Firstly, all the stop words are removed. 
+#Our initial idea was to do Stemming to increase the similarity. Unfortunately we ran into issues with NLTK installation. So we had to skip that part
+	
+The main approach that is followed is TextRank approach. It is a graph-based approach. 
+It represents each instance as a vertex and the connection between the vertices are given an edge-weight. The edge-weight is calculated based on the Similarity metric that has been outlined in the paper. Si=W1W2..Wn,Sj=W1W2W3...Wn.
+Similarity(Si,Sj)=(|Wk|Wk belongs to both Si and Sj)/log(|Si|)+log(|Sj|)
+	
+This represents the lexical similarrity between the two instances normalized by a normalizin factor.
+This gives the edge weight for two words i and j. 
+	
+Finally a graph is constructed and each edge represents the connection between two pairs of instances.
+Finally, a rank is given to each vertex which indicates its SimilarityWeight. We pick the vertex that has the maximum SimilarityWeight as the best example.
 
-The clusters generated in SenseClusters.py are passed to SenseGenerator.py class as a list.
+#We also tried to take add frequency_similarity score(the count of the number of top common words present in a instance) to the computed similarity weight for each instance. Due, to some issues, we could not accomplish that part. 
 
-Lets consider the two clusters we have formed above: cluster 1- [A,B,E,F] and 
-													 cluster 2 -	[C,D]
-A,B, C, D, E, F are instances.
-
-We need to pick an example for each sense(each cluster).
-
-So among A, B, E, F in cluster 1, one of them can be picked and be used as an example for cluster 1.
-similarly among C and D in cluster 2, one of them can be picked and be used as an example for cluster 2.
-
-In our solution, we pick one random instance in each cluster as the example for that cluster.
-
-So in cluster1, among A,B,E,F an instance is randomly picked and is used as example for cluster 1.
-
-Python allows us to pick a random entity in a list- we are using this in our example picking.
+# input:
+#       1. clusters - list of lists
+#             example : [[1,3,7], [2,6,8]]
+#           instances - list of lists
+#             example : [['word1', 'word2','word3'], ['word4','word1', 'word3',], ['word1', 'word2','word3', 'word5']....]
+#       2.  output:  list of examples
+#               example_list : [12,34,67]    >>>>represents the index of the best example in our cluster
+	The approach that is followed is outlined the following paper
 
 **************************************************************************************************************************
 
@@ -423,3 +432,19 @@ in ./out
 and report.out in ./senseclusters_scorer
 (examples for outputs are shown in "instructions to run" section)
 
+***********************************************
+COMPONENT 5 - ExampleGenerator.py
+Author: Swetha Naidu
+***********************************************
+Objective: The main objective of this class is to generate an example that best illustrates the sense of the given word in the cluster.
+ 
+ 	input:
+ 	   clusters - list of lists
+               example : [[1,3,7], [2,6,8],[11,12,13]]
+           instances - list of lists
+                example : [['word1', 'word2','word3'], ['word4','word1', 'word3',], ['word1', 'word2','word3', 'word5']....]
+        output:  list of examples
+                example_list : [1,6,12]    #represents the index of the best example in our cluster	
+		here 1 represents the best example in cluster [1,3,7]
+		     6 represents the best example in cluster [2,6,8]
+		     12 represents the best example in cluster [11,12,13]

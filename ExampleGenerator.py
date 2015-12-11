@@ -15,19 +15,13 @@
 #But since we had issues with installing NLTK, we had to skip that part. 
 # We also wanted to get better example by including the top n common words (where n is a normalized value which is 1/10th of the number of words between in the given input list.) and giving a score based on the frequency of those words in our instances 
 #But, as we had some issues in the code which could not be fixed on time we skip that part.
-##input: 1. clusters - list of lists
-#          example : [[1,3,7], [2,6,8]]
-#
-#       2. instances - list of lists
-#           example : [['word1', 'word2','word3'], ['word4','word1', 'word3',], ['word1', 'word2','word3', 'word5']....]
-
-#       intermediate results:
-#       values = [[0.34,0.93], [0.45,0.567] ]
-#       score  = 0.56     >>>>represents the similarity weight for each instance
-#	max    = 2.993    >>>>represents the maximum weight associated with the best example
-#      output:  list of examples
-#           example_list : [12,34,67]    >>>>represents the index of the best example in our cluster
-#When we tried to compute the time, it took 3 minutes for the 10,000 instances set.
+# input: 1. clusters - list of lists
+#             example : [[1,3,7], [2,6,8]]
+#           instances - list of lists
+#             example : [['word1', 'word2','word3'], ['word4','word1', 'word3',], ['word1', 'word2','word3', 'word5']....]
+#       2.  output:  list of examples
+#               example_list : [12,34,67]    >>>>represents the index of the best example in our cluster
+# When we tried to compute the time, it took 3 minutes for the 10,000 instances set.
 #Time Complexity: O(n^2)
 #-------------------------------------------------------------------------------------------------------------------------------
 #import nltk
@@ -79,7 +73,7 @@ class ExampleGenerator(object):
 				max=score
 				inkjuif=i
 		return temporary[inkjuif]
-
+'''
 	#This commented part is based on our idea which we could not implement due to some issues. 
 	#The main idea is to better example generation by taking another metric of frequency of most common words
 	#Each instance is given a weight based on the the number of frequent words that the sentence has among the top most common words.
@@ -108,7 +102,7 @@ class ExampleGenerator(object):
 	def get_frequency_score(self,content,i):
 		thematicwords=self.collect_topwords(content)
 		return len(set(content[i]).intersection(thematicwords))/((len(content[i])+len(thematicwords))/2)
-
+'''
         #This function generates the example by taking the following 
         #input:
         #clusters: list of lists [[1,2,3],[4,5,6]]
