@@ -40,11 +40,10 @@ print("Parsing XML...")
 xmlparser = XMLParser()
 xmlparser.parse(inputpath, targetword)
 instances_raw = xmlparser.get_raw_text()
+instances_words = xmlparser.get_clean_text()
 
 #instances_raw contains the (context)entire text between context tags in xml file
-instances_words = xmlparser.get_clean_text()
-for words in instances_words:
-    print words
+
 #instances_clean contains the text between context tags in xml file but this text is cleaned-> extra symbols are removed
 #instances_data_old = xmlparser.get_instances_data()
 #instances_data_old-> contains [instance id, senseid]. This list can be used to generate .key file for the target word in question.
