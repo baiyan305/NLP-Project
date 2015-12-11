@@ -33,10 +33,11 @@ class ExampleGenerator(object):
 		example_list=[]
 		temporary=[]
 		for cluster in clusters:
-		    length=len(cluster)
-		    temporary=cluster[:]
-            for index in range(0,length):
-                replace=cluster[index]
-				cluster[index]=instances[replace-1]
-            example_list.append(self.get_sentence_ranks(cluster,temporary))
+		        length=len(cluster)
+		        temporary=cluster[:]
+		        cluster2=cluster[:]
+                        for index in range(0,length):
+                                replace=cluster[index]
+				cluster2[index]=instances[replace-1]
+                        example_list.append(self.get_sentence_ranks(cluster2,temporary))
 		return example_list
