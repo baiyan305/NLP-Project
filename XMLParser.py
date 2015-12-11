@@ -51,7 +51,7 @@ class XMLParser:
                      "between", "may", "might", "only", "back", "under", "even", "because", "still", "my", "after", "since",
                      "couldnt", "recently", "often", "Im", "else", "away", "wasnt", "didnt", "usually", "doesnt", "a", "b"
                      "c", "d", "e", "f", "g", "h", "i", "g", "k", "l", "m", "n", "o", "p", "q", "s", "t", "u", "v", "w", "x"
-                     "y", "z", "yet", "mays", "exactly"]
+                     "y", "z", "yet", "mays", "exactly", "<s>", "</s>", "<@>"]
 
         #strip punctuation
         pattern = re.compile(u'[.,:#"!?;()-/\']')
