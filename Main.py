@@ -19,7 +19,9 @@ def time():
 shutil.rmtree("out", ignore_errors=True)
 
 inputpath = sys.argv[1]
+print(time()+" ==================================================")
 print(time()+" ===================Process start==================")
+print(time()+" ==================================================")
 print(time()+" input file: " + inputpath)
 
 #parse XML to get all instances
@@ -85,4 +87,7 @@ os.chdir(os.getcwd()+"/senseclusters_scorer/")
 #run sensecluster_scorer program
 os.system(command1)
 
+print(time()+" ==================================================")
 print(time()+" ========================Done======================")
+print(time()+" ==================================================")
+
