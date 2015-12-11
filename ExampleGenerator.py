@@ -10,7 +10,7 @@ class ExampleGenerator(object):
 		#print(content[6])
 		n=len(content)
 		max=0
-
+		global inkjuif
 		#print(n)
 		values=[[0 for x in xrange(n)] for x in xrange(n)]
 
@@ -27,9 +27,9 @@ class ExampleGenerator(object):
 					score+=values[i][j]			
 			if(score>max):
 				max=score
-				index=i
-                print("asdasd"+str(index))
-		return temporary[index]
+				inkjuif=i
+                
+		return temporary[inkjuif]
 
 	def get_examples(self, clusters,instances):
 		example_list=[]
