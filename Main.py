@@ -21,7 +21,7 @@ shutil.rmtree("out", ignore_errors=True)
 #num_of_argv = len(sys.argv)
 #inputpath = sys.argv[1]
 #targetword = None
-inputpath="teamdata/apple.xml"
+inputpath="teamdata/orange.xml"
 targetword="model"
 
 #our program takes either two or 3 commands based on the number of target words in the input file
@@ -42,6 +42,18 @@ xmlparser = XMLParser()
 xmlparser.parse(inputpath, targetword)
 instances_raw = xmlparser.get_raw_text()
 instances_words = xmlparser.get_clean_text()
+target = xmlparser.get_targetword()
+
+print("target word: " + target)
+
+
+print("raw text...")
+#for raw in instances_raw:
+#    print(raw)
+
+print("clean words...")
+#for words in instances_words:
+#    print(words)
 
 #instances_raw contains the (context)entire text between context tags in xml file
 
@@ -59,16 +71,22 @@ sense_cluster.cluster(instances_words)
 clusters = sense_cluster.get_clusters()
 dimensions = sense_cluster.get_dimensions()
 
+
+
+print("clustering done! Totally "+str(len(clusters))+" found.")
 for cluster in clusters:
+    print(len(cluster))
     print(cluster)
+for words in instances_words:
+    print(words)
+print(len(instances_words))
 
 example_gen = ExampleGenerator()
 examples = example_gen.get_examples(clusters, instances_words)
-
-for cluster in clusters:
-    print(cluster)
-
+print("exampling done!")
 print(examples)
+
+
 #sense_cluster.cluster(instances_clean)
 #groups = sense_cluster.get_groups() #all clusters
 #common_words = sense_cluster.get_commonwords() #common words for each cluster

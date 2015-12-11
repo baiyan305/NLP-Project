@@ -12,7 +12,6 @@ class XMLParser:
     instances_data = []         #store instance information including instance id, sense id and instance text
     raw_text = []               #store raw text of instances
     clean_text = []             #store text of instances without punctuation
-    global_input = None
     global_targetword = None
 
     #return list of instances data.
@@ -34,10 +33,6 @@ class XMLParser:
     #return list of instance text without punctuations and stop words
     def get_clean_text(self):
         return self.clean_text
-
-    #return input file path
-    def get_input_path(self):
-        return self.global_input
     
     #return target word
     def get_targetword(self):
@@ -93,11 +88,11 @@ class XMLParser:
 
         return available_words
 
-    def extract_target_word(self, instance):
-        children = list(instance)
-        context = children[1]
-        context_in_string = etree.tostringlist(context, encoding="utf-8", method="xml")[0]
-        context_raw_text = context_in_string[10:-11]        #extract instance text
+    def extract_target_word(self):
+        #children = list(instance)
+        #context = children[1]
+        #context_in_string = etree.tostringlist(context, encoding="utf-8", method="xml")[0]
+        context_raw_text = self.raw_text[0]        #extract instance text
 
         #strip punctuation
         pattern = re.compile(u'[.,:#"!?;()-/\']')
@@ -111,32 +106,35 @@ class XMLParser:
                 self.global_targetword = re.match(prog, word).string[6:-6]
                 return
 
-    
     #use lxml library to parse XML file to extract data
     def parse(self, inputfile, targetword):
-        self.global_input = inputfile
-        parser = etree.XMLParser(recover=True)
-        tree = etree.parse(inputfile, parser=parser)
-        root = tree.getroot()
 
-        instances = root.findall('.//instance')
+        with open(inputfile) as f:
+            for line in f:
+                if line.startswith("<instance"):
+                    self.instances_data.append([])
+                    self.raw_text.append("")
+                elif line.startswith("<answer"):
+                    instance = re.search('instance=\"(.*)\"\s', line)
+                    instanceid = instance.group(1)
+                    sense = re.search('senseid=\"(.*)\"/>', line)
+                    senseid = sense.group(1)
+                    self.instances_data[len(self.instances_data)-1].append(instanceid)
+                    self.instances_data[len(self.instances_data)-1].append(senseid)
+                    self.instances_data[len(self.instances_data)-1].append("")
+                elif line.startswith("<context") or \
+                        line.startswith("</context") or \
+                        line.startswith("<lexelt") or \
+                        line.startswith("</lexelt") or \
+                        line.startswith("<corpus") or \
+                        line.startswith("</corpus") or \
+                        line.startswith("<?xml"):
+                    continue
+                elif not line.isspace():
+                    self.instances_data[len(self.instances_data)-1][2] += line.strip()
+                    self.raw_text[len(self.raw_text)-1] += line.strip()
 
-        self.extract_target_word(instances[0])
+        for raw in self.raw_text:
+            self.clean_text.append(self._strip_punctuation(raw))
 
-        for instance in instances:
-            instance_data = []
-            instance_id = instance.get("id")        #extract instance id
-            children = list(instance)
-            answer = children[0]
-            context = children[1]
-            sense_id = answer.get("senseid")        #extract sense id
-            context_in_string = etree.tostringlist(context, encoding="utf-8", method="xml")[0]
-            context_raw_text = context_in_string[10:-11]        #extract instance text
-            context_vector_words = self._strip_punctuation(context_raw_text)       #instance text without punctuation
-            instance_data = []
-            instance_data.append(instance_id)         #push instance id to list
-            instance_data.append(sense_id)            #push sense id to list   
-            instance_data.append(context_raw_text)    #push instance text to list
-            self.instances_data.append(instance_data) #push instance itself to bigger list 
-            self.raw_text.append(context_raw_text)
-            self.clean_text.append(context_vector_words)
+        self.extract_target_word()

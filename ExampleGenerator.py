@@ -10,6 +10,7 @@ class ExampleGenerator(object):
 		#print(content[6])
 		n=len(content)
 		max=0
+
 		#print(n)
 		values=[[0 for x in xrange(n)] for x in xrange(n)]
 
@@ -27,6 +28,7 @@ class ExampleGenerator(object):
 			if(score>max):
 				max=score
 				index=i
+                print("asdasd"+str(index))
 		return temporary[index]
 
 	def get_examples(self, clusters,instances):
@@ -36,8 +38,8 @@ class ExampleGenerator(object):
 		        length=len(cluster)
 		        temporary=cluster[:]
 		        cluster2=cluster[:]
-                        for index in range(0,length):
-                                replace=cluster[index]
-				cluster2[index]=instances[replace-1]
+                        for index1 in range(0,length):
+                                replace=cluster[index1]
+				cluster2[index1]=instances[replace-1]
                         example_list.append(self.get_sentence_ranks(cluster2,temporary))
 		return example_list
