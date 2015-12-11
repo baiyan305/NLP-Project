@@ -3,8 +3,6 @@
 # this class extracts data from XML files and converts to required Python data structure.
 # data generated in this class will be used for SenseCluster.py and SenseGenerator.py
 
-from lxml import etree
-import string
 import re
 
 class XMLParser:
@@ -89,22 +87,9 @@ class XMLParser:
         return available_words
 
     def extract_target_word(self):
-        #children = list(instance)
-        #context = children[1]
-        #context_in_string = etree.tostringlist(context, encoding="utf-8", method="xml")[0]
         context_raw_text = self.raw_text[0]        #extract instance text
-
-        #strip punctuation
-        pattern = re.compile(u'[.,:#"!?;()-/\']')
-        str_no_punc = re.sub(pattern, "", context_raw_text.decode("utf-8"))  #strip punctuation
-
-        #find target word
-        prog = re.compile("<head>.*<head>")
-        words = str_no_punc.split()
-        for word in words:
-            if re.match(prog, word):
-                self.global_targetword = re.match(prog, word).string[6:-6]
-                return
+        m = re.search('<head>(.*)</head>', context_raw_text)
+        self.global_targetword = m.group(1)
 
     #use lxml library to parse XML file to extract data
     def parse(self, inputfile, targetword):

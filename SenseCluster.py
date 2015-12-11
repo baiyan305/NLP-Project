@@ -67,7 +67,7 @@ class SenseCluster:
 
     def hierarchy_cluster(self, contexts_vectors):
         dist_matrix = hac.linkage(contexts_vectors, "ward")
-        clusters = hac.fcluster(dist_matrix, 1, criterion='distance')
+        clusters = hac.fcluster(dist_matrix, 10, criterion='distance')
 
         #plt.figure()
         #data = hac.dendrogram(dist_matrix)

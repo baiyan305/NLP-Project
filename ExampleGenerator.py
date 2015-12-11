@@ -25,7 +25,7 @@ class ExampleGenerator(object):
 				else:			
 					values[i][j]=self.sentences_intersection(content[i],content[j])
 					score+=values[i][j]			
-			if(score>max):
+			if(score>=max):
 				max=score
 				inkjuif=i
                 

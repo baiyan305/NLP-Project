@@ -17,7 +17,7 @@ from nltk.tag import pos_tag, map_tag
 class DefinitionGeneration:
 
 
-    def get_collocated_words(self, clusters, cleaned_instances, target):
+    def get_collocated_words(self, clusters, cleaned_instances):
         collocatedWords = []
         for cluster in clusters:
             wordsInCluster = []
@@ -98,9 +98,9 @@ class DefinitionGeneration:
         else:
                 words[0]= "refers to the property or quality similar to "+ ' '.join(words[0])
     
-    def get_Definitions (self, clusters, cleaned_instances, target):
+    def get_Definitions (self, clusters, cleaned_instances):
 
-        list1= self.get_collocated_words(clusters, cleaned_instances, target)
+        list1= self.get_collocated_words(clusters, cleaned_instances)
 
         topwords = self.findTopWords(list1)
 

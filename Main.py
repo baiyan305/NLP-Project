@@ -4,6 +4,7 @@
 from XMLParser import XMLParser
 from SenseCluster import SenseCluster
 from ExampleGenerator import ExampleGenerator
+from DefinitionGeneration import DefinitionGeneration
 from SenseGenerator import SenseGenerator
 from Util import Util
 import subprocess
@@ -74,17 +75,21 @@ dimensions = sense_cluster.get_dimensions()
 
 
 print("clustering done! Totally "+str(len(clusters))+" found.")
-for cluster in clusters:
-    print(len(cluster))
-    print(cluster)
-for words in instances_words:
-    print(words)
+#for cluster in clusters:
+#    print(len(cluster))
+#   print(cluster)
+#for words in instances_words:
+#    print(words)
 print(len(instances_words))
 
 example_gen = ExampleGenerator()
 examples = example_gen.get_examples(clusters, instances_words)
 print("exampling done!")
 print(examples)
+
+
+sense_gen = DefinitionGeneration();
+senses = sense_gen.get_Definitions(clusters, instances_words)
 
 
 #sense_cluster.cluster(instances_clean)
