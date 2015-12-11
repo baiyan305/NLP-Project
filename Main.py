@@ -3,6 +3,7 @@
 
 from XMLParser import XMLParser
 from SenseCluster import SenseCluster
+from ExampleGenerator import ExampleGenerator
 from SenseGenerator import SenseGenerator
 from Util import Util
 import subprocess
@@ -20,7 +21,7 @@ shutil.rmtree("out", ignore_errors=True)
 #num_of_argv = len(sys.argv)
 #inputpath = sys.argv[1]
 #targetword = None
-inputpath="teamdata/orange.xml"
+inputpath="teamdata/apple.xml"
 targetword="model"
 
 #our program takes either two or 3 commands based on the number of target words in the input file
@@ -58,6 +59,16 @@ sense_cluster.cluster(instances_words)
 clusters = sense_cluster.get_clusters()
 dimensions = sense_cluster.get_dimensions()
 
+for cluster in clusters:
+    print(cluster)
+
+example_gen = ExampleGenerator()
+examples = example_gen.get_examples(clusters, instances_words)
+
+for cluster in clusters:
+    print(cluster)
+
+print(examples)
 #sense_cluster.cluster(instances_clean)
 #groups = sense_cluster.get_groups() #all clusters
 #common_words = sense_cluster.get_commonwords() #common words for each cluster

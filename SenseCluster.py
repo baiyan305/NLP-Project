@@ -7,7 +7,6 @@
 
 from collections import Counter
 import scipy.cluster.hierarchy as hac
-import numpy as np
 import matplotlib.pyplot as plt
 import string
 import re
@@ -75,17 +74,17 @@ class SenseCluster:
 
         counter = Counter(wordcount)
 
-        for index in range(0, 100):
+        for index in range(0, len(instances)):
             self.dimensions.append(counter.most_common()[index][0])
 
     def hierarchy_cluster(self, contexts_vectors):
         dist_matrix = hac.linkage(contexts_vectors, "ward")
         clusters = hac.fcluster(dist_matrix, 10, criterion='distance')
 
-        print(clusters)
-
         #plt.figure()
         #data = hac.dendrogram(dist_matrix)
+
+        #print(data)
         #plt.show()
 
         return clusters
