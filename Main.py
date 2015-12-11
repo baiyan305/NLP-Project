@@ -61,7 +61,7 @@ print(time()+" write defitions and example to "+"/out/"+targetword+".answer.txt"
 Util.generate_answer_file(targetword, instances_text_raw, definitions, examples, "./out/", targetword+".answer.txt")
 
 #output senseval-2
-print(time()+ "write instances to "+"/out/"+targetword+"_Semeval2.xml")
+print(time()+ " write instances to "+"/out/"+targetword+"_Semeval2.xml")
 Util.generate_SemEval2Format(instances_text_raw, clusters, "./out/", targetword+"_Semeval2.xml");
 
 #output original key file
