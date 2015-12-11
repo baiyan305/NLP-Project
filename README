@@ -396,8 +396,9 @@ Author: Bharath Kumar Bommana
 Objective: generate definitions
 
 input:  	clusters[]
+			example:  [[1,3,7], [2,6,8],[11,12,13]]
 		cleaned_instances[]
-
+			example:  [['word1', 'word2','word3'], ['word4','word1', 'word3',], ['word1', 'word2','word3', 'word5']....]
 output:		
 		definitions[]	 #a list to store one definition for each cluster
 
