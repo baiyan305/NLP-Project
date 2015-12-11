@@ -1,4 +1,4 @@
-#author swetha
+#Author: Swetha Naidu
 #
 #! /bin/sh
 #
