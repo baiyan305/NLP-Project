@@ -2,11 +2,11 @@ from __future__ import division
 import re
 
 class ExampleGenerator(object):
-
+	ps=PorterStemmer()
 	def sentences_intersection(self,s1,s2):
 		return len(set(s1).intersection(s2))/((len(s1)+len(s2))/2)
 	
-	def get_length(content):
+	def get_length(self,content):
 		length=0
 		for listitem in content:
 			length=length+len(listitem)
@@ -49,7 +49,7 @@ class ExampleGenerator(object):
 				else:			
 					values[i][j]=self.sentences_intersection(content[i],content[j])
 					score+=values[i][j]
-			score+=self.get_frequence_score(content,i)			
+			score+=self.get_frequency_score(content,i)			
 			if(score>=max):
 				max=score
 				inkjuif=i
@@ -62,6 +62,8 @@ class ExampleGenerator(object):
 		        length=len(cluster)
 		        temporary=cluster[:]
 		        cluster2=cluster[:]
+		        for word in cluster2:
+		        	word=ps.stem(word)
                         for index1 in range(0,length):
                                 replace=cluster[index1]
 				cluster2[index1]=instances[replace-1]
