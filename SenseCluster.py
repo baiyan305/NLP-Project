@@ -7,9 +7,6 @@
 
 from collections import Counter
 import scipy.cluster.hierarchy as hac
-import string
-import re
-import math
 
 class SenseCluster:
 
@@ -92,11 +89,5 @@ class SenseCluster:
             threshold = 20
         dist_matrix = hac.linkage(contexts_vectors, "ward")
         clusters = hac.fcluster(dist_matrix, threshold, criterion='distance')
-
-        #plt.figure()
-        #data = hac.dendrogram(dist_matrix)
-
-        #print(data)
-        #plt.show()
 
         return clusters

@@ -5,9 +5,7 @@ from XMLParser import XMLParser
 from SenseCluster import SenseCluster
 from ExampleGenerator import ExampleGenerator
 from DefinitionGeneration import DefinitionGeneration
-from SenseGenerator import SenseGenerator
 from Util import Util
-import subprocess
 import sys
 import os
 import time

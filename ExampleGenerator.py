@@ -79,7 +79,7 @@ class ExampleGenerator(object):
 				max=score
 				inkjuif=i
 		return temporary[inkjuif]
-'''	
+
 	#This commented part is based on our idea which we could not implement due to some issues. 
 	#The main idea is to better example generation by taking another metric of frequency of most common words
 	#Each instance is given a weight based on the the number of frequent words that the sentence has among the top most common words.
@@ -107,7 +107,7 @@ class ExampleGenerator(object):
 	#This function returns a frequency_score which is added to the score for each instance.
 	def get_frequency_score(self,content,i):
 		thematicwords=self.collect_topwords(content)
-		return len(set(content[i]).intersection(thematicwords))/((len(content[i])+len(thematicwords))/2)'''
+		return len(set(content[i]).intersection(thematicwords))/((len(content[i])+len(thematicwords))/2)
 
         #This function generates the example by taking the following 
         #input:
