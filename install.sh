@@ -10,7 +10,7 @@
 
 sudo apt-get update
 echo "===================================="
-echo "==========install python 3=========="
+echo "==========install scipy=========="
 echo "===================================="
 sudo apt-get install python-numpy python-scipy
 echo "===================================="

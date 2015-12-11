@@ -100,14 +100,14 @@ Util.generate_key_file(instances_data_new, targetword, "./out/", targetword+".ne
 
 #print("sensecluters_scorer.sh in running...")
 #call sensecluster_score.sh
-#command1 = "./senseclusters_scorer.sh" +  " ../out/"+targetword+".new.key" + " ../out/"+targetword+".old.key"
+command1 = "./senseclusters_scorer.sh" +  " ../out/"+targetword+".new.key" + " ../out/"+targetword+".old.key"
 
 #to make sure the execution of command1 waits until writing into the files is finished. 
-#while not (os.path.exists("./out/"+targetword+".old.key") or os.path.exists("./out/"+targetword+".new.key")):
-#    time.sleep(10)
+while not (os.path.exists("./out/"+targetword+".old.key") or os.path.exists("./out/"+targetword+".new.key")):
+    time.sleep(10)
 #change directory
-#os.chdir(os.getcwd()+"/senseclusters_scorer/")
+os.chdir(os.getcwd()+"/senseclusters_scorer/")
 #run sensecluster_scorer program
-#os.system(command1)
+os.system(command1)
 
 #print("========================Done======================")
