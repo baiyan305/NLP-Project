@@ -16,33 +16,36 @@ Input:  inputfile contains Instances of target word in semeval2 format
 output: dictionary for this target word
 		(lists out all the senses for the target word along with an example)
 		
-		input file : charged-verb-bomma008.xml
+		input file : orange-noun-bomma008.xml
 
-		Suppose our target word is 'charged' and our system has identified 3 clusters among the instances, output would be as follows.
+		Suppose our target word is 'orange' and our system has identified 3 clusters among the instances, output would be as follows.
 
 		Expected Output:
 		########
-		charged
-
-		Sense = 0 # corresponding to cluster 1
-
-		Definition: an action similar to accused
-
-		Example: Dallas police say a former Texas A&M wide receiver will be <head>charged</head> with murder for randomly hacking a jogger to death in a Dallas park Monday. 
-
-		Sense = 1 # corresponding to cluster 2
-
-		Definition: an action similar to demand for payment
-
-		Example: According to the circular, women customers, who typically get a subsidised rate, would be <head>charged</head> 20 basis points above the base rate, resulting in an actual interest rate of 9.5 per cent Monday onwards.
-
-
-		Sense = 3 # corresponding to cluster 2
-
-		Definition: an action similar to assign responsibility
-
-		Example: After Congress proposes an amendment, the Archivist of the United States, who heads the National Archives and Records Administration, is <head>charged</head> with responsibility for administering the ratification process under the provisions of 1 U.S.C. 106b.
-
+		sense id: 0
+		definition: refers to the property or quality similar to  vitamin AND/OR c
+		example:
+		As mentioned, vitamin C works as an antioxidant, and one of the most important functions of antioxidants is to prevent cancer. Antioxidants keep the DNA of healthy cells from mutating into cancerous cells, so antioxidants like vitamin C are the first line of defense for cancer and other serious diseases. Along with vitamin C, <head>orange</head> juice also contains the antioxidant hesperidin, which has been connected to reducing tumor growth and even stimulating apoptosis, or programmed cell death, in cancerous cells. Although research is ongoing, it has positively been linked to colon cancer prevention, but it is likely that hesperidin is effective in terms of many types of cancer.
+		
+		sense id: 1
+		definition: refers to an action similar to  county AND/OR california
+		example:
+		<head>orange</head> will continue to expand to the east, where it has a 60-square mile sphere of influence extending to the county line. Preliminary plans call for a variety of developments in the area around Irvine Lake, with much of the area to the north of the lake remaining as open space.
+		
+		sense id: 2
+		definition: refers to the property or quality similar to  juice AND/OR water
+		example:
+		<head>orange</head> juice helps improve blood circulation, avoiding the formation of clots, and therefore can prevent arteriosclerosis.
+		
+		sense id: 3
+		definition: refers to the property or quality similar to  juice AND/OR sugar
+		example:
+		Worried about all that sugar you’d be drinking, though? Well, the magnesium that comes in your OJ is actually essential for blood sugar regulation, too, and keeps blood glucose levels normalized. As well as potassium, another key nutrient found plentifully in <head>orange</head> juice. Potassium is involved in regulating both blood sugar and insulin levels. Potassium works by getting sugar into the cell, which regulates cellular metabolism and makes use of that sugar by using it as fuel. Potassium has other benefits, too. It determines cellular hydration, by keeping sodium in circulation, which regulates water retention and blood volume.
+		
+		sense id: 4
+		definition: refers to an action similar to  like AND/OR make
+		example:
+		But now because of the massive use of High Fructose Corn Syrup — which basically tastes like sugar but is cheaper to make — Fructose makes up a much higher percentage of our diet.  Fructose is in everything. Soft drinks. Candies. Crackers. Fructose, when you consume it in normal proportions, is fine.  But because people now are drinking 2 glasses of <head>orange</head> juice, then a soda with High Fructose Cornsyrup, and some crackers and chips (also with High Fructose Corn Syrup), and even bread that has it, fructose consumption is at an all-time high. In studies, high fructose consumption has been linked to alterations in fat levels, cholesterol changes, as well as other obvious changes that occur with a high energy intake like weight gain, metabolic disorder, and cardiovascular issues.
 
 *********************************
 Files and Authors
@@ -106,25 +109,33 @@ We run senseclusters_scorer on the  outputkey.key and inputkey.key files and the
 
 1. answers.txt -> dictionary for the target word
 	
-		charged
+		orange
 
-		sense id: 5
-		definition: refers to an action similar to violence AND/OR felony
+		sense id: 0
+		definition: refers to the property or quality similar to  vitamin AND/OR c
 		example:
-		LGBT activist by strangling her, before gouging out his cell mate&#8217;s eyeballs in a violent attack in a Georgia jail. Donte Lamar Wyatt, 33, has been accused of waging the gruesome violence on two separate occasions in April and July this year. In two separate indictments, Wyatt was <head>charged</head> with 14 felonies, including two counts of malice murder, two counts of felony murder and four counts of aggravated assault. Wyatt&#8217;s attorney entered a not guilty plea on his behalf in DeKalb County courtroom, reported AJC.com. &#8220;The allegations really are gruesome in this case,&#8221; said DeKalb County District Attorney Robert James.
-
-		sense id: 15
-		definition: refers to an action similar toauthority AND/OR Health
+		As mentioned, vitamin C works as an antioxidant, and one of the most important functions of antioxidants is to prevent cancer. Antioxidants keep the DNA of healthy cells from mutating into cancerous cells, so antioxidants like vitamin C are the first line of defense for cancer and other serious diseases. Along with vitamin C, <head>orange</head> juice also contains the antioxidant hesperidin, which has been connected to reducing tumor growth and even stimulating apoptosis, or programmed cell death, in cancerous cells. Although research is ongoing, it has positively been linked to colon cancer prevention, but it is likely that hesperidin is effective in terms of many types of cancer.
+		
+		sense id: 1
+		definition: refers to an action similar to  county AND/OR california
 		example:
-		in respect of both types of system. Culyer et al. (1988) stress that' care will have to be exercised to ensure that very sick and elderly patients are not treated or cared for long distances away from their homes and families'. Possibly one of the most dramatic implications is the effect of the two different systems on health (care) planning. Type I systems, because they allocate funds to a health authority, which is <head>charged</head> with responsibility for the health (care) of its (geographically defined) population, will not only ensure, but will require, an important planning role for the health authority, to ensure that local needs and priorities are pursued. However, the Type I system is not without problems. As discussed below, the problems of letting contracts, controlling payments and maintaining quality would be immense in the more radical proposals. In addition, individual health authorities would enter the' Internal Markets' with different historical
-
-
-		sense id: 22
-		definition: refers to an action similar to consumer AND/OR price
+		<head>orange</head> will continue to expand to the east, where it has a 60-square mile sphere of influence extending to the county line. Preliminary plans call for a variety of developments in the area around Irvine Lake, with much of the area to the north of the lake remaining as open space.
+		
+		sense id: 2
+		definition: refers to the property or quality similar to  juice AND/OR water
 		example:
-		is that the consumer, in economically difficult times, is more likely to be attracted by the opportunity to save money than by incidental free offers or competitions. Price promotions are predominantly used by fast-moving consumer goods producers, especially in the grocery trade. Premium offers are marketing techniques which give extra value to goods or services in the short term as part of a promotional package. Under this category are the following. An offer of merchandise is communicated to the customer in, on or off the pack. The price <head>charged</head> to the customer covers the cost of the item to the promoter. The promoter is able to purchase such merchandise in bulk and thereby pass savings on to the customers who feel that they are getting good value for money. Such promotions are usually linked with the necessity to collect labels or cut out tokens, etc., from a number of purchases of the same, or same range of, products. Thus the premium need not necessarily be connected with the product that carried the premium; the idea is
-
-
+		<head>orange</head> juice helps improve blood circulation, avoiding the formation of clots, and therefore can prevent arteriosclerosis.
+		
+		sense id: 3
+		definition: refers to the property or quality similar to  juice AND/OR sugar
+		example:
+		Worried about all that sugar you’d be drinking, though? Well, the magnesium that comes in your OJ is actually essential for blood sugar regulation, too, and keeps blood glucose levels normalized. As well as potassium, another key nutrient found plentifully in <head>orange</head> juice. Potassium is involved in regulating both blood sugar and insulin levels. Potassium works by getting sugar into the cell, which regulates cellular metabolism and makes use of that sugar by using it as fuel. Potassium has other benefits, too. It determines cellular hydration, by keeping sodium in circulation, which regulates water retention and blood volume.
+		
+		sense id: 4
+		definition: refers to an action similar to  like AND/OR make
+		example:
+		But now because of the massive use of High Fructose Corn Syrup — which basically tastes like sugar but is cheaper to make — Fructose makes up a much higher percentage of our diet.  Fructose is in everything. Soft drinks. Candies. Crackers. Fructose, when you consume it in normal proportions, is fine.  But because people now are drinking 2 glasses of <head>orange</head> juice, then a soda with High Fructose Cornsyrup, and some crackers and chips (also with High Fructose Corn Syrup), and even bread that has it, fructose consumption is at an all-time high. In studies, high fructose consumption has been linked to alterations in fat levels, cholesterol changes, as well as other obvious changes that occur with a high energy intake like weight gain, metabolic disorder, and cardiovascular issues.
+		
 
 
 2. semeval2.xml -> output (intances clustered based on their senseids) in semeval2 format
@@ -132,107 +143,90 @@ We run senseclusters_scorer on the  outputkey.key and inputkey.key files and the
 		<corpus lang="english">
 		<lexelt item="LEXELT">
 		<instance id="0">
-		<answer instance="0" senseid="0"/>
+		<answer instance="0" senseid="2"/>
 		<context>
-		Turns out, it wasn&#8217;t the fault of either driver when two trucks plunged from I-285 to Ga. 400, causing a crash that stopped traffic at the busy interchange for five hours, police said Thursday. Instead, it was the driver of a 2014 Kia Sorento who allegedly sparked the wreck when he left his lane, driving into the path of a tractor-trailer, according to Sandy Springs police. Howard Silverstein, 64, was <head>charged</head> with failure to maintain lane in the Friday crash. &#8220;Silverstein entered into the path and lane on 285 eastbound already occupied by the Publix tractor-trailer,&#8221; Sandy Springs police said in an emailed statement. &#8220;The right front tire of the Kia Sorento struck the left front tire and rim of the tractor-trailer causing the Kia&#8217;s tire to go flat.&#8221;
-
+		are a vegetarian it is certainly worthwhile making sure you include other good sources of iron in your diet. You'll need to get your daily iron from eggs (if you're eating them), beans such as baked beans, soya beans and lentils, leafy green veg, dried fruit, and fortified breakfast cereals (check the labels to see which have iron added). Iron from non meat sources is better absorbed by the body if it is eaten with a source of vitamin C, so try to have your cereal with a glass of fresh <head>orange</head> or your lentils with a tomato based sauce and so on. CAN you tell me which type of milk is suitable for my four-year-old daughter? A LITTLE ray of sunshine she isn't. Cute and sweet are not adjectives that readily spring to mind on surveying the stage wardrobe of Andi, the blonde frontwoman of local cover band Sunshine. But then Andi isn't really your average rock babe. Two years ago she traded her long, barbie doll locks for a
 		</context>
 		</instance>
 		<instance id="1">
-		<answer instance="1" senseid="0"/>
+		<answer instance="1" senseid="1"/>
 		<context>
-		Sandy Springs police said Thursday that Howard Silverstein, 64, of Duluth, was driving a Kia Sorento on Sept. 28 and veered into the right lane, where he hit a Publix tractor-trailer. The Publix tractor-trailer veered to the right after being hit, and hit another tractor-trailer. Both tractor-trailers went over a concrete barrier onto Ga. 400. Silverstein was <head>charged</head> with failure to maintain a lane, Sandy Springs police said. The fuel tanker in the far right lane was carrying 8,000 gallons of gasoline, but Sandy Springs Fire Rescue said the fuel was contained inside the vehicle and there was no leak. Both truck drivers were briefly trapped in their trucks but were pulled out. They both suffered non-life threatening injuries.
-
+		one of the biggest exhibitions at the fair with 21 towns and holiday attractions taking part. It is not all work for children at Mount Pleasant primary school in Darlington, where children take a caring approach. Distressed by mindless vandalism that destroys trees and flowers they are keeping a watchful eye on plant life. The animal kingdom gets its fair share of attention as children learn how to care for pets. A runaway hamster called Sophie takes pride of place where the school rat once roamed. And they learn to care for themselves with a sociable cafe selling <head>orange</head> and biscuits before home-time every Friday. Lynne Humes has taken time off work as a staff nurse at Darlington Memorial Hospital to start a family, and her son Anthony was born in January. The NHS is one of the main election issues for Lynne, who says she has seen many changes in the service over the last ten years.' Some were for the better but a lot were for worse. Lack of funds has been a big problem, especially for research, but it always has
 		</context>
 		</instance>
 		.....
 
-3. inputkey.key -> key file generated based on the inputfile(charged-verb-bomma008.xml)
+3. inputkey.key -> key file generated based on the inputfile(orange-noun-bomma008.xml)
 		
-		charged charged.0 charged.accused
-		charged charged.1 charged.accused
-		charged charged.2 charged.accused
-		charged charged.3 charged.accused
-		charged charged.4 charged.accused
-		charged charged.5 charged.accused
-		charged charged.81 charged.demand_money
-		charged charged.82 charged.demand_money
-		charged charged.83 charged.demand_money
-		charged charged.84 charged.demand_money
-		charged charged.65 charged.entrust
-		charged charged.66 charged.entrust
-		charged charged.67 charged.entrust
-		charged charged.68 charged.entrust
-		charged charged.69 charged.entrust
-		charged charged.70 charged.entrust
-		charged charged.71 charged.entrust
+		orange orange.0 orange.fruit_tree
+		orange orange.1 orange.fruit_tree
+		orange orange.2 orange.fruit_tree
+		orange orange.3 orange.fruit_tree
+		orange orange.4 orange.fruit_tree
+		orange orange.5 orange.fruit_tree
+		orange orange.6 orange.fruit_tree
+		orange orange.7 orange.fruit_tree
+		orange orange.8 orange.fruit_tree
+		orange orange.9 orange.fruit_tree
+		orange orange.10 orange.fruit_tree
+		orange orange.11 orange.fruit_tree
+		orange orange.12 orange.fruit_tree
+		orange orange.13 orange.fruit_tree
+		orange orange.14 orange.fruit_tree
+		orange orange.15 orange.fruit_tree
+		orange orange.16 orange.fruit_tree
+		orange orange.17 orange.fruit_tree
+		orange orange.18 orange.fruit_tree
+		orange orange.19 orange.fruit_tree
 
 4. outputkey.key --> key file generated based on the results of our system
 
-		charged charged.0 charged.0
-		charged charged.1 charged.0
-		charged charged.2 charged.1
-		charged charged.11 charged.1
-		charged charged.3 charged.1
-		charged charged.8 charged.1
-		charged charged.4 charged.2
-		charged charged.13 charged.2
-		charged charged.6 charged.2
-		charged charged.12 charged.2
-		charged charged.10 charged.3
-		charged charged.35 charged.3
-		charged charged.36 charged.3
-		charged charged.47 charged.3
-
+		orange orange.0 orange.2
+		orange orange.1 orange.1
+		orange orange.2 orange.1
+		orange orange.3 orange.2
+		orange orange.4 orange.1
+		orange orange.5 orange.2
+		orange orange.6 orange.2
+		orange orange.7 orange.1
+		orange orange.8 orange.1
+		orange orange.9 orange.2
+		orange orange.10 orange.2
+		orange orange.11 orange.2
+		orange orange.12 orange.1
+		orange orange.13 orange.1
+		orange orange.14 orange.1
+		orange orange.15 orange.1
+		orange orange.16 orange.3
+		orange orange.17 orange.0
 
 5. report.out(in ./senseclusters_scorer directory)
 
-		            S0	      S2	      S1	   TOTAL	
-		  C2:       19	       0	       0	      19	(17.12)
-		 C10:        0	      16	       0	      16	(14.41)
-		 C13:        0	       0	       4	       4	(3.60)
-		  C0:*       2	       0	       0	       2	(1.80)
-		  C1:*       4	       0	       0	       4	(3.60)
-		 C11:*       0	       2	       0	       2	(1.80)
-		 C12:*       0	       2	       2	       4	(3.60)
-		 C14:*       0	       0	       3	       3	(2.70)
-		 C15:*       0	       0	       4	       4	(3.60)
-		 C16:*       0	       0	       2	       2	(1.80)
-		 C17:*       0	       0	       2	       2	(1.80)
-		 C18:*       0	       0	       2	       2	(1.80)
-		 C19:*       0	       0	       3	       3	(2.70)
-		 C20:*       0	       0	       3	       3	(2.70)
-		 C21:*       0	       0	       3	       3	(2.70)
-		 C22:*       0	       0	       3	       3	(2.70)
-		  C3:*       7	       0	       0	       7	(6.31)
-		  C4:*       5	       0	       0	       5	(4.50)
-		  C5:*       2	       0	       0	       2	(1.80)
-		  C6:*       2	       0	       0	       2	(1.80)
-		  C7:*       2	       0	       0	       2	(1.80)
-		  C8:*       1	       1	       0	       2	(1.80)
-		  C9:*       0	      15	       0	      15	(13.51)
-		 TOTAL      44	      36	      31	     111
-		         (39.64)   (32.43)   (27.93)
-		Precision = 100.00(39/39)
-		Recall = 35.14(39/111+0)
-		F-Measure = 52.00
-
+			            S1	      S0	   TOTAL	
+		  C0:       46	       2	      48	(35.29)
+		  C1:       27	      50	      77	(56.62)
+		  C2:*       3	       0	       3	(2.21)
+		  C3:*       7	       0	       7	(5.15)
+		  C4:*       1	       0	       1	(0.74)
+		 TOTAL      84	      52	     136
+		         (61.76)   (38.24)
+		Precision = 76.80(96/125)
+		Recall = 70.59(96/136+0)
+		F-Measure = 73.56
+		
 		Legend of Sense Tags
-		S0 = charged.accused
-		S1 = charged.demand_money
-		S2 = charged.entrust
-
-
-
+		S0 = orange.Location_County
+		S1 = orange.fruit_tree
+	
 *****************************************************************************************************************
 DETAILED EXPLANATION OF THE SOLUTION WITH EXAMPLES
 ******************************************************************************************************************
 
 Reading the xml input files is done by XMLParser.py class. And the useful information stored include the following.
 	
-	instances_data = []      #store instance information including instance id, sense id and instance text
-    raw_text = []            #store raw text of instances without cleaning i.e text between <context> **** </context> tags in XML file.
-    clean_text = []          #store text of instances without punctuations and stopwords.
+    instances_data_old = [	       #store instance information including instance id, sense id and instance text
+    instances_text_raw = []            #store raw text of instances without cleaning i.e text between <context> **** </context> tags in XML file.
+    instances_text_clean = []          #store text of instances without punctuations and stopwords.
     
 
 Once we parse the XML input files and collect the required data, there are 3 main tasks in this project.
@@ -310,10 +304,8 @@ for this we are using a pool of 3 choices out of which one will be chosen at ran
 		collocatedWords = [[word1, word2, word2, word1, word3, word4, word5], ['word4','word1', 'word3',word3, word4] ]
 #       	topWords = [[word1, word2], [word3,word4]]
 #
-#      output: Definitions- a list
+#                output: Definitions- a list
 #          	 example : [refers to an action similar to word1 AND/OR word2, refers to the name of a place, entity or quality similar to word3 AND/OR word4]
-
-
 
 ----------------------------------------------------------------------------------------------------
 3. Picking an Example:
@@ -396,8 +388,9 @@ Author: Bharath Kumar Bommana
 Objective: generate definitions
 
 input:  	clusters[]
+			example:  [[1,3,7], [2,6,8],[11,12,13]]
 		cleaned_instances[]
-
+			example:  [['word1', 'word2','word3'], ['word4','word1', 'word3',], ['word1', 'word2','word3', 'word5']....]
 output:		
 		definitions[]	 #a list to store one definition for each cluster
 

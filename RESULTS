@@ -66,6 +66,9 @@ Example Generation
 
   The baseline approach is based on selecting a random instance from all the instances.
   Our new aproach is based on "Text Summarization using Text Rank Approch". It has been outlined in the paper : http://www.aclweb.org/anthology/P04-3020
+
+Improvement on base-line:
+
 Step 1:
   Firstly, the data is preprocessed and all the punctuations and stop-words are removed. This becomes the input for the example generation part.
 
