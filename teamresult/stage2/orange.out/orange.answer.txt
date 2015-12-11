@@ -1,0 +1,27 @@
+orange
+
+sense id: 0
+definition: refers to the property or quality similar to  vitamin AND/OR c
+example:
+As mentioned, vitamin C works as an antioxidant, and one of the most important functions of antioxidants is to prevent cancer. Antioxidants keep the DNA of healthy cells from mutating into cancerous cells, so antioxidants like vitamin C are the first line of defense for cancer and other serious diseases. Along with vitamin C, <head>orange</head> juice also contains the antioxidant hesperidin, which has been connected to reducing tumor growth and even stimulating apoptosis, or programmed cell death, in cancerous cells. Although research is ongoing, it has positively been linked to colon cancer prevention, but it is likely that hesperidin is effective in terms of many types of cancer.
+
+sense id: 1
+definition: refers to an action similar to  county AND/OR california
+example:
+<head>orange</head> will continue to expand to the east, where it has a 60-square mile sphere of influence extending to the county line. Preliminary plans call for a variety of developments in the area around Irvine Lake, with much of the area to the north of the lake remaining as open space.
+
+sense id: 2
+definition: refers to the property or quality similar to  juice AND/OR water
+example:
+<head>orange</head> juice helps improve blood circulation, avoiding the formation of clots, and therefore can prevent arteriosclerosis.
+
+sense id: 3
+definition: refers to the property or quality similar to  juice AND/OR sugar
+example:
+Worried about all that sugar you’d be drinking, though? Well, the magnesium that comes in your OJ is actually essential for blood sugar regulation, too, and keeps blood glucose levels normalized. As well as potassium, another key nutrient found plentifully in <head>orange</head> juice. Potassium is involved in regulating both blood sugar and insulin levels. Potassium works by getting sugar into the cell, which regulates cellular metabolism and makes use of that sugar by using it as fuel. Potassium has other benefits, too. It determines cellular hydration, by keeping sodium in circulation, which regulates water retention and blood volume.
+
+sense id: 4
+definition: refers to an action similar to  like AND/OR make
+example:
+But now because of the massive use of High Fructose Corn Syrup — which basically tastes like sugar but is cheaper to make — Fructose makes up a much higher percentage of our diet.  Fructose is in everything. Soft drinks. Candies. Crackers. Fructose, when you consume it in normal proportions, is fine.  But because people now are drinking 2 glasses of <head>orange</head> juice, then a soda with High Fructose Cornsyrup, and some crackers and chips (also with High Fructose Corn Syrup), and even bread that has it, fructose consumption is at an all-time high. In studies, high fructose consumption has been linked to alterations in fat levels, cholesterol changes, as well as other obvious changes that occur with a high energy intake like weight gain, metabolic disorder, and cardiovascular issues.
+

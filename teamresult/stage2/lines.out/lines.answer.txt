@@ -1,0 +1,52 @@
+lines
+
+sense id: 0
+definition: refers to the property or quality similar to  line AND/OR says
+example:
+<s> Expert Westerners say Russian refrigerators use too much power, weigh too much and make too much noise. </s> <@> <s> Consumers clamor for them, as they do for the extensive Soviet  <head>line</head>  of fully unautomatic cameras. </s>
+
+sense id: 1
+definition: refers to an action similar to  computers AND/OR computer
+example:
+<s> After months of hesitation, the European personal computer industry is gearing up to clone International Business Machines Corp.'s struggling new  <head>line</head>  of personal computers. </s> <@> </p> <@> <p> <@> <s> Starting this week with the announcement by Britain's Apricot Computer PLC, most of Europe's major personal-computer makers are expected to unveil plans to sell machines compatible with IBM's Personal System/2 line. </s>
+
+sense id: 2
+definition: refers to an action similar to  ibm AND/OR computers
+example:
+<s> Yet some students of history may recall that Apple ran a smug ad in 1981 welcoming IBM to the PC market -- then watched as IBM's market share quickly dwarfed Apple's. </s> <@> </p> <@> <p> <@> <s> In any case, competitors seem ready to finally face reality and either take their lumps or perhaps profit from any weaknesses in the IBM  <head>line</head> . </s>
+
+sense id: 3
+definition: refers to an action similar to  million AND/OR year
+example:
+<s> The maker of air-conditioning and heating equipment expects earnings for the second quarter -- historically, its best period of the year -- to exceed year-earlier net income of $5.3 million, or 61 cents a share, James T. Dresher, vice chairman, said. </s> <@> </p> <@> <p> <@> <s> Some of the gains will come from sales of a new  <head>line</head>  of rooftop air conditioners suited for fast-food restaurants and strip shopping centers, Mr. Dresher said in an interview. </s>
+
+sense id: 4
+definition: refers to name of an entity, place or quality similar to  cars AND/OR said
+example:
+<s> One dealer said Nissan told him that the sports coupe would be priced in the low-$30,000 range; the sedan may be priced in the mid-$30,000 range. </s> <@> <s> He added that Nissan currently is considering introducing the  <head>line</head>  in the fall of 1988 as 1989 models. </s>
+
+sense id: 5
+definition: refers to name of an entity, place or quality similar to  computers AND/OR computer
+example:
+<s> Overall computer sales in the consumer electronics concern's fiscal third quarter rose 16%, he said. </s> <@> <s> Both percentage figures include Tandy's  <head>line</head>  of computers that aren't IBM-compatible, as well as those that are. </s>
+
+sense id: 6
+definition: refers to an action similar to  new AND/OR telephone
+example:
+<s> Among the new products Rubbermaid is introducing are modular home office products, just now being shipped, and molded outdoor furniture, under the new brand name Sundial, which will be introduced in early 1987. </s> <@> <s> Mr. Gault said orders for both  <head>lines</head>  are "very encouraging." </s>
+
+sense id: 7
+definition: refers to the property or quality similar to  said AND/OR products
+example:
+<s> He added that customer reaction to the company's I.O.U. brand of sportswear, introduced in the fall of 1985 and promoted heavily last year, also was "excellent" in the second half. </s> <@> <s> The  <head>line</head> , aimed at young men and women, produces higher profit margins than other name-brand clothes, he said. </s>
+
+sense id: 8
+definition: refers to name of an entity, place or quality similar to  sales AND/OR year
+example:
+<s> Analysts predict net income will fall as much as a third this year, from 565.5 billion lire in 1986. </s> <@> </p> <@> <p> <@> <s> One problem has been flat sales of Olivetti's five-year-old  <head>line</head>  of minicomputers. </s> <@> <s> The new line of minicomputers shown yesterday seeks to boost Olivetti's minicomputer sales by 50% annually over the next two years, Mr. Levi said. </s>
+
+sense id: 9
+definition: refers to an action similar to  said AND/OR products
+example:
+<s> But Emhart isn't abandoning its past as a consumer and industrial products company either, as the Stanadyne bid shows. </s> <@> <s> Emhart is primarily interested in Stanadyne's Moen brand of plumbing products, which Emhart says would make a natural fit with its consumer hardware and housewares  <head>lines</head> . </s>
+

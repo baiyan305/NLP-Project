@@ -1,0 +1,32 @@
+charged
+
+sense id: 0
+definition: refers to an action similar to  rate AND/OR public
+example:
+in respect of both types of system. Culyer et al. (1988) stress that' care will have to be exercised to ensure that very sick and elderly patients are not treated or cared for long distances away from their homes and families'. Possibly one of the most dramatic implications is the effect of the two different systems on health (care) planning. Type I systems, because they allocate funds to a health authority, which is <head>charged</head> with responsibility for the health (care) of its (geographically defined) population, will not only ensure, but will require, an important planning role for the health authority, to ensure that local needs and priorities are pursued. However, the Type I system is not without problems. As discussed below, the problems of letting contracts, controlling payments and maintaining quality would be immense in the more radical proposals. In addition, individual health authorities would enter the' Internal Markets' with different historical
+
+sense id: 1
+definition: refers to an action similar to  functions AND/OR housing
+example:
+as they have exercised a discretion (as they may require to do in considering questions of reasonableness under section 17(1) (2) and (4)), the exercise can be impugned on the principles set out in the judgment of Lord Greene M.R. in Associated Provincial Picture Houses Ltd. v. Wednesbury Corporation 19481 K.B. 223. All this is trite law and the contrary has, so far as I know, never been argued in any case which has come before the courts under the Act of 1977.' On the other hand, the housing authority are <head>charged</head> with executive functions. Once a decision has been reached by the housing authority which gives rise to the temporary, the limited or the full housing duty, rights and obligations are immediately created in the field of private law. Each of the duties referred to, once established, is capable of being enforced by injunction and the breach of it will give rise to a liability in damages. But it is inherent in the scheme of the Act that an appropriate public law decision of the housing authority is a
+
+sense id: 2
+definition: refers to name of an entity, place or quality similar to  law AND/OR crown
+example:
+Nor do I feel compelled to depart from that conclusion by the fact that, under the present practice, a local authority which acts as a relator in a relator action is required to give an undertaking in damages even though it is so proceeding in order to enforce the law in the public interest. I observe that, in the Hoffmann-La Roche case, Lord Diplock distinguished the position of a relator on the ground that he owes no duty to the public to initiate any law enforcement action. In the present case, however, the Council is indeed <head>charged</head> with such a duty. That does not prevent the Crown from proceeding to enforce the law under its general powers; but it would be an extraordinary situation if a local authority, acting under a statutory duty, was required to give an undertaking in damages, whereas the Crown was not. To my mind, the position of the local authority as relator can not be decisive of the present case. The essential question is whether the court's discretion to require an undertaking in damages in law enforcement actions
+
+sense id: 3
+definition: refers to an action similar to  police AND/OR facing
+example:
+alongside her parents in a case involving sex, a threesome and a computer mogul allegedly extorted out of $3 million has died unexpectedly while awaiting trial in federal court. Romulus resident Jessica Tackett, 25, who prosecutors say was a prostitute and stripper, died Monday, six months after being <head>charged</head> in federal court. Tackett and her parents allegedly were involved in a scheme to extort almost $3 million from a retired software mogul by threatening to tell police about a threesome involving her, her teenage cousin and the businessman, prosecutors said. Tackett, the mother of a toddler son, had a long history of drug addiction but the cause and manner of death is unclear, as is the potential impact on a salacious criminal case in U.S. District Court.
+
+sense id: 4
+definition: refers to name of an entity, place or quality similar to  felony AND/OR counts
+example:
+Tuesday with murder for allegedly stabbing her brother’s girlfriend to death with a pair of scissors during an argument in Rowland Heights over the weekend. Lisette Kimberly Moreno was <head>charged</head> with one count of murder and a special allegation that she personally used a deadly and dangerous weapon during the commission of the crime, the Los Angeles County District Attorney’s Office stated in a news release. Moreno allegedly got into an argument with 21-year-old Annette Martinez on Aug. 6 at an apartment in the 1900 block of Baston Avenue, the release stated.
+
+sense id: 5
+definition: refers to the property or quality similar to  billing AND/OR office
+example:
+The investigation, dubbed Operation Kids Count, began a year-and-a-half ago when the Minnesota Department of Human Services' Office of Inspector General noticed unusually high billings from Minnesota Child Care Services, 2500 Minnehaha Ave., Minneapolis, to the Child Care Assistance Program. "Each of the child care facilities <head>charged</head> have been involved in a common theme of billing the government for child care services and then not providing them. These centers do provide legitimate support and services, but they also bill the government anywhere from 15-30 percent for kids who weren't there," said Hennepin County Attorney Mike Freeman. "If there were 200 kids in the center, they would bill the government for 300."
+

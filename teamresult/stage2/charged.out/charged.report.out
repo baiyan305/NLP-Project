@@ -1,0 +1,17 @@
+            S0	      S1	      S2	   TOTAL	
+  C1:       21	       0	       0	      21	(18.92)
+  C2:        8	      31	      30	      69	(62.16)
+  C4:        0	       0	       3	       3	(2.70)
+  C0:*      14	       0	       1	      15	(13.51)
+  C3:*       1	       0	       0	       1	(0.90)
+  C5:*       0	       0	       2	       2	(1.80)
+ TOTAL      44	      31	      36	     111
+         (39.64)   (27.93)   (32.43)
+Precision = 59.14(55/93)
+Recall = 49.55(55/111+0)
+F-Measure = 53.92
+
+Legend of Sense Tags
+S0 = charged.accused
+S1 = charged.demand_money
+S2 = charged.entrust

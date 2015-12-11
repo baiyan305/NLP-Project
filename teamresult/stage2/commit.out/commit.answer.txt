@@ -1,0 +1,7 @@
+commit
+
+sense id: 0
+definition: refers to name of an entity, place or quality similar to  suicide AND/OR new
+example:
+The script was handed to him by Casper Wrede, a director friend from the Royal Exchange who directed him on screen in One Day in the Life of Ivan Denisovich.' I had done Moliere's The Misanthrope with him and The Hypochondriac, which is much more difficult and not such a good play. I really struggled with that one,' says Courtenay. Plans had to be put on hold when the Royal National Theatre decided to stage The Miser in London but the actor was keen enough on the project to <head>commit</head> himself to the project months ahead and risk turning down more lucrative work. What annoys him is people who say Moliere is not funny:' I don't read reviews although I understand we have done extremely well, but a couple thought it has to be very serious.' It's absurd and it's profound about parents, children, human selfishness and obviously greed. But he was a genius and it's one of his best plays and most pertinent today. Everyone understands about money.
+

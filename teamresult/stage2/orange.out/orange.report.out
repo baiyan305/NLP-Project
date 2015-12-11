@@ -1,0 +1,15 @@
+            S1	      S0	   TOTAL	
+  C0:       46	       2	      48	(35.29)
+  C1:       27	      50	      77	(56.62)
+  C2:*       3	       0	       3	(2.21)
+  C3:*       7	       0	       7	(5.15)
+  C4:*       1	       0	       1	(0.74)
+ TOTAL      84	      52	     136
+         (61.76)   (38.24)
+Precision = 76.80(96/125)
+Recall = 70.59(96/136+0)
+F-Measure = 73.56
+
+Legend of Sense Tags
+S0 = orange.Location_County
+S1 = orange.fruit_tree

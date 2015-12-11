@@ -1,0 +1,452 @@
+I_M
+
+sense id: 0
+definition: refers to the property or quality similar to  microsoft AND/OR new
+example:
+track all of their desktop information and communicate with others. Microsoft Office 97 includes new versions of each of the component applications, including Microsoft Word, <head>I_M</head> Excel, the PowerPoint presentation graphics program and Microsoft Access, as well as the new Microsoft Outlook. Common to these Office 97 applications is the integration
+
+sense id: 1
+definition: refers to the property or quality similar to  microsoft AND/OR commission
+example:
+first personal computer (PC). The program, MS-DOS, helped make Microsoft the world's biggest in personal computer software. Over the next several years Microsoft launched the <head>I_M</head> Word word-processing program and Microsoft Windows operating system. In 1991, the Federal Trade Commission began investigating claims that Microsoft monopolized the market for PC operating
+
+sense id: 2
+definition: refers to an action similar to  decree AND/OR judge
+example:
+the agreement, considered a victory for Microsoft, was rejected in February by a federal judge who ruled that the investigation had not been aggressive enough. <head>I_M</head> and the Justice Department appealed the decision. The second probe resulted in a defeat for Microsoft, which on May 20 was forced to back out
+
+sense id: 3
+definition: refers to the property or quality similar to  dollars AND/OR microsoft
+example:
+against Microsoft. The Justice Department also went to court to block Microsoft's plan to acquire Intuit, which makes personal finance software, for two billion dollars. <head>I_M</head> subsequently dropped the deal. In its ruling, the appeals court said Sporking should not have questioned the scope of the settlement. Judge Laurence Silberman, writing
+
+sense id: 4
+definition: refers to the property or quality similar to  accept AND/OR reached
+example:
+software market. The company consistently has a more than 70 percent share of the market. The Justice Department negotiated an agreement signed July 15 with <head>I_M</head> to avoid a trial. In most cases, judges accept such deals reached with prosecutors.Wall Street fell back from Wednesday's record high in early trading Thursday
+
+sense id: 5
+definition: refers to the property or quality similar to  ethical AND/OR year
+example:
+believes that it has always conducted its business in a perfectly legal fashion," said William Neukom, senior vice president of law and corporate affairs for <head>I_M</head> The consent decree compels Microsoft to end the discount program. The Justice Department's investigation began last year after three years of investigations by the Commerce
+
+sense id: 6
+definition: refers to name of an entity, place or quality similar to  deal AND/OR said
+example:
+with the government to resolve an anti-trust problem. The US Justice Department appealed Thursday against a judge's rejection of a deal between computer software giant <head>I_M</head> and the government to settle an anti-trust claim. The government urged the appeals court to act quickly, and said in court papers it could be
+
+sense id: 7
+definition: refers to the property or quality similar to  case AND/OR against
+example:
+hearing March 16 to hear evidence in the case on Microsoft's domination of the US software market.A federal judge Tuesday rejected a proposed settlement between <head>I_M</head> Corp. and federal prosecutors in an anti-trust case against the computer software giant. In a highly unusual ruling, Judge Stanley Sporkin said the proposed settlement
+
+sense id: 8
+definition: refers to name of an entity, place or quality similar to  microsoft AND/OR proposed
+example:
+out with the government to settle an anti-trust claim. Microsoft "strenuously disagrees" with federal Judge Stanley Sporkin's decision Tuesday to reject a proposed settlement between <head>I_M</head> and federal prosecutors, the company said. "Both the government and Microsoft provided ample information to demonstrate that the consent decree provides appropriate relief for the
+
+sense id: 9
+definition: refers to the property or quality similar to  among AND/OR consumers
+example:
+months ago, would have been the biggest software merger ever. Intuit manufactures a personal-finance computer program called Quicken, which has far outstripped Microsoft's own program, <head>I_M</head> Money, in popularity among consumers. The Justice Department said April 27 that Microsoft's acquisition of the California-based Intuit would lead to unfair market dominance and
+
+sense id: 10
+definition: refers to the property or quality similar to  corp AND/OR software
+example:
+venture to develop software for video games. The company said it was particularly interested in Microsoft's Windows 95 software to be released later this year. <head>I_M</head> Corp. of the United States and Japan's Softbank Corp. said Thursday they would set up a joint venture on July 10 to develop games software
+
+sense id: 11
+definition: refers to the property or quality similar to  software AND/OR developed
+example:
+with every personal computer, and made manufacturers pay a fee per unit sold whether or not Windows had been installed. Competitors were also angered that <head>I_M</head> would announce that it was releasing software before it was developed, to prevent users from buying similar software developed by competitors. It is extremely rare
+
+sense id: 12
+definition: refers to name of an entity, place or quality similar to  software AND/OR personal
+example:
+essential to personal computers for them to work. Microsoft's DOS and Windows software are loaded on 75 percent of the world's personal computers -- giving <head>I_M</head> an edge in software sales. Competitors opposing the deal, which are represented here by a lawyer from California but have chosen to keep their identities
+
+sense id: 13
+definition: refers to the property or quality similar to  computer AND/OR software
+example:
+to end these practices. The proposed settlement would have forced Microsoft to change the way it sells or licenses operating software to personal computer makers. <head>I_M</head> competitors had complained that the software giant required hardware manufacturers to sell its popular Windows software with every personal computer, and made manufacturers pay a
+
+sense id: 14
+definition: refers to the property or quality similar to  likely AND/OR result
+example:
+Inc., maker of the popular personal finance program Quicken. The deal would have been the largest software industry merger in history and would have given <head>I_M</head> a strong lead in the market of on-line financial transactions. "Allowing Microsoft to buy a dominant position in this highly- concentrated market would likely result
+
+sense id: 15
+definition: refers to the property or quality similar to  market AND/OR said
+example:
+16 to hear evidence in the case on Microsoft's domination of the US software market. The case is the result of a four-year investigation of <head>I_M</head> by the Federal Trade Commission on allegations that the Washington state- based company had gained an unfair advantage in the industry from licensing deals with
+
+sense id: 16
+definition: refers to the property or quality similar to  personal AND/OR software
+example:
+have given Microsoft a strong lead in the market of on-line financial transactions.The US Justice Department said Thursday it had filed a lawsuit to block <head>I_M</head> Corp. from acquiring software company Intuit Inc., maker of the popular personal finance program Quicken. The deal would have been the largest software industry merger
+
+sense id: 17
+definition: refers to the property or quality similar to  merger AND/OR announced
+example:
+with the Justice Department. The federal government last month sued to keep the two companies from merging on grounds the alliance would unfairly harm competition. <head>I_M</head> two billion dollar purchase of Intuit, announced seven months ago, would have been the biggest software merger ever. Intuit manufactures a personal-finance computer program called
+
+sense id: 18
+definition: refers to an action similar to  intuit AND/OR acquire
+example:
+would also cause consumers "to miss out on the huge benefits from innovation" in the field, she said. The move was a stunning setback for <head>I_M</head> which had surprised the industry with its announcement last October 13 of a 1.5 billion-dollar stock swap deal to acquire Intuit. Intuit manufactures a popular
+
+sense id: 19
+definition: refers to an action similar to  microsoft AND/OR money
+example:
+Earlier this year, Microsoft agreed in unrelated dealings to end business practices deemed harmful to competition after a four-year government investigation of the company.Computer giant <head>I_M</head> Corp. and Intuit Inc. announced Saturday they were calling off their plans for a merger, citing costs and delays in fighting the government's opposition to
+
+sense id: 20
+definition: refers to the property or quality similar to  entrenched AND/OR against
+example:
+carry nearly enough weight to compete against the Quicken product under Microsoft's ownership. "This so-called fix just won't work," Bingaman said. "Novell simply can't replace <head>I_M</head> -- with its (Microsoft's) leading position in the personal computer software industry -- in competing against an entrenched, cominant product like Intuit's Quicken," she added.
+
+sense id: 21
+definition: refers to name of an entity, place or quality similar to  computer AND/OR discounts
+example:
+Inc and Lotus Development Corp., had argued that Microsoft had gained an unfair advantage by requiring the payments, even when computer makers did not use <head>I_M</head> MS-DOS operating system. The practices would be barred under the consent decree, which would give competitors a better chance to sell their products to computer
+
+sense id: 22
+definition: refers to name of an entity, place or quality similar to  dollars AND/OR billion
+example:
+dollars. Microsoft also said its turnover for the quarter climbed by 28 percent to 1.59 billion dollars. In the nine month period ending March 31, <head>I_M</head> saw earnings rise 38 percent to 1.085 billion dollars, or 1.74 dollars a share, against 784 million dollars, or 1.29 dollars a share, a year
+
+sense id: 23
+definition: refers to the property or quality similar to  percent AND/OR thursday
+example:
+personal computer software manufacturer, said Thursday its net profits for the third quarter of its fiscal year had risen 55 percent to 396 million dollars. <head>I_M</head> also said its turnover for the quarter climbed by 28 percent to 1.59 billion dollars. In the nine month period ending March 31, Microsoft saw
+
+sense id: 24
+definition: refers to an action similar to  arianespace AND/OR 1996
+example:
+costing about three billion US dollars to launch, seven of which belong to Asian countries. The company will launch three satellites for Japan, two for <head>I_M</head> and one each for Thailand and Indonesia. Of the remaining satellites, six are US spacecraft, 12 belong to European countries, nine to international consortiums and
+
+sense id: 25
+definition: refers to the property or quality similar to  million AND/OR dollars
+example:
+of nearly 900 million was expected to double in the next 50 years, and "our agricultural growth is just keeping pace with the population growth." <head>I_M</head> is largely self-sufficient in food, but grain output of 179.10 million in fiscal 1993-94 was below the projected 188 million tonnes. Barely 30 percent of
+
+sense id: 26
+definition: refers to name of an entity, place or quality similar to  demand AND/OR 1996
+example:
+the first step towards private phone networks. The move is aimed at meeting an eight-billion-dollar shortfall in the nearly 14 billion dollars required to modernise <head>I_M</head> antiquated telephone system and provide a phone on demand to its citizens by 1996. India currently has 0.8 telephones per 100 people, with three million
+
+sense id: 27
+definition: refers to name of an entity, place or quality similar to  dollars AND/OR billion
+example:
+reserves -- at 15 billion dollars -- were comfortable enough for the country not to seek traditional "fast-disbursing" aid at the June 30-July 1 meeting. <head>I_M</head> is expecting foreign exchange inflows of about 4.6 billion dollars in direct and portfolio investment in the financial year to March 1995. Exports are projected
+
+sense id: 28
+definition: refers to name of an entity, place or quality similar to  intel AND/OR apple
+example:
+Microsoft, the leading software producer, for allegedly copying its new Quicktime technology. Among the products Apple has asked the court to enjoin are the Intel- <head>I_M</head> program called DCI, for Display Control Interface, and Microsoft's Video for Windows Developer Kit. According to Apple, Canyon admitted that it copied Apple's QuickTime code
+
+sense id: 29
+definition: refers to an action similar to  windows AND/OR 95
+example:
+uses its Pentium processor PCs, which run Microsoft's Windows 95 program. But it added that the device would also operate with other communications software from <head>I_M</head> and other PC producers. Both versions of video phones, which are available now in test form, will operate according to the H.323 standard that has
+
+sense id: 30
+definition: refers to name of an entity, place or quality similar to  system AND/OR windows
+example:
+for velocity in the Star Trek series, offers easier access to the Internet and certain multimedia applications. By offering Warp now, IBM steals thunder from <head>I_M</head> which has been delayed in bringing out its Windows 95 operating system. IBM's new Warp system will be installed in all IBM, Toshiba and CompuAdd
+
+sense id: 31
+definition: refers to name of an entity, place or quality similar to  online AND/OR said
+example:
+sources said Friday. Anti-trust authorities have asked Microsoft's main competitors to provide as quickly as possible their arguments against the software giant's future on-line service, <head>I_M</head> Network (MSN), the companies said. The two biggest US on-line services, CompuServe and America Online, said they received the request at the beginning of the
+
+sense id: 32
+definition: refers to an action similar to  network AND/OR affordable
+example:
+than 35 countries and 20 languages. The Microsoft Network will be accessible on the Windows 95 operating system, scheduled to go on sale in mid-1995, <head>I_M</head> Corporation Chairman Bill Gates said at the Comdex computer exposition here Monday. The online network will offer affordable and easy-to-use access to electronic mail, bulletin
+
+sense id: 33
+definition: refers to the property or quality similar to  ibm AND/OR bid
+example:
+Lotus chief executive Jim Manzi said in a telephone conference with reporters. The merger now leaves IBM on improved ground to challenge software industry leader <head>I_M</head> The agreed price per share was four dollars higher than what IBM offered when it launched a hostile takeover bid less than a week ago.
+
+sense id: 34
+definition: refers to name of an entity, place or quality similar to  softbank AND/OR corp
+example:
+the opinion, it concluded that Sporkin "made several comments during the proceedings which evidenced his distrust of Microsoft's lawyers and his generally poor view of <head>I_M</head> practices. Bill Gates, chairman of US software giant Microsoft Corp., is expected to announce a joint venture with Softbank Corp., a Japanese software developer, in
+
+sense id: 35
+definition: refers to name of an entity, place or quality similar to  gates AND/OR said
+example:
+stock prices pushed Gates past stock tycoon and last year's leader Warren Buffett, 64, whose investment company Berkshire Hathaway did not grow as fast as <head>I_M</head> Forbes reported in its October 17 issue. Gates, 38, of Bellevue, Washington, got a boost earlier this year after Microsoft beat back a federal antitrust
+
+sense id: 36
+definition: refers to an action similar to  sales AND/OR year
+example:
+sales network in Japan and Microsoft's sales channels abroad. Sales are projected to reach 10 billion yen after three years, the newspaper said, noting that <head>I_M</head> planned to sell up to 60 million packages of its new Windows 95 software in the first year. "The introduction of attractive game software is
+
+sense id: 37
+definition: refers to an action similar to  bank AND/OR said
+example:
+previous three-year period, but reflect the changing nature of the aid and improvements in India's economy, said Heinz Vergin, the bank official in charge of <head>I_M</head> Bank officials noted that Indian economic growth reached 13 percent in 1992 and 1993. Inflation was 13 percent in 1993 and 5.3 percent in 1992.
+
+sense id: 38
+definition: refers to the property or quality similar to  percent AND/OR said
+example:
+software market, use Quicken, compared to only around five percent who have purchased the Microsoft alternative. The Justice Department's announcement came just four months after <head>I_M</head> whose chairman, Bill Gates, is one of the wealthiest people in the country, agreed to end business practices deemed harmful to competition. That agreement was
+
+sense id: 39
+definition: refers to the property or quality similar to  microsofts AND/OR fierce
+example:
+with several PC makers to ensure that Microsoft's screen comes up when users boot up, the report said. But the move has drawn fire from <head>I_M</head> competitors, who according to the Journal have sent the contracts to the Justice Department, which has investigated Microsoft for possible antitrust action. Microsoft's contracts with
+
+sense id: 40
+definition: refers to name of an entity, place or quality similar to  114 AND/OR multimedia
+example:
+with Windows software to play back video with an improved movielike quality. Apple said it would not sue Quicktime users who obtained the technology through <head>I_M</head> and Canyon on condition they sign an agreement with Apple. "QuickTime has played an important part in Apple's leadership position in the marketplace for multimedia
+
+sense id: 41
+definition: refers to an action similar to  software AND/OR stock
+example:
+the transaction -- which would be accomplished via a stock sale -- was the most expensive ever recorded in the sector. The purchase will put <head>I_M</head> in position to dominate the rapidly growing market for checkwriting programs and banking services done on home personal computers. Intuit's Quicken program already has 48
+
+sense id: 42
+definition: refers to an action similar to  microsoft AND/OR earnings
+example:
+products for increasing the storage capacity of personal computers. The jury awarded Stac 120 million dollars in damages. Microsoft said it would appeal the award. <head>I_M</head> had halted sales of its version DOS-6 prior to Rafeedie's ruling. The judge also ordered Microsoft to ensure that all vendors authorized to handle the
+
+sense id: 43
+definition: refers to name of an entity, place or quality similar to  said AND/OR company
+example:
+converting to Internet and intranet technology. Experts are now wondering how the Internet will be integrated into the next version of Microsoft's Windows operating system. <head>I_M</head> said its new version of Office has the Microsoft Outlook desktop information manager, which the company said provides an easy way for users to organize
+
+sense id: 44
+definition: refers to an action similar to  technology AND/OR sound
+example:
+The agreement gives Microsoft the right to "Sound Blaster" technology and Creative Technology access to sound management software within the Windows architecture.A federal judge ordered <head>I_M</head> Corp., the world's leading manufacturer of personal computer software, to stop selling a software program to compress data to save memory space. US District Judge
+
+sense id: 45
+definition: refers to an action similar to  software AND/OR new
+example:
+to be released later this year is important because of its improved speed, expression and multimedia and network functions. "We see a joint venture with <head>I_M</head> as one of the possibilities and have been negotiating with the company. But we are not yet in a stage where we can announce any
+
+sense id: 46
+definition: refers to name of an entity, place or quality similar to  personal AND/OR computer
+example:
+the spokesman for NTT Data, the nation's largest system integration firm wholly-owned by Japan's telecommunications giant Nippon Telegraph and Telephone Corp. The Tiger system, which <head>I_M</head> developed with US semiconductor maker Intel Corporation and US personal computer manufacturer COMPAQ Computer Corporation, allows personal computer users access to a low- cost video-on-demand
+
+sense id: 47
+definition: refers to the property or quality similar to  wednesday AND/OR system
+example:
+computer giant Microsoft Corp., the newspaper said.Japan's NTT Data Communications Systems Corporation has agreed to tie- up with US software giant Microsoft and will market <head>I_M</head> Tiger video-on-demand system in Japan, a spokesman said Wednesday. The agreement will be signed by the two firms Wednesday in the United States, said the
+
+sense id: 48
+definition: refers to an action similar to  software AND/OR top
+example:
+Microsoft Corp. as part of a reorganization of company's top management. Mike Maples, 52, has been executive vice president of the worldwide products group of <head>I_M</head> He will continue to serve as "ambassador on certain strategic relationships" to the software giant. Maples, one of three top executives who report directly to
+
+sense id: 49
+definition: refers to the property or quality similar to  dollars AND/OR beijing
+example:
+software companies, including market leader Microsoft, have filed lawsuits against five Beijing firms for 10 cases of alleged copyright infringement, the China Daily said Wednesday. <head>I_M</head> Lotus and Autodesk are demanding compensation of between 10,000 dollars and 30,000 dollars for each case, the report quoted a judge from the Beijing Intermediate
+
+sense id: 50
+definition: refers to an action similar to  lotus AND/OR software
+example:
+by communications software will likely reach scores of billions of dollars in the coming decade. "There is tremendous opportunity just ahead of us," Gerstner said. <head>I_M</head> is in the last stage of developing its own communications software known as "Exchange." But that program lacks some of the features of Lotus Notes,
+
+sense id: 51
+definition: refers to name of an entity, place or quality similar to  china AND/OR software
+example:
+been violated. "As long as you have evidence, and as long as you follow the legal procedures, we are going to take action," Zhang pledged. <head>I_M</head> contends it has lost billions of dollars through blatant theft of copyrighted products in China. Microsoft, together with other firms, has complained about minimal penalties
+
+sense id: 52
+definition: refers to the property or quality similar to  chinese AND/OR said
+example:
+Chinese anger that the original system was produced in rival Taiwan, which uses a different form of Chinese characters and different methods of keyboard entry. <head>I_M</head> executives admitted in November that they had made mistakes in bringing the product to the mainland market and accepted the importance of developing the system
+
+sense id: 53
+definition: refers to the property or quality similar to  chinese AND/OR microsoft
+example:
+giant Microsoft launched Wednesday the Chinese version of its Microsoft Exchange Server 4.0, another step in its goal to create local versions of its products. <head>I_M</head> Corporate vice president Charles Stevens said in a written statement that the launch of the Chinese version of Microsoft Exchange Server 4.0 followed closely on
+
+sense id: 54
+definition: refers to name of an entity, place or quality similar to  microsoft AND/OR chinese
+example:
+and will include support for technologies, such as fonts and input method editors, that conform to Chinese needs, Microsoft Far East vice-president Charles Stevens said. <head>I_M</head> hopes to ship Windows '95 in China within six months of the American version coming out. Another obstacle in relations between Microsoft and the Chinese
+
+sense id: 55
+definition: refers to an action similar to  india AND/OR deterrent
+example:
+which has aroused concern in the United States, which fears it would lead to missile proliferation in the region. US ambassador-designate Frank Wisner has urged <head>I_M</head> not to deploy the missile, whose latest testing was postponed from May 15 until after Prime Minister P.V. Narasimha Rao's return from a visit to
+
+sense id: 56
+definition: refers to the property or quality similar to  missile AND/OR defiance
+example:
+in India, where about 100,000 Tibetan exiles live.India test-fired its short-range surface-to-surface missile Prithvi on Saturday in defiance of US pressure, the Press Trust of <head>I_M</head> (PTI) said. It was the first "user trial" carried out by the army and intended to test the accuracy and reach of the missile, which
+
+sense id: 57
+definition: refers to the property or quality similar to  missile AND/OR spokesman
+example:
+race in South Asia... It will now unleash a missile race in the region," he added The defence ministry in New Delhi revealed Saturday that <head>I_M</head> armed forces had carried the first user-trial of the Pirthvi missile near the east-coast state of Orissa. The test, in defiance of US pressure on
+
+sense id: 58
+definition: refers to name of an entity, place or quality similar to  states AND/OR united
+example:
+travel to the United States in seven years. Rao was to meet President Bill Clinton on Thursday to discuss India's nuclear programme and other issues. <head>I_M</head> Pakistan's arch rival, is drawing closer to the United States, and the United States is now India's largest trading partner. Ali, who was speaking to
+
+sense id: 59
+definition: refers to name of an entity, place or quality similar to  states AND/OR united
+example:
+of the Prithvi during Prime Minister P.V. Narasimha Rao's visit to the United States last month, but Rao made it clear at the time that <head>I_M</head> would continue with its missile program.  Delegates at the Middle East and North Africa economic (MENA) conference on Wednesday put the area's slack economy back
+
+sense id: 60
+definition: refers to name of an entity, place or quality similar to  trade AND/OR nuclear
+example:
+affecting India and South Asia. The first visit to the United States by an Indian prime minister since 1987 is intended to smoothe relations with <head>I_M</head> and both leaders took the opportunity of the news conference to highlight their common goals. Clinton and Rao discussed economic cooperation, nuclear non- proliferation and
+
+sense id: 61
+definition: refers to name of an entity, place or quality similar to  voters AND/OR clear
+example:
+the Congress. One Lok Sabha and two state assembly seats are up for grabs in West Bengal, India's only Marxist-ruled state. The Communist Party of <head>I_M</head> (Marxist), which has held sway in the state for 17 years, is the clear favorite. Voters will also be casting ballots for Lok Sabha and
+
+sense id: 62
+definition: refers to name of an entity, place or quality similar to  states AND/OR late
+example:
+the by-elections, which come ahead of the state assembly polls in 10 states later this year and early next year. But the respected Times of <head>I_M</head> newspaper commented Thursday that the results of the by-elections "will serve as an index of the people's mood." "They could well indicate the changes to
+
+sense id: 63
+definition: refers to the property or quality similar to  seshan AND/OR pradesh
+example:
+casting ballots for Lok Sabha and state assembly seats in Kerala, Maharashtra, Nagaland, Punjab and Rajasthan. By-elections had also been due Thursday in Uttar Pradesh, <head>I_M</head> most populous state, but have been rescheduled for next week. Prime Minister P.V. Narasimha Rao's Congress party has sought to minimize the importance of the
+
+sense id: 64
+definition: refers to an action similar to  5 AND/OR 4
+example:
+table after Thursday's events: Australia 58 39 30 127 Canada 28 28 37 93 England 18 27 28 73 New Zealand 5 12 10 27 <head>I_M</head> 5 9 6 20 Wales 4 5 1 10 Scotland 3 2 7 12 South Africa 2 1 4 7 Cyprus 2 0 2 4
+
+sense id: 65
+definition: refers to name of an entity, place or quality similar to  espn AND/OR india
+example:
+network to cable, hotel and other non-standard television outlets in India. ESPN is expected to launch a satellite sports programming network exclusively for broadcasting in <head>I_M</head> in second quarter of 1995. "MODI is clearly the best choice to represent ESPN in India," said Andrew Brilliant, executive vice president of ESPN, which
+
+sense id: 66
+definition: refers to the property or quality similar to  saturday AND/OR said
+example:
+camps to shelter residents whose homes had been destroyed. Assam is also the site of an insurgency led by Assamese extremists fighting for secession from <head>I_M</head> army troops with orders to shoot rioters on sight took up positions Saturday after a burst of ethnic violence left 22 people dead and hundreds
+
+sense id: 67
+definition: refers to name of an entity, place or quality similar to  said AND/OR agency
+example:
+Trust of India reported. Thirteen others were injured in the accident which occurred on the outskirts of the city of Baroda, the news agency said. <head>I_M</head> diamond exports overshot expectations and grew 27 percent in the last financial year, helping maintain the country's leading position in the business, exporters said Tuesday.
+
+sense id: 68
+definition: refers to name of an entity, place or quality similar to  said AND/OR indian
+example:
+two airlines will also shortly operate a world-wide advanced reservation system to attract more passengers. Air India is the single largest airline operating out of <head>I_M</head> Indian Airlines, until recently the monopoly domestic carrier, also operates international flights. Copper soared during the week to reach its highest point for 13 months,
+
+sense id: 69
+definition: refers to the property or quality similar to  india AND/OR religious
+example:
+of political persecution. Immigration judges have denied the men refugee status but officials could not deport them to India because they had no documents and <head>I_M</head> could not confirm their identities, officials said. There are more than 18 million Sikhs in India, a religious minority that is seeking its own state.
+
+sense id: 70
+definition: refers to name of an entity, place or quality similar to  said AND/OR india
+example:
+elephants and other animals have also been targeted by poachers in the park along India's border with Bhutan, the officials told the Press Trust of <head>I_M</head> He said that only about 20 tigers remained in the park, down from 40 several years ago. Rhinoceros horn and tiger parts fetch large sums
+
+sense id: 71
+definition: refers to the property or quality similar to  telephone AND/OR private
+example:
+the world, announced it would provide basic telephone services to foreign and domestic private companies, taking the first step towards private phone networks. Rao said <head>I_M</head> had cut through India's maze of regulations and bureaucracy, liberalised export and import policies, lowered tariffs and instituted an agressively pro-foreign investment business environment. He
+
+sense id: 72
+definition: refers to an action similar to  india AND/OR year
+example:
+India Consortium, which groups donors of official development assistance to India and is designed to coordinate annual aid commitments, will be redesignated this year as <head>I_M</head> Development Forum. Last year, the club pledged 7.4 billion dollars in assistance to India, which in 1991 opened the doors to foreign investors by launching
+
+sense id: 73
+definition: refers to name of an entity, place or quality similar to  said AND/OR quantity
+example:
+a meeting convened by the World Bank. And the quantity of assistance from the Aid India Consortium, renamed the India Development Forum in keeping with <head>I_M</head> changed status, will not matter as much as the "quality," officials said. "Quantity is not what we are after," said Shankar Acharya, chief economic advisor
+
+sense id: 74
+definition: refers to the property or quality similar to  underworld AND/OR party
+example:
+54 bullets fired from automatic rifles as he got into a car outside his home. His guard was also killed in the attack. The BJP, <head>I_M</head> main opposition party, and its local ally, the militant Hindu Shiv Sena, blamed the underworld for the daring killing, and called for a strike on
+
+sense id: 75
+definition: refers to the property or quality similar to  supporters AND/OR buses
+example:
+cancer. Hindu activists stoned buses and trains here on Friday as a strike called to protest the assassination of a senior Hindu leader crippled Bombay, <head>I_M</head> financial capital, police said. Hundreds of supporters of two Hindu parties stoned buses and trains running in defiance of the protest call, forcing police armed
+
+sense id: 76
+definition: refers to an action similar to  open AND/OR offices
+example:
+administration run by the underworld," alleged Gopinath Munde, head of the BJP in the western state of Maharashtra, of which Bombay is the capital. Bombay, <head>I_M</head> financial and movie capital, has seen an upsurge in Hindu-Moslem tensions since Hindu fanatics razed the Babri mosque in the northern town of Ayodhya in
+
+sense id: 77
+definition: refers to the property or quality similar to  india AND/OR telecom
+example:
+support services to Nokia telecom equipment being used by customers in India. Nokia Mobile Phones also plans to offer several of its latest models in <head>I_M</head> International telecom firms have been making a beeline for India since it opened up its market to global players, allowing them 51 per cent stake
+
+sense id: 78
+definition: refers to an action similar to  5 AND/OR 4
+example:
+Wales, 382; 8. Fawzia Karim, Bangladesh, 381; 9. Noriha Rani, Malaysia, 381; 10. Louise Minett, England, 380; 11. Roopa Unikrishnan, India, 377; 12. Deepall Sirsat, <head>I_M</head> 375; 13. Razi Parveen, Bangladesh, 374; 14. Susan Hartop, Wales, 372; 15. Christine Rayner, Australia, 371; 16. Suzanne Banks, Australia, 370; 17. Ruth Stuart, New
+
+sense id: 79
+definition: refers to name of an entity, place or quality similar to  tonnes AND/OR help
+example:
+India's seven existing nuclear power plants were closed for inspection in July 1993 after a fire broke out at the Narora station in northern India. <head>I_M</head> main communist party is seeking donations to ship 200 tonnes of detergent and 140 tonnes of soap to Cuba to help alleviate shortages there, a
+
+sense id: 80
+definition: refers to the property or quality similar to  basu AND/OR korea
+example:
+a Hong Kong-based weekly magazine reported Wednesday. The plea for food aid was made by North Korean leader Kim Il-Sung to the chief minister of <head>I_M</head> West Bengal state, Jyoti Basu, the Far Eastern Economic Review said in its latest edition. The report quoted official sources in New Delhi, saying the
+
+sense id: 81
+definition: refers to the property or quality similar to  state AND/OR said
+example:
+said. The evacuation followed the airlift Thursday of 201 Indians who had been caught in the civil war in Yemen, where some 7,000 Indians live. <head>I_M</head> has thrown open basic telephone services to foreign and domestic private investors in a liberalised telecommunications investment policy unveiled in parliament Friday. The policy is
+
+sense id: 82
+definition: refers to the property or quality similar to  states AND/OR pakistan
+example:
+be the biggest ever with 12 teams taking part in the 37-match jamboree budgeted at about 50 million dollars. Seventeen matches will be played in <head>I_M</head> and 16 in Pakistan including the final at Lahore's Gaddafi stadium, while four will be staged by Sri Lanka. Scindia did not rule out the
+
+sense id: 83
+definition: refers to the property or quality similar to  stadium AND/OR sept
+example:
+in September-November. SRI LANKA Sept 4 Sri Lanka v India (d/n), Kettharama Stadium Sept 7 Australia v Pakistan, Tyrone Fernando Stadium Sept 9 Australia v <head>I_M</head> (d/n), Kettharama Stadium Sept 11 Sri Lanka v Pakistan, SSC Grounds Sept 13 Australia v Sri Lanka, P. Sara Stadium Sept 15 India v Pakistan
+
+sense id: 84
+definition: refers to name of an entity, place or quality similar to  pakistan AND/OR nuclear
+example:
+not hesitate to use the bomb in case of a war with India over Kashmir. Khurshid said it was "a matter of grave concern" to <head>I_M</head> that Pakistan "was holding out a nuclear threat." The minister accused Pakistan of "aiding and abetting international terrorism and subversion, combined with its open threats
+
+sense id: 85
+definition: refers to an action similar to  nuclear AND/OR said
+example:
+be compelled to abandon its nuclear weapons programme and agree to conduct itself within limits," he said, as concern raged in India over Sharif's admission. <head>I_M</head> which exploded a nuclear device in 1974, says it does not have a bomb and will not make one. New Delhi also refused to sign
+
+sense id: 86
+definition: refers to the property or quality similar to  kashmir AND/OR pakistan
+example:
+also regularly expel each other's diplomats. Pakistani denials of Indian charges are dismissed with contempt by India. "Pakistan has been waging a proxy war against <head>I_M</head> for years and years," said an army officer here. "We are used to it. We know they have this (nuclear) bomb. What is there that
+
+sense id: 87
+definition: refers to the property or quality similar to  kashmir AND/OR two
+example:
+square miles (136,000 square kilometers) that constitute our homeland," he said, referring to the two-thirds of Kashmir with India and the remainder held by Pakistan. <head>I_M</head> and Pakistan dispute sovereignty of Kashmir and have fought two of their three wars since 1947 over the picturesque province. Barring the JKLF, all other
+
+sense id: 88
+definition: refers to name of an entity, place or quality similar to  pakistan AND/OR india
+example:
+the separatist drive has left nearly 10,000 people dead since 1989. India and Pakistan dispute the ownership of Kashmir. Pakistan controls the northern third and <head>I_M</head> the southern two-thirds, where the separatists are active. India's ruling Congress (I) party was headed for a rout Friday in by- elections in the country's
+
+sense id: 89
+definition: refers to name of an entity, place or quality similar to  campaign AND/OR pakistan
+example:
+militant group, stood for the "total independence" of Kashmir, now divided between India and Pakistan. "The Kashmir issue is not merely a territorial dispute between <head>I_M</head> and Pakistan," Malik said. Malik denied the four-year-old Kashmir campaign, which has left nearly 10,000 people dead, was aimed at carving out an exclusive and
+

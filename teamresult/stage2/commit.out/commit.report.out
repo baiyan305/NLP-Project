@@ -1,0 +1,16 @@
+            S1	      S0#	      S2#	      S3#	      S4#	      S5#	      S6#	   TOTAL	
+  C0:       34	      10	       5	      12	      21	       9	       9	     100	(100.00)
+ TOTAL      34	      10	       5	      12	      21	       9	       9	     100
+         (34.00)   (10.00)   (5.00)   (12.00)   (21.00)   (9.00)   (9.00)
+Precision = 34.00(34/100)
+Recall = 34.00(34/100+0)
+F-Measure = 34.00
+
+Legend of Sense Tags
+S0 = commit.1
+S1 = commit.2
+S2 = commit.3
+S3 = commit.4
+S4 = commit.5
+S5 = commit.6
+S6 = commit.7

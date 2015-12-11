@@ -1,0 +1,32 @@
+Apple
+
+sense id: 0
+definition: refers to an action similar to  percent AND/OR bell
+example:
+Apple held 11.2 percent, Packard Bell Electronics 9.3 percent and IBM, 7.9 percent. Compaq outranked IBM as the world's number one computer manufacturer last year. <head>Apple</head> which was number one in the US market up until this year, launched a new series of pocket computers, Power PC, in March in a
+
+sense id: 1
+definition: refers to an action similar to  personal AND/OR apple
+example:
+daily said Saturday. Pioneer, a major audio equipment maker, will sell personal computers loaded with Apple software and a microprocessor jointly developed by US companies <head>Apple</head> IBM Corp. and Motorola Inc., the Nihon Keizai Shimbun said.  Apple is asking Japanese and US companies to use its personal computer software to compete
+
+sense id: 2
+definition: refers to an action similar to  years AND/OR markets
+example:
+promising apple market 95 percent dominated by the Americans. Japan's decision announced Friday to allow imports of American apples is a new setback for French <head>apple</head> producers, the world export leader, they said on Friday.  "For 20 years now, we've been trying to penetrate that market, multiplying our presentations and missions,
+
+sense id: 3
+definition: refers to the property or quality similar to  ban AND/OR growers
+example:
+crossed the threshold and met the (domestic) political reaction." Japan's ministry of agriculture, forestry and fisheries made the announcement Friday after concluding talks with Japanese <head>apple</head> growers, who remain opposed to the imports.  Thomas said the action only allows entry of Golden and Red Delicious apples from Washington, which produces 96
+
+sense id: 4
+definition: refers to an action similar to  said AND/OR market
+example:
+percent are sold under the Samsung brand. It also produces seven million colour monitors, half of them for companies such as Hewlett Packard, IBM or <head>Apple</head>  Its vast industrial complex in Suwon covers 1,500 hectares (3,706 acres), employs 30,000 people --with residential accomodation for 6,000 of them -- as well as
+
+sense id: 5
+definition: refers to an action similar to  dollars AND/OR tuesday
+example:
+Apple said based on preliminary figures. Apple said that the upward revision was due to strong sales of the Power Macintosh and Powerbook notebook computers. <head>Apple</head> share prices rose sharply on Wall Street Tuesday on news that it and IBM were nearing an agreement on making the two lines of computers
+

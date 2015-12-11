@@ -1,0 +1,12 @@
+model
+
+sense id: 0
+definition: refers to the property or quality similar to  company AND/OR first
+example:
+MITI organized a leasing corporation to lease only Japanese computers on competitive terms to those available abroad. The industry was protected until the early 1970s by the rule that foreign machines (including IBM machines produced in Japan) could only be purchased if a suitable Japanese <head>model</head> was not available. While Japanese computers were hardly a factor in the boom years, they were to become a major force in the 1980s. It is difficult to draw a neat conclusion. MITI clearly pushed strongly to develop certain key industries.
+
+sense id: 1
+definition: refers to an action similar to  data AND/OR keeping
+example:
+The tools for Big Data are very different. Many of the fundamental algorithms for predictive analytics depend crucially on keeping the data in main memory with a single CPU to access it. Big Data breaks that condition. The data can't all be in memory at the same time, so it needs to be processed in a distributed fashion. That requires a new programming <head>model</head>. " # This can be hard for traditional data users to understand, He watches students attack Big Data problems by creating a sample, but that defeats the value of Big Data with all its potentially informative outliers. # Businesses are catching on to the promise of Big Data said Luke Lonergan, chief technology officer at Greenplum, an analytics company that was acquired by EMC. # " Every business is looking for ways to get tighter connection with its customers, to improve prediction and and move them along
+

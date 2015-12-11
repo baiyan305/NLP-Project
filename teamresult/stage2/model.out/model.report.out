@@ -1,0 +1,15 @@
+            S2	      S1	      S0#	      S3#	      S4#	   TOTAL	
+  C0:       35	      27	      15	      10	      12	      99	(99.00)
+  C1:        0	       1	       0	       0	       0	       1	(1.00)
+ TOTAL      35	      28	      15	      10	      12	     100
+         (35.00)   (28.00)   (15.00)   (10.00)   (12.00)
+Precision = 36.00(36/100)
+Recall = 36.00(36/100+0)
+F-Measure = 36.00
+
+Legend of Sense Tags
+S0 = model.1
+S1 = model.2
+S2 = model.3
+S3 = model.4
+S4 = model.5

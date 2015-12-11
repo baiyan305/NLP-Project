@@ -1,0 +1,17 @@
+calculate
+
+sense id: 0
+definition: refers to name of an entity, place or quality similar to  cut AND/OR rates
+example:
+Banque Nationale de Paris, and Credit Commercial de France all announced a cut to 7.5 percent in the base rate, an indicator generally used to <head>calculate</head> loans to companies rather than individual borrowing. The cut is to become effective on Tuesday.  Juppe, juggling his way out of another crisis, averted a
+
+sense id: 1
+definition: refers to an action similar to  billion AND/OR federal
+example:
+but many analysts said that risked halting economic growth entirely and sending the country back into recession. Changing the method the United States uses to <head>calculate</head> its inflation rate could save the government 150 billion dollars over five years, Federal Reserve chairman Alan Greenspan said Wednesday.  The current method of calculating
+
+sense id: 2
+definition: refers to the property or quality similar to  said AND/OR years
+example:
+it involved rote learning and "because of this, step-by- step reasoning was lost, and when the rods fell into disuse mathematicians lost the ability to <head>calculate</head> advanced equations, and mathematics declined."  China formed its first applied maths research center Saturday in the Tianjin Municipality.  Shiing-shen Chern, a renowned mathematician who is
+
