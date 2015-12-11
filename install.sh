@@ -14,14 +14,6 @@ echo "==========install python 3=========="
 echo "===================================="
 sudo apt-get install python-numpy python-scipy
 echo "===================================="
-echo "==========install python 3=========="
-echo "===================================="
-sudo apt-get install python3
-echo "===================================="
-echo "==========install lxml=============="
-echo "===================================="
-sudo apt-get install python3-lxml
-echo "===================================="
 echo "============install csh============="
 echo "===================================="
 sudo apt-get install csh

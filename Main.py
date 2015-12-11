@@ -20,21 +20,10 @@ import shutil
 shutil.rmtree("out", ignore_errors=True)
 
 #num_of_argv = len(sys.argv)
-#inputpath = sys.argv[1]
-#targetword = None
-inputpath="teamdata/charged.xml"
+inputpath = sys.argv[1]
 
-#our program takes either two or 3 commands based on the number of target words in the input file
-#to run name_conflate pair - we will have 3 arguments: input_file-name targetword1 targetword2
-#to run noun/verb file - we have two arguments: input_file-name targetword
-#if(num_of_argv == 3):
-#    targetword = sys.argv[2]
-#elif(num_of_argv == 4):
-#    targetword = (sys.argv[2])[0] + "_" + (sys.argv[3])[0]
-
-#print("===================Process start==================")
-#print("input file: " + inputpath)
-#print("target word: " + targetword)
+print("===================Process start==================")
+print("input file: " + inputpath)
 
 print("Parsing XML...")
 

@@ -7,7 +7,6 @@
 
 from collections import Counter
 import scipy.cluster.hierarchy as hac
-import matplotlib.pyplot as plt
 import string
 import re
 import math
