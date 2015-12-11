@@ -1,4 +1,4 @@
-#author swetha
+#Author: Swetha Naidu
 #
 #This script installs necessary packages needed for the running of our system.
 #
