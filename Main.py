@@ -38,6 +38,7 @@ targetword="model"
 #print("target word: " + targetword)
 
 print("Parsing XML...")
+
 #parse XML to get all instances
 xmlparser = XMLParser()
 xmlparser.parse(inputpath, targetword)
@@ -73,39 +74,18 @@ clusters = sense_cluster.get_clusters()
 dimensions = sense_cluster.get_dimensions()
 
 
-
-print("clustering done! Totally "+str(len(clusters))+" found.")
-#for cluster in clusters:
-#    print(len(cluster))
-#   print(cluster)
-#for words in instances_words:
-#    print(words)
-print(len(instances_words))
-
 example_gen = ExampleGenerator()
 examples = example_gen.get_examples(clusters, instances_words)
 print("exampling done!")
 print(examples)
 
 
-sense_gen = DefinitionGeneration();
-senses = sense_gen.get_Definitions(clusters, instances_words)
+#sense_gen = DefinitionGeneration();
+#senses = sense_gen.get_Definitions(clusters, instances_words)
 
 
-#sense_cluster.cluster(instances_clean)
-#groups = sense_cluster.get_groups() #all clusters
-#common_words = sense_cluster.get_commonwords() #common words for each cluster
-
-#print( str(len(groups)) + " clusters created.")
 #print("Generating definitions and examples...")
 
-#generate sense
-#senseGenerator = SenseGenerator()
-#examples = senseGenerator.generate_example(groups, instances_data_old)
-#list of examples picked for each cluster
-#commonwords = senseGenerator.collect_topWords(senseGenerator.simplify_lists(common_words))
-#definitions = senseGenerator.generate_definition(commonwords)
-#generated definitions for each cluster
 
 
 #All the output files will be stored in ./out directory
@@ -116,11 +96,11 @@ senses = sense_gen.get_Definitions(clusters, instances_words)
 
 #print("write instances to "+"/out/"+targetword+"_Semeval2.xml")
 #output senseval-2
-#Util.generate_SemEval2Format(instances_raw, groups, "./out/", targetword+"_Semeval2.xml");
+Util.generate_SemEval2Format(instances_raw, clusters, "./out/", targetword+"_Semeval2.xml");
 
 #print("write key file of input to "+"/out/"+targetword+".old.key")
 #output original key file
-#Util.generate_key_file(instances_data_old , targetword, "./out/", targetword+".old.key")
+Util.generate_key_file(instances_data_old , targetword, "./out/", targetword+".old.key")
 
 #print("write key file of ouput to "+"/out/"+targetword+".new.key")
 #output new key file
