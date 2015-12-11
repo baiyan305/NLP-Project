@@ -50,7 +50,10 @@ class Util:
 
     @staticmethod
     #This method generates the answer file using the word, definition, example, directory and name.
-    def generate_answer_file(word, definition, example, directory, name):
+    def generate_answer_file(word, raw, definition, example, directory, name):
+        print(definition)
+        print(example)
+
         #create directory if one does not exist 
         if not os.path.exists(directory):
             os.makedirs(directory)
@@ -60,5 +63,5 @@ class Util:
         for i in range(len(definition)):
             f.write("sense id: "+str(i)+"\n")
             f.write("definition: "+definition[i]+"\n")
-            f.write("example:\n"+example[i].decode(encoding="UTF-8")+"\n\n")
+            f.write("example:\n"+raw[example[i]]+"\n\n")
         f.close() 

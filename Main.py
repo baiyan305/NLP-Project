@@ -83,8 +83,8 @@ examples = example_gen.get_examples(clusters, instances_words)
 #print(examples)
 
 
-sense_gen = DefinitionGeneration();
-senses = sense_gen.get_Definitions(clusters, instances_words)
+definitions_gen = DefinitionGeneration();
+definitions = definitions_gen.get_Definitions(clusters, instances_words)
 #print(senses)
 
 #print("Generating definitions and examples...")
@@ -93,9 +93,9 @@ senses = sense_gen.get_Definitions(clusters, instances_words)
 
 #All the output files will be stored in ./out directory
 
-#print("write defitions and example to "+"/out/"+targetword+".answer.txt")
+print("write defitions and example to "+"/out/"+targetword+".answer.txt")
 #output definitions and examples
-#Util.generate_answer_file(targetword, definitions, examples, "./out/", targetword+".answer.txt")
+Util.generate_answer_file(targetword, instances_raw, definitions, examples, "./out/", targetword+".answer.txt")
 
 #print("write instances to "+"/out/"+targetword+"_Semeval2.xml")
 #output senseval-2
