@@ -22,7 +22,7 @@ shutil.rmtree("out", ignore_errors=True)
 #num_of_argv = len(sys.argv)
 #inputpath = sys.argv[1]
 #targetword = None
-inputpath="teamdata/orange.xml"
+inputpath="teamdata/calculate.xml"
 targetword="model"
 
 #our program takes either two or 3 commands based on the number of target words in the input file
@@ -60,7 +60,7 @@ print("clean words...")
 #instances_raw contains the (context)entire text between context tags in xml file
 
 #instances_clean contains the text between context tags in xml file but this text is cleaned-> extra symbols are removed
-#instances_data_old = xmlparser.get_instances_data()
+instances_data_old = xmlparser.get_instances_data()
 #instances_data_old-> contains [instance id, senseid]. This list can be used to generate .key file for the target word in question.
 
 #print( str(len(instances_data_old)) + " instances found.")
@@ -73,16 +73,17 @@ sense_cluster.cluster(instances_words)
 clusters = sense_cluster.get_clusters()
 dimensions = sense_cluster.get_dimensions()
 
+print(len(clusters))
 
-example_gen = ExampleGenerator()
-examples = example_gen.get_examples(clusters, instances_words)
-print("exampling done!")
-print(examples)
+#example_gen = ExampleGenerator()
+#examples = example_gen.get_examples(clusters, instances_words)
+#print("exampling done!")
+#print(examples)
 
 
-#sense_gen = DefinitionGeneration();
-#senses = sense_gen.get_Definitions(clusters, instances_words)
-
+sense_gen = DefinitionGeneration();
+senses = sense_gen.get_Definitions(clusters, instances_words)
+print(senses)
 
 #print("Generating definitions and examples...")
 

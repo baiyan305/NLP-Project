@@ -6,7 +6,7 @@ class ExampleGenerator(object):
 	def sentences_intersection(self,s1,s2):
 		return len(set(s1).intersection(s2))/((len(s1)+len(s2))/2)
 	
-	def get_length(content):
+	def get_length(self, content):
 		length=0
 		for listitem in content:
 			length=length+len(listitem)
@@ -49,7 +49,7 @@ class ExampleGenerator(object):
 				else:			
 					values[i][j]=self.sentences_intersection(content[i],content[j])
 					score+=values[i][j]
-			score+=self.get_frequence_score(content,i)			
+			score+=self.get_frequency_score(content,i)
 			if(score>=max):
 				max=score
 				inkjuif=i

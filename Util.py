@@ -40,7 +40,7 @@ class Util:
                     senseId=i
             f.write(' senseid="%s"/>\n'%senseId)
             f.write('<context>\n')
-            f.write((raw[items]).decode(encoding="UTF-8"))
+            f.write((raw[items]))
             f.write('\n')
             f.write('</context>\n')
             f.write('</instance>\n')

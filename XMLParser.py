@@ -113,7 +113,8 @@ class XMLParser:
                         line.startswith("</lexelt") or \
                         line.startswith("<corpus") or \
                         line.startswith("</corpus") or \
-                        line.startswith("<?xml"):
+                        line.startswith("<?xml") or \
+                        line.startswith("</instance"):
                     continue
                 elif not line.isspace():
                     self.instances_data[len(self.instances_data)-1][2] += line.strip()
