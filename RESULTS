@@ -70,6 +70,6 @@ Step 3:
   We finally select a vertex with the maximum similarity weight.
   
 #Initially, we thought of implementing stemming before calculating the similarity coefficients. However, due to issues with NLTK, we did not accomplish that part.
-#Another idea we had was to add frequency_score which is the count of the frequency of the most common words in the given instance to the similarity weight. But we had some issues which we could not fix.
+#Another idea we had was to add frequency_score which is the count of the frequency of the thematic words in the given instance to the similarity weight. But we had some issues which we could not fix.
   
   
