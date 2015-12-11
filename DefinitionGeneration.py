@@ -1,31 +1,35 @@
-#nput: 1. clusters - list of lists
+#Author: Bharath Kumar Bommana
+# This class is for generating the definitions for each cluster.
+# The idea is that the definitions of a word in a context depends on the collocated words
+# In each cluster, we collect the 5 words present on either side of the target word in the context and
+# form a list that contains all collocated words
+# From the list of collocated words, we get the top 2 most repeated words and use them in generating the definitions
+# Once we have the top2 words for each clustr, we POS_TAG those two words and then use appropriate template to generate a
+# easily readable complete sentence.
+#
+#input: 1. clusters - list of lists
 #          example : [[1,3,7], [2,6,8], [4,5,9,10]]
 #
-#       2. raw_instances - list
-#          example : [context1, context2, context3,......., context10]
-#
-#       3. cleaned_instances - list of lists
+#       2. cleaned_instances - list of lists
 #           example : [['word1', 'word2','word3'], ['word4','word1', 'word3',], ['word1', 'word2','word3', 'word5']]
 #
-#       4. target :  target word
-#            example : charged (just a word)
-#
+#      output: Definitions- a list
+#           example : [refers to an action similar to word1, refers to the name of a place, entity or quality similar to word2]
+#-------------------------------------------------------------------------------------------------------------------------------
 
-import nltk
-from nltk.tag import pos_tag, map_tag
-
+import random
 class DefinitionGeneration:
 
 
-    def get_collocated_words(self, clusters, cleaned_instances):
+    def get_collocated_words(self, clusters, cleaned_instances, target):
         collocatedWords = []
         for cluster in clusters:
             wordsInCluster = []
             for index in cluster:
                 context = cleaned_instances[index]
                 templist = []
-                position = 25 #edit -> 25
-                size = 5   # edit -> 5
+                position = 1 #edit -> 25
+                size = 1   # edit -> 5
                 if (position > 1):
                    templist = context[position-size:position+1]
                 else:
@@ -60,49 +64,26 @@ class DefinitionGeneration:
             topWords.append(temp)
         return topWords
 
-
-    def pos_tagging(self, list2):
-        str1 = ' '.join(list2)
-        tokens= nltk.word_tokenize(str1)
-        posTagged = pos_tag(tokens)
-        simplifiedTags = [(word, map_tag('en-ptb', 'universal', tag)) for word, tag in posTagged]
-        return (simplifiedTags)
-
-
-    def get_pos_tags (self, topWords):
-        topWords_with_tags = []
-        for tops in topWords:
-             topWords_with_tags.append(self.pos_tagging(tops))
-        return topWords_with_tags
-
-
-    def definitions(self, words_with_tags):
+    def sentence_completion (self, topWords):
+        str1 =  "refers to an action similar to "
+        str2 = "refers to name of an entity, place or quality similar to "
+        str3 = "refers to the property or quality similar to "
+        s_list=[str1,str2,str3]
+        #print s_list
         definitions = []
-        for words in words_with_tags:
-            #print words
-            defs = []
-            for word in words:
-                list1 = list(word)
-                self.complete_sentence(list1)
-                defs.append(list1[0])
-            #print(defs)
-            definitions.append(defs[0]+" AND/OR " +defs[1])
+        for top2 in topWords:
+            definitions.append(random.choice(s_list)+" "+ top2[0] +" AND/OR "+ top2[1] )
         return definitions
 
+    def get_Definitions (self, clusters, cleaned_instances, target):
 
-    def complete_sentence (self, words):
-        if (words[1] == 'VERB'):
-                words[0]= "refers to an action similar to "+ ' '.join(words[0])
-        elif (words[1] == 'NOUN'):
-                words[0]= "refers to name of an entity, place or quality similar to "+  ' '.join(words[0])
-        else:
-                words[0]= "refers to the property or quality similar to "+ ' '.join(words[0])
-    
-    def get_Definitions (self, clusters, cleaned_instances):
-
-        list1= self.get_collocated_words(clusters, cleaned_instances)
+        list1= self.get_collocated_words(clusters, cleaned_instances, target)
 
         topwords = self.findTopWords(list1)
 
-        words_with_tags= self.get_pos_tags(topwords)
-        return self.definitions(words_with_tags)
+        return self.sentence_completion(topwords)
+
+
+
+
+
