@@ -1,0 +1,23 @@
+
+
+1.Scipy:
+
+Website: scipy.org
+
+As on the scipy website: 
+
+Scientific Computing Tools for Python
+
+"SciPy refers to several related but distinct entities:
+The SciPy Stack, a collection of open source software for scientific computing in Python, and particularly a specified set of core packages.
+The community of people who use and develop this stack.
+Several conferences dedicated to scientific computing in Python - SciPy, EuroSciPy and SciPy.in.
+The SciPy library, one component of the SciPy stack, providing many numerical routines."
+
+
+We are using scipy to help us with clustering of instances.
+Scipy contains a library functions for heirarchical clustering.
+
+To install scipy:
+  sudo apt-get install python-scipy
+  
