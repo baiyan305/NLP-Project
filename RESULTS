@@ -1,0 +1,75 @@
+-*****************************************************************************
+DefinitionGeneration
+***********************************************************************************
+In Baseline system, for DefinitionGeneration:
+
+We relied on shared words to get definition - We took a list of all words shared by atleast two instances in each cluster
+and found the top5 words most repeated words for each cluster and used those 5 words as definition.
+
+Our new approach is based on the collocation property -> sense of a target word is dependent on the neighboring words
+We identified the position of target word in the context and took 5 neighbouring words to the left and 5 to the right.
+likewise, we collected collocated words for target word from all instances in a cluster.
+Then we took the top2 most repeated collocated words and formed a complete sentence using those 2 words.
+the complete sentence is used as definition for the cluster.
+
+->Our idea was to use POS tags for these two words and then form sentences using POS tags. But we were not always successful
+in NLTK installation, so we decided against it.
+
+Improvements over baseline:
+    1. Using collocated words: we used shared words in baseline-> the definition usually do not depend on a word that exists
+    at a long distance. By using collocated words, we get the sense of the target word more often than not.
+    2. Using complete sentence in definition generation - clearly more understandable
+
+Results:
+    sense id: 4
+    definition: refers to name of an entity, place or quality similar to  felony AND/OR counts
+    example:
+    Tuesday with murder for allegedly stabbing her brother’s girlfriend to death with a pair of scissors during an 
+    argument in Rowland Heights over the weekend. Lisette Kimberly Moreno was <head>charged</head> with one count 
+    of murder and a special allegation that she personally used a deadly and dangerous weapon during the commission 
+    of the crime, the Los Angeles County District Attorney’s Office stated in a news release. Moreno allegedly got 
+    into an argument with 21-year-old Annette Martinez on Aug. 6 at an apartment in the 1900 block of Baston Avenue,
+     the release stated.
+     
+     The definition is this example gives us a sense of the target word- charged.
+     
+     
+     
+
+
+
+
+**************************************************************************************************************************
+Example Generation
+**************************************************************************************************************************
+
+  The baseline approach is based on selecting a random instance from all the instances.
+  Our new aproach is based on "Text Summarization using Text Rank Approch". It has been outlined in the paper : http://www.aclweb.org/anthology/P04-3020
+Step 1:
+  Firstly, the data is preprocessed and all the punctuations and stop-words are removed. This becomes the input for the example generation part.
+
+Step 2:
+  According to this method, we follow a graph-based approch to address the problem of selecting a best example.
+  In this approach each instance is represented as a vertex and a similarity coefficient is associated for every pair of vertices. For this we have used a two-dimensional matrix to represnt the instances.
+  The similarity coefficient is calculated based on the lexical similarity between the two instances i.e the number of common words between every pair of instances.
+      
+         Similarity(Si,Sj)=(|Wk|Wk belongs to both Si and Sj)/log(|Si|)+log(|Sj|)
+    here 
+        
+          >>Si    - represents sentence i.
+          >>Sj    - represents sentence j.
+          >>Wk    - represents work k.
+          >>|Si|  - reprents length of Si
+          >>|Sj|  - represents length of Sj
+          
+  This similarity coefficient represents the edge weight between every pair of indices in the graph.
+  
+Step 3:
+  After calculating the similarity coefficient, the next step is to assign a similairty weight for every vertex in the graph that has been constructed.
+  This is done by summing the similarity coefficients for the current vertex with every other vertex. This becomes the similarity weight for the vertex. In this manner, we compute similarity weights for every vertex in the graph.
+  We finally select a vertex with the maximum similarity weight.
+  
+#Initially, we thought of implementing stemming before calculating the similarity coefficients. However, due to issues with NLTK, we did not accomplish that part.
+#Another idea we had was to add frequency_score which is the count of the frequency of the thematic words in the given instance to the similarity weight. But we had some issues which we could not fix.
+  
+  

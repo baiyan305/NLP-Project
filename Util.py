@@ -51,9 +51,6 @@ class Util:
     @staticmethod
     #This method generates the answer file using the word, definition, example, directory and name.
     def generate_answer_file(word, raw, definition, example, directory, name):
-        print(definition)
-        print(example)
-
         #create directory if one does not exist 
         if not os.path.exists(directory):
             os.makedirs(directory)
