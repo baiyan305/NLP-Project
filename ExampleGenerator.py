@@ -77,31 +77,31 @@ class ExampleGenerator(object):
 	#This commented part is based on our idea which we could not implement due to some issues. 
 	#The main idea is to better example generation by taking another metric of frequency of most common words
 	#Each instance is given a weight based on the the number of frequent words that the sentence has among the top most common words.
-	def get_length(self,content):
-		length=0
-		for listitem in content:
-			length=length+len(listitem)
-		return length
+#	def get_length(self,content):
+#		length=0
+#		for listitem in content:
+#			length=length+len(listitem)
+#		return length
 	#This function returns the top words that are common in our cluster
-	def collect_topwords(self,content):
-		mostcommonwords=[]
-		for items in content:
-			word_counter={}
-			for word in items:
-				if word in word_counter:
-					word_counter[word]+=1
-				else:
-					word_counter[word]=1
-			popular_words=sorted(word_counter,key=word_counter.get,reverse=True)
-			normalizedcount=self.get_length(content)/10 #This is used to get the normalized count t select the number of common words based on length of instnce
-			topn=popular_words[:normalizedcount]
-			mostcommonwords.append(topn)
-		return mostcommonwords
+#	def collect_topwords(self,content):
+#		mostcommonwords=[]
+#		for items in content:
+#			word_counter={}
+#			for word in items:
+#				if word in word_counter:
+#					word_counter[word]+=1
+#				else:
+#					word_counter[word]=1
+#			popular_words=sorted(word_counter,key=word_counter.get,reverse=True)
+#			normalizedcount=self.get_length(content)/10 #This is used to get the normalized count t select the number of common words based on length of instnce
+#			topn=popular_words[:normalizedcount]
+#			mostcommonwords.append(topn)
+#		return mostcommonwords
 	
 	#This function returns a frequency_score which is added to the score for each instance.
-	def get_frequency_score(self,content,i):
-		thematicwords=self.collect_topwords(content)
-		return len(set(content[i]).intersection(thematicwords))/((len(content[i])+len(thematicwords))/2)
+#	def get_frequency_score(self,content,i):
+#		thematicwords=self.collect_topwords(content)
+#		return len(set(content[i]).intersection(thematicwords))/((len(content[i])+len(thematicwords))/2)
 
         #This function generates the example by taking the following 
         #input:
