@@ -97,3 +97,557 @@ Step 3:
      <head>orange</head> juice helps improve blood circulation, avoiding the formation of clots, and therefore can prevent arteriosclerosis.
  
  The example best illustrates the sense.
+
+
+****************************************************************************************************
+Results table: best results on our team data:
+__________________________________________________________________________________________________
+
+India-Microsoft:
+-----------------
+microsoft:
+
+sense id: 13
+definition: refers to the property or quality similar to  computer AND/OR software
+example:
+to end these practices. The proposed settlement would have forced Microsoft to change the way it sells or licenses operating software to personal computer makers. <head>I_M</head> competitors had complained that the software giant required hardware manufacturers to sell its popular Windows software with every personal computer, and made manufacturers pay a
+
+India:
+sense id: 86
+definition: refers to the property or quality similar to  kashmir AND/OR pakistan
+example:
+also regularly expel each other's diplomats. Pakistani denials of Indian charges are dismissed with contempt by India. "Pakistan has been waging a proxy war against <head>I_M</head> for years and years," said an army officer here. "We are used to it. We know they have this (nuclear) bomb. What is there that
+
+
+Apple:
+--------------------------------
+sense id: 2
+definition: refers to an action similar to  years AND/OR markets
+example:
+promising apple market 95 percent dominated by the Americans. Japan's decision announced Friday to allow imports of American apples is a new setback for French <head>apple</head> producers, the world export leader, they said on Friday.  "For 20 years now, we've been trying to penetrate that market, multiplying our presentations and missions,
+
+calculate:
+-----------------
+sense id: 0
+definition: refers to name of an entity, place or quality similar to  cut AND/OR rates
+example:
+Banque Nationale de Paris, and Credit Commercial de France all announced a cut to 7.5 percent in the base rate, an indicator generally used to <head>calculate</head> loans to companies rather than individual borrowing. The cut is to become effective on Tuesday.  Juppe, juggling his way out of another crisis, averted a
+
+Charged:
+----------------
+sense id: 4
+definition: refers to name of an entity, place or quality similar to  felony AND/OR counts
+example:
+Tuesday with murder for allegedly stabbing her brother’s girlfriend to death with a pair of scissors during an argument in Rowland Heights over the weekend. Lisette Kimberly Moreno was <head>charged</head> with one count of murder and a special allegation that she personally used a deadly and dangerous weapon during the commission of the crime, the Los Angeles County District Attorney’s Office stated in a news release. Moreno allegedly got into an argument with 21-year-old Annette Martinez on Aug. 6 at an apartment in the 1900 block of Baston Avenue, the release stated.
+
+
+commit:
+---------
+
+sense id: 0
+definition: refers to name of an entity, place or quality similar to  suicide AND/OR new
+example:
+The script was handed to him by Casper Wrede, a director friend from the Royal Exchange who directed him on screen in One Day in the Life of Ivan Denisovich.' I had done Moliere's The Misanthrope with him and The Hypochondriac, which is much more difficult and not such a good play. I really struggled with that one,' says Courtenay. Plans had to be put on hold when the Royal National Theatre decided to stage The Miser in London but the actor was keen enough on the project to <head>commit</head> himself to the project months ahead and risk turning down more lucrative work. What annoys him is people who say Moliere is not funny:' I don't read reviews although I understand we have done extremely well, but a couple thought it has to be very serious.' It's absurd and it's profound about parents, children, human selfishness and obviously greed. But he was a genius and it's one of his best plays and most pertinent today. Everyone understands about money.
+
+government-year:
+-------------------------
+government:
+
+sense id: 0
+definition: refers to the property or quality similar to  states AND/OR united
+example:
+year:
+sense id: 8
+definition: refers to name of an entity, place or quality similar to  century AND/OR comment
+example:
+European country under a centralized administration; of a European country under an absolute government. 6. What are the advantages of local self-government over a centralized <head>g_y</head>7. "The emperor of the first century was a _Prince_, that is, 'firstcitizen'; the emperor of the fourth century was a _Sultan_." Comment on
+
+Model
+-----------------------
+sense id: 0
+definition: refers to the property or quality similar to  company AND/OR first
+example:
+MITI organized a leasing corporation to lease only Japanese computers on competitive terms to those available abroad. The industry was protected until the early 1970s by the rule that foreign machines (including IBM machines produced in Japan) could only be purchased if a suitable Japanese <head>model</head> was not available. While Japanese computers were hardly a factor in the boom years, they were to become a major force in the 1980s. It is difficult to draw a neat conclusion. MITI clearly pushed strongly to develop certain key industries.
+
+Orange:
+----------
+sense id: 1
+definition: refers to an action similar to  county AND/OR california
+example:
+<head>orange</head> will continue to expand to the east, where it has a 60-square mile sphere of influence extending to the county line. Preliminary plans call for a variety of developments in the area around Irvine Lake, with much of the area to the north of the lake remaining as open space.
+
+
+world-people
+------------------
+
+world:
+
+sense id: 24
+definition: refers to an action similar to  colonial AND/OR europe
+example:
+know the song, perhaps?' 'I've heard something like it,' said Alice. 'It goes on, you know,' the Hatter continued, 'in this way:-- "Up above the <head>w_p</head> you fly,      Like a tea-tray in the sky.          Twinkle, twinkle--"'  Here the Dormouse shook itself, and began singing in its sleep 'Twinkle, twinkle, twinkle, twinkle--'
+
+
+people:
+sense id: 42
+definition: refers to name of an entity, place or quality similar to  give AND/OR poor
+example:
+Jane Fairfax, who is mistress of music, has not any thing of the nature of an instrument, not even the pitifullest old spinet in the <head>w_p</head> to amuse herself with.--I was saying this to Mr. Cole but yesterday, and he quite agreed with me; only he is so particularly fond of
+
+
+
+
+
+
+*****************************************************************************************************************************
+Discussion of results:
+*****************************************************************************************************************************
+With a F-measure score of 73, clearly "orange" is our best case and 'commit' is our worst case with 34 F-measure score.
+
+
+We are using space vecotors based on shared words for sense clustering.
+In the orange data, it has two senses -> fruit or county/place
+and usually, instances of different senses did not share many words making it easy to segregate into clusters.
+
+Also in the definition generation,
+we are considering collocated words. and in the data, orange is usually surrounded by juice, fruit, vitamin or county, mayor
+and hence we are getting senses as good as the below ones.
+
+sense id: 1
+definition: refers to an action similar to  county AND/OR california
+example:
+<head>orange</head> will continue to expand to the east, where it has a 60-square mile sphere of influence extending to the county line. Preliminary plans call for a variety of developments in the area around Irvine Lake, with much of the area to the north of the lake remaining as open space.
+
+sense id: 2
+definition: refers to the property or quality similar to  juice AND/OR water
+example:
+<head>orange</head> juice helps improve blood circulation, avoiding the formation of clots, and therefore can prevent arteriosclerosis..
+
+Owing to the similar reasons, for commit, instances of different senses share too many commmon words and hence we did not get really good
+clusters.
+-----------------------------------------------------------------------------------------------------------------------------------
+***************************************************************************************************************************************
+Confusion Matrices:
+***************************************************************************************************************************************
+
+India-Microsof:
+------------------
+
+            S0	      S1	   TOTAL
+  C1:      142	      38	     180	(15.44)
+ C43:        0	      62	      62	(5.32)
+  C0:*       5	       0	       5	(0.43)
+ C10:*      15	       0	      15	(1.29)
+ C11:*      35	       0	      35	(3.00)
+ C12:*      11	       0	      11	(0.94)
+ C13:*      27	       1	      28	(2.40)
+ C14:*      15	       0	      15	(1.29)
+ C15:*       2	       0	       2	(0.17)
+ C16:*       4	       0	       4	(0.34)
+ C17:*       8	       1	       9	(0.77)
+ C18:*      30	       0	      30	(2.57)
+ C19:*       7	       0	       7	(0.60)
+  C2:*       7	       0	       7	(0.60)
+ C20:*       4	       0	       4	(0.34)
+ C21:*       6	       8	      14	(1.20)
+ C22:*       4	       0	       4	(0.34)
+ C23:*       2	       4	       6	(0.51)
+ C24:*       6	       0	       6	(0.51)
+ C25:*       3	       0	       3	(0.26)
+ C26:*       3	       0	       3	(0.26)
+ C27:*       9	       0	       9	(0.77)
+ C28:*       4	       0	       4	(0.34)
+ C29:*       4	       0	       4	(0.34)
+  C3:*       8	      12	      20	(1.72)
+ C30:*       4	      16	      20	(1.72)
+ C31:*       4	       0	       4	(0.34)
+ C32:*      14	       0	      14	(1.20)
+ C33:*       4	       0	       4	(0.34)
+ C34:*       7	       0	       7	(0.60)
+ C35:*      11	       0	      11	(0.94)
+ C36:*       3	       0	       3	(0.26)
+ C37:*      13	       0	      13	(1.11)
+ C38:*       4	       0	       4	(0.34)
+ C39:*       4	       0	       4	(0.34)
+  C4:*      59	      25	      84	(7.20)
+ C40:*       7	       0	       7	(0.60)
+ C41:*       2	      13	      15	(1.29)
+ C42:*      11	       0	      11	(0.94)
+ C44:*       0	      14	      14	(1.20)
+ C45:*       0	      13	      13	(1.11)
+ C46:*       0	       7	       7	(0.60)
+ C47:*       0	       6	       6	(0.51)
+ C48:*       0	      12	      12	(1.03)
+ C49:*       0	       4	       4	(0.34)
+  C5:*      24	       0	      24	(2.06)
+ C50:*       0	       9	       9	(0.77)
+ C51:*       0	       6	       6	(0.51)
+ C52:*       0	      13	      13	(1.11)
+ C53:*       0	       7	       7	(0.60)
+ C54:*       0	      14	      14	(1.20)
+ C55:*       0	       8	       8	(0.69)
+ C56:*       0	      13	      13	(1.11)
+ C57:*       0	       6	       6	(0.51)
+ C58:*       0	       7	       7	(0.60)
+ C59:*       0	       5	       5	(0.43)
+  C6:*       2	       0	       2	(0.17)
+ C60:*       0	       8	       8	(0.69)
+ C61:*       0	      11	      11	(0.94)
+ C62:*       0	       8	       8	(0.69)
+ C63:*       0	      14	      14	(1.20)
+ C64:*       0	       3	       3	(0.26)
+ C65:*       0	       3	       3	(0.26)
+ C66:*       0	      13	      13	(1.11)
+ C67:*       0	       6	       6	(0.51)
+ C68:*       0	       7	       7	(0.60)
+ C69:*       0	       7	       7	(0.60)
+  C7:*      26	       1	      27	(2.32)
+ C70:*       0	      16	      16	(1.37)
+ C71:*       0	       7	       7	(0.60)
+ C72:*       0	      12	      12	(1.03)
+ C73:*       0	       8	       8	(0.69)
+ C74:*       0	       4	       4	(0.34)
+ C75:*       0	       5	       5	(0.43)
+ C76:*       0	      10	      10	(0.86)
+ C77:*       0	       5	       5	(0.43)
+ C78:*       0	       6	       6	(0.51)
+ C79:*       0	      13	      13	(1.11)
+  C8:*      13	       0	      13	(1.11)
+ C80:*       0	       6	       6	(0.51)
+ C81:*       0	       7	       7	(0.60)
+ C82:*       0	       9	       9	(0.77)
+ C83:*       0	       4	       4	(0.34)
+ C84:*       0	       9	       9	(0.77)
+ C85:*       0	       6	       6	(0.51)
+ C86:*       0	       4	       4	(0.34)
+ C87:*       0	       5	       5	(0.43)
+ C88:*       0	       8	       8	(0.69)
+ C89:*       0	       8	       8	(0.69)
+  C9:*      36	       0	      36	(3.09)
+ TOTAL     609	     557	    1166
+         (52.23)   (47.77)
+Precision = 84.30(204/242)
+Recall = 17.50(204/1166+0)
+F-Measure = 28.98
+
+Legend of Sense Tags
+S0 = I_M.India
+S1 = I_M.Microsoft
+Status API Training Shop Blog About Pricing
+© 2015 GitHub, Inc. Terms Privacy Security Contact Help
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Apple
+---------------------------------------------------------------------------------------------------------------------------------------
+            S0	      S1	   TOTAL
+  C0:       42	      17	      59	(55.66)
+  C1:        2	      15	      17	(16.04)
+  C2:*       3	       0	       3	(2.83)
+  C3:*       0	       7	       7	(6.60)
+  C4:*       8	       0	       8	(7.55)
+  C5:*      12	       0	      12	(11.32)
+ TOTAL      67	      39	     106
+         (63.21)   (36.79)
+Precision = 75.00(57/76)
+Recall = 53.77(57/106+0)
+F-Measure = 62.64
+
+Legend of Sense Tags
+S0 = Apple.1
+S1 = Apple.2
+
+
+-----------------------------------------------------------------------------------------------------
+Calculate:
+----------------------------------------------------------------------------------------------------
+
+            S1	      S2	      S3	      S0#	   TOTAL
+  C0:       63	      20	       3	       6	      92	(92.00)
+  C1:        3	       0	       0	       0	       3	(3.00)
+  C2:        4	       0	       1	       0	       5	(5.00)
+ TOTAL      70	      20	       4	       6	     100
+         (70.00)   (20.00)   (4.00)   (6.00)
+Precision = 64.00(64/100)
+Recall = 64.00(64/100+0)
+F-Measure = 64.00
+
+Legend of Sense Tags
+S0 = calculate.1
+S1 = calculate.2
+S2 = calculate.3
+S3 = calculate.calculate
+
+--------------------------------------------------------------------------------------------------------
+charged
+------------------------------------------------------------------------------------------------------------
+            S0	      S1	      S2	   TOTAL
+  C1:       21	       0	       0	      21	(18.92)
+  C2:        8	      31	      30	      69	(62.16)
+  C4:        0	       0	       3	       3	(2.70)
+  C0:*      14	       0	       1	      15	(13.51)
+  C3:*       1	       0	       0	       1	(0.90)
+  C5:*       0	       0	       2	       2	(1.80)
+ TOTAL      44	      31	      36	     111
+         (39.64)   (27.93)   (32.43)
+Precision = 59.14(55/93)
+Recall = 49.55(55/111+0)
+F-Measure = 53.92
+
+Legend of Sense Tags
+S0 = charged.accused
+S1 = charged.demand_money
+S2 = charged.entrust
+
+-------------------------------------------------------------------------------------------------------------
+commit
+------------------------------------------------------------------------------------------------------------
+            S1	      S0#	      S2#	      S3#	      S4#	      S5#	      S6#	   TOTAL
+  C0:       34	      10	       5	      12	      21	       9	       9	     100	(100.00)
+ TOTAL      34	      10	       5	      12	      21	       9	       9	     100
+         (34.00)   (10.00)   (5.00)   (12.00)   (21.00)   (9.00)   (9.00)
+Precision = 34.00(34/100)
+Recall = 34.00(34/100+0)
+F-Measure = 34.00
+
+Legend of Sense Tags
+S0 = commit.1
+S1 = commit.2
+S2 = commit.3
+S3 = commit.4
+S4 = commit.5
+S5 = commit.6
+S6 = commit.7
+
+
+-------------------------------------------------------------------------------------------------------------------------
+government-year
+---------------------------------------------------------------------------------------------------------------------------
+            S0	      S1	   TOTAL
+  C1:      502	     269	     771	(50.26)
+  C3:       26	      34	      60	(3.91)
+  C0:*      38	      21	      59	(3.85)
+ C10:*      35	      17	      52	(3.39)
+ C11:*      38	      18	      56	(3.65)
+ C12:*      60	      15	      75	(4.89)
+ C13:*      21	       4	      25	(1.63)
+ C14:*       6	       0	       6	(0.39)
+ C15:*       0	       3	       3	(0.20)
+ C16:*       0	       8	       8	(0.52)
+ C17:*      29	      25	      54	(3.52)
+ C18:*      12	       1	      13	(0.85)
+ C19:*      17	       2	      19	(1.24)
+  C2:*      16	      10	      26	(1.69)
+ C20:*       0	       4	       4	(0.26)
+ C21:*       3	       0	       3	(0.20)
+ C22:*      17	       2	      19	(1.24)
+ C23:*       1	       0	       1	(0.07)
+ C24:*       7	       5	      12	(0.78)
+ C25:*      17	       8	      25	(1.63)
+ C26:*      19	       0	      19	(1.24)
+ C27:*       0	       4	       4	(0.26)
+ C28:*       0	      16	      16	(1.04)
+ C29:*       0	       1	       1	(0.07)
+  C4:*      25	      30	      55	(3.59)
+  C5:*      27	      15	      42	(2.74)
+  C6:*       3	      14	      17	(1.11)
+  C7:*      31	      12	      43	(2.80)
+  C8:*       6	       9	      15	(0.98)
+  C9:*      16	      15	      31	(2.02)
+ TOTAL     972	     562	    1534
+         (63.36)   (36.64)
+Precision = 64.50(536/831)
+Recall = 34.94(536/1534+0)
+F-Measure = 45.33
+
+Legend of Sense Tags
+S0 = g_y.government
+S1 = g_y.year
+
+---------------------------------------------------------------------------------------------------------------------------
+lines
+-----------------------------------------------------------------------------------------------------------------------------
+            S0	      S4	      S5	      S3	      S2	      S1	   TOTAL
+  C0:      338	     303	     330	     233	     260	     297	    1761	(42.47)
+  C2:       18	     839	      40	      74	      46	      50	    1067	(25.74)
+  C3:       12	     184	      17	      16	      15	      11	     255	(6.15)
+  C4:        3	     100	      13	      79	      11	       7	     213	(5.14)
+  C5:        1	     187	       0	       0	      10	       3	     201	(4.85)
+  C7:        0	     154	       1	       3	       0	       3	     161	(3.88)
+  C1:*       1	     221	       2	       8	       4	       2	     238	(5.74)
+  C6:*       0	      98	       1	      15	       3	       1	     118	(2.85)
+  C8:*       0	      49	       0	       1	       0	       0	      50	(1.21)
+  C9:*       0	      82	       0	       0	       0	       0	      82	(1.98)
+ TOTAL     373	    2217	     404	     429	     349	     374	    4146
+         (9.00)   (53.47)   (9.74)   (10.35)   (8.42)   (9.02)
+Precision = 35.16(1286/3658)
+Recall = 31.02(1286/4146+0)
+F-Measure = 32.96
+
+Legend of Sense Tags
+S0 = lines.cord
+S1 = lines.division
+S2 = lines.formation
+S3 = lines.phone
+S4 = lines.product
+S5 = lines.text
+
+--------------------------------------------------------------------------------------------------------------------------------------
+model
+-------------------------------------------------------------------------------------------------------------------------------------
+            S2	      S1	      S0#	      S3#	      S4#	   TOTAL
+  C0:       35	      27	      15	      10	      12	      99	(99.00)
+  C1:        0	       1	       0	       0	       0	       1	(1.00)
+ TOTAL      35	      28	      15	      10	      12	     100
+         (35.00)   (28.00)   (15.00)   (10.00)   (12.00)
+Precision = 36.00(36/100)
+Recall = 36.00(36/100+0)
+F-Measure = 36.00
+
+Legend of Sense Tags
+S0 = model.1
+S1 = model.2
+S2 = model.3
+S3 = model.4
+S4 = model.5
+
+---------------------------------------------------------------------------------------------------------------------
+Orange
+----------------------------------------------------------------------------------------------------------------------
+            S1	      S0	   TOTAL
+  C0:       46	       2	      48	(35.29)
+  C1:       27	      50	      77	(56.62)
+  C2:*       3	       0	       3	(2.21)
+  C3:*       7	       0	       7	(5.15)
+  C4:*       1	       0	       1	(0.74)
+ TOTAL      84	      52	     136
+         (61.76)   (38.24)
+Precision = 76.80(96/125)
+Recall = 70.59(96/136+0)
+F-Measure = 73.56
+
+Legend of Sense Tags
+S0 = orange.Location_County
+S1 = orange.fruit_tree
+
+------------------------------------------------------------------------------------------------------------------------------
+World-people
+-------------------------------------------------------------------------------------------------------------------------------
+            S1	      S0	   TOTAL
+  C0:      379	     243	     622	(39.77)
+  C1:       76	      77	     153	(9.78)
+ C10:*       9	       7	      16	(1.02)
+ C11:*      21	       9	      30	(1.92)
+ C12:*      27	      34	      61	(3.90)
+ C13:*      24	      24	      48	(3.07)
+ C14:*      12	       4	      16	(1.02)
+ C15:*      17	       5	      22	(1.41)
+ C16:*      45	      17	      62	(3.96)
+ C17:*       6	       3	       9	(0.58)
+ C18:*       7	      14	      21	(1.34)
+ C19:*       4	       7	      11	(0.70)
+  C2:*      43	      28	      71	(4.54)
+ C20:*       5	       6	      11	(0.70)
+ C21:*       3	       2	       5	(0.32)
+ C22:*       0	       3	       3	(0.19)
+ C23:*       0	       3	       3	(0.19)
+ C24:*       4	       7	      11	(0.70)
+ C25:*       1	       3	       4	(0.26)
+ C26:*      19	       1	      20	(1.28)
+ C27:*       3	       2	       5	(0.32)
+ C28:*       0	       6	       6	(0.38)
+ C29:*       2	       1	       3	(0.19)
+  C3:*      41	      28	      69	(4.41)
+ C30:*       1	       0	       1	(0.06)
+ C31:*       1	       1	       2	(0.13)
+ C32:*       2	       1	       3	(0.19)
+ C33:*       3	       1	       4	(0.26)
+ C34:*       5	       0	       5	(0.32)
+ C35:*       0	       3	       3	(0.19)
+ C36:*       2	       0	       2	(0.13)
+ C37:*       1	       1	       2	(0.13)
+ C38:*       2	       0	       2	(0.13)
+ C39:*      26	       2	      28	(1.79)
+  C4:*      12	       7	      19	(1.21)
+ C40:*       8	       0	       8	(0.51)
+ C41:*       4	       0	       4	(0.26)
+ C42:*       1	       0	       1	(0.06)
+ C43:*       3	       0	       3	(0.19)
+ C44:*       4	       0	       4	(0.26)
+ C45:*       4	       0	       4	(0.26)
+  C5:*      34	      33	      67	(4.28)
+  C6:*      27	       9	      36	(2.30)
+  C7:*      18	      11	      29	(1.85)
+  C8:*      16	      10	      26	(1.66)
+  C9:*      12	      17	      29	(1.85)
+ TOTAL     934	     630	    1564
+         (59.72)   (40.28)
+Precision = 58.84(456/775)
+Recall = 29.16(456/1564+0)
+F-Measure = 38.99
+
+Legend of Sense Tags
+S0 = w_p.people
+S1 = w_p.world
+
+-------------------------------------------------------------------------------------------------------------------
+P_M_S_S
+-------------------------------------------------------------------------------------------------------------------
+
+            S0	      S2	      S1	      S3	   TOTAL
+  C1:     1090	    1092	     556	     570	    3308	(33.08)
+  C8:       43	     463	      67	      27	     600	(6.00)
+ C10:      148	      43	     894	      34	    1119	(11.19)
+ C20:       18	       1	       0	     257	     276	(2.76)
+  C0:*     168	      60	      27	      24	     279	(2.79)
+ C11:*     150	      11	       9	       3	     173	(1.73)
+ C12:*     132	      10	       2	       4	     148	(1.48)
+ C13:*      47	       4	     210	      10	     271	(2.71)
+ C14:*      11	     275	       9	      35	     330	(3.30)
+ C15:*      13	       1	      13	     200	     227	(2.27)
+ C16:*       5	       1	       5	     171	     182	(1.82)
+ C17:*      28	       2	      45	       4	      79	(0.79)
+ C18:*       7	       0	       0	     223	     230	(2.30)
+ C19:*      25	       0	       0	       0	      25	(0.25)
+  C2:*      18	      10	       2	     207	     237	(2.37)
+ C21:*      12	      32	      27	      17	      88	(0.88)
+ C22:*       1	       0	       0	      37	      38	(0.38)
+ C23:*       2	       0	       0	      51	      53	(0.53)
+ C24:*       6	       5	      55	       6	      72	(0.72)
+ C25:*       4	      74	       3	       1	      82	(0.82)
+ C26:*       1	       1	       0	     114	     116	(1.16)
+ C27:*       2	       0	       0	     132	     134	(1.34)
+ C28:*       1	      45	       0	       1	      47	(0.47)
+ C29:*       0	       0	     121	       0	     121	(1.21)
+  C3:*     266	     185	     251	      66	     768	(7.68)
+ C30:*       0	       0	      80	       0	      80	(0.80)
+ C31:*       0	      18	       0	       0	      18	(0.18)
+ C32:*       0	       8	       0	       0	       8	(0.08)
+ C33:*       0	      19	       0	       0	      19	(0.19)
+ C34:*       0	       4	       0	       0	       4	(0.04)
+ C35:*       0	       6	       0	       0	       6	(0.06)
+ C36:*       0	       6	       0	       0	       6	(0.06)
+ C37:*       0	      13	       0	       0	      13	(0.13)
+ C38:*       0	       5	       0	       0	       5	(0.05)
+ C39:*       0	       0	       0	      67	      67	(0.67)
+  C4:*      15	      11	       7	       5	      38	(0.38)
+ C40:*       0	       0	       0	      72	      72	(0.72)
+ C41:*       0	       0	       0	     100	     100	(1.00)
+  C5:*      44	       0	       0	       0	      44	(0.44)
+  C6:*      63	      58	     103	      13	     237	(2.37)
+  C7:*      13	       0	       0	      32	      45	(0.45)
+  C9:*     167	      37	      14	      17	     235	(2.35)
+ TOTAL    2500	    2500	    2500	    2500	   10000
+         (25.00)   (25.00)   (25.00)   (25.00)
+Precision = 50.99(2704/5303)
+Recall = 27.04(2704/10000+0)
+F-Measure = 35.34
+
+Legend of Sense Tags
+S0 = P_M_S_S.MURDERERS
+S1 = P_M_S_S.PLAINTIFF
+S2 = P_M_S_S.SKELETON
+S3 = P_M_S_S.STRONGMAN
+
+
+
