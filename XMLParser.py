@@ -92,7 +92,7 @@ class XMLParser:
         self.global_targetword = m.group(1)
 
     #use lxml library to parse XML file to extract data
-    def parse(self, inputfile, targetword):
+    def parse(self, inputfile):
 
         with open(inputfile) as f:
             for line in f:
@@ -106,7 +106,6 @@ class XMLParser:
                     senseid = sense.group(1)
                     self.instances_data[len(self.instances_data)-1].append(instanceid)
                     self.instances_data[len(self.instances_data)-1].append(senseid)
-                    self.instances_data[len(self.instances_data)-1].append("")
                 elif line.startswith("<context") or \
                         line.startswith("</context") or \
                         line.startswith("<lexelt") or \
@@ -117,7 +116,6 @@ class XMLParser:
                         line.startswith("</instance"):
                     continue
                 elif not line.isspace():
-                    self.instances_data[len(self.instances_data)-1][2] += line.strip()
                     self.raw_text[len(self.raw_text)-1] += line.strip()
 
         for raw in self.raw_text:

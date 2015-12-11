@@ -22,8 +22,7 @@ shutil.rmtree("out", ignore_errors=True)
 #num_of_argv = len(sys.argv)
 #inputpath = sys.argv[1]
 #targetword = None
-inputpath="teamdata/calculate.xml"
-targetword="model"
+inputpath="teamdata/charged.xml"
 
 #our program takes either two or 3 commands based on the number of target words in the input file
 #to run name_conflate pair - we will have 3 arguments: input_file-name targetword1 targetword2
@@ -41,12 +40,12 @@ print("Parsing XML...")
 
 #parse XML to get all instances
 xmlparser = XMLParser()
-xmlparser.parse(inputpath, targetword)
+xmlparser.parse(inputpath)
 instances_raw = xmlparser.get_raw_text()
 instances_words = xmlparser.get_clean_text()
-target = xmlparser.get_targetword()
+targetword = xmlparser.get_targetword()
 
-print("target word: " + target)
+print("target word: " + targetword)
 
 
 print("raw text...")
@@ -61,6 +60,8 @@ print("clean words...")
 
 #instances_clean contains the text between context tags in xml file but this text is cleaned-> extra symbols are removed
 instances_data_old = xmlparser.get_instances_data()
+
+
 #instances_data_old-> contains [instance id, senseid]. This list can be used to generate .key file for the target word in question.
 
 #print( str(len(instances_data_old)) + " instances found.")
@@ -72,18 +73,19 @@ sense_cluster = SenseCluster()
 sense_cluster.cluster(instances_words)
 clusters = sense_cluster.get_clusters()
 dimensions = sense_cluster.get_dimensions()
+instances_data_new = sense_cluster.get_instance_data()
 
-print(len(clusters))
+#print(len(clusters))
 
-#example_gen = ExampleGenerator()
-#examples = example_gen.get_examples(clusters, instances_words)
+example_gen = ExampleGenerator()
+examples = example_gen.get_examples(clusters, instances_words)
 #print("exampling done!")
 #print(examples)
 
 
 sense_gen = DefinitionGeneration();
 senses = sense_gen.get_Definitions(clusters, instances_words)
-print(senses)
+#print(senses)
 
 #print("Generating definitions and examples...")
 
@@ -101,12 +103,11 @@ Util.generate_SemEval2Format(instances_raw, clusters, "./out/", targetword+"_Sem
 
 #print("write key file of input to "+"/out/"+targetword+".old.key")
 #output original key file
-Util.generate_key_file(instances_data_old , targetword, "./out/", targetword+".old.key")
+Util.generate_key_file(instances_data_old, targetword, "./out/", targetword+".old.key")
 
 #print("write key file of ouput to "+"/out/"+targetword+".new.key")
 #output new key file
-#instances_data_new = senseGenerator.generate_instance_sense_pairs(groups)
-#Util.generate_key_file(instances_data_new , targetword, "./out/", targetword+".new.key")
+Util.generate_key_file(instances_data_new, targetword, "./out/", targetword+".new.key")
 
 #print("sensecluters_scorer.sh in running...")
 #call sensecluster_score.sh
