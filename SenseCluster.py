@@ -6,13 +6,14 @@
 # the general idea of clustering is based on common words among instances.
 
 from collections import Counter
+import scipy.cluster.hierarchy as hac
+import numpy as np
+import matplotlib.pyplot as plt
 import string
 import re
-import operator
+import math
 
 class SenseCluster:
-
-
 
     #store clusters. It is a list of lists. Each list indicates a cluster.
     groups = []
@@ -26,38 +27,69 @@ class SenseCluster:
     #A matrix to store common words of each instance pair.
     commonwords = []
 
-    wordcount={}
-    wordvector=[]
-    def print_instance(self, instances):
+    #clusters
+    clusters = []
 
-        index = 0
-        words = []  #store all words of all instances
+    #dimensions
+    dimensions = []
+
+    def get_clusters(self):
+        return self.clusters
+
+    def get_dimensions(self):
+        return self.dimensions
+
+    #cluster contexts
+    def cluster(self, instances):
+        self.extract_dimensions(instances)
+        contexts_vectors = self.generate_context_vector(instances)
+        res = self.hierarchy_cluster(contexts_vectors)
+
+        num_of_cluster = max(res)
+
+        for i in range(0, num_of_cluster):
+            self.clusters.append([])
+
+        for index in range(0, len(res)):
+            self.clusters[res[index]-1].append(index)
+
+    def generate_context_vector(self, instances):
+        contexts_vector = []
         for instance in instances:
-            words.append([])
-            words[index] = instance.split()
-            index = index + 1
+            context_vector = []
+            for dimension in self.dimensions:
+                count = instance.count(dimension)
+                context_vector.append(count)
+            contexts_vector.append(context_vector)
 
-        #strip words in blacklist
-        for i in range(len(words)):
-            words[i] = self._strip_words_inblacklist(words[i])
+        return contexts_vector
 
-        for context in words:
+    def extract_dimensions(self, instances):
+        wordcount = {}
+        for context in instances:
             for word in context:
-                if word not in self.wordcount:
-                    self.wordcount[word] = 1
+                if word not in wordcount:
+                    wordcount[word] = 1
                 else:
-                    self.wordcount[word] += 1
+                    wordcount[word] += 1
 
-        c = Counter(self.wordcount)
-        topwords = c.most_common()
-        #print(topwords)
-        for index in range(0, 99):
-            self.wordvector.append(topwords[index])
+        counter = Counter(wordcount)
 
-        for dimension in self.wordvector:
-            print(dimension)
-               
-	
+        for index in range(0, 100):
+            self.dimensions.append(counter.most_common()[index][0])
+
+    def hierarchy_cluster(self, contexts_vectors):
+        dist_matrix = hac.linkage(contexts_vectors, "ward")
+        clusters = hac.fcluster(dist_matrix, 10, criterion='distance')
+
+        print(clusters)
+
+        #plt.figure()
+        #data = hac.dendrogram(dist_matrix)
+        #plt.show()
+
+        return clusters
+
     #return clusters
     def get_groups(self):
         return self.groups
@@ -65,75 +97,6 @@ class SenseCluster:
     #return common words
     def get_commonwords(self):
         return self.groups_commonwords
-
-    #cluster instances
-    def cluster(self, instances):
-        
-        #divide every instance to words and save to list
-        index = 0
-        words = []  #store all words of all instances
-        for instance in instances:
-            words.append([])
-            words[index] = instance.split()
-            index = index + 1
-
-        #strip words in blacklist
-        for i in range(len(words)):
-            words[i] = self._strip_words_inblacklist(words[i])
-
-        #calculate similarities of each pair of instances
-        size = len(words)
-        for source in range(size):
-            similarities_row = []
-            commonwords_row = []
-            for dest in range(size):
-                self._get_similarities(source, dest, words, similarities_row, commonwords_row)
-            self.similarities.append(similarities_row)
-            self.commonwords.append(commonwords_row)
-
-        #after get similarities, pick best match for each instance.
-        best_matchs = []
-        index = 0
-        for similarity in self.similarities:
-            #print similarity
-            best_match = []
-            big_num = max(similarity)
-            big_num_index = similarity.index(big_num)
-            best_match.append(index)
-            best_match.append(big_num_index)
-            best_matchs.append(best_match)
-            index = index + 1
-
-        #generate clusters based on best match
-        processed = []
-        for i in range(size):
-            group = []
-            group_commonword = []
-            group_size = 0;
-
-            if(i not in processed):
-                group.append(best_matchs[i][0])
-                group.append(best_matchs[i][1])
-                group_commonword.append(self.commonwords[best_matchs[i][0]][best_matchs[i][1]])
-
-                while(group_size != len(group)):
-                    group_size = len(group)
-                    for j in range(size):
-                        if( (i != j) and (j not in processed) ):
-                            if( (best_matchs[j][0] in group) and (best_matchs[j][1] in group) ):
-                                processed.append(j)
-                            if( (best_matchs[j][0] in group) and (best_matchs[j][1] not in group)):
-                                group.append(best_matchs[j][1])
-                                group_commonword[0].extend(self.commonwords[best_matchs[j][0]][best_matchs[j][1]])
-                                processed.append(j)
-                            elif( (best_matchs[j][1] in group) and (best_matchs[j][0] not in group)):
-                                group.append(best_matchs[j][0])
-                                group_commonword[0].extend(self.commonwords[best_matchs[j][1]][best_matchs[j][0]])
-                                processed.append(j)
-
-            if(len(group) > 0):
-                self.groups.append(group)
-                self.groups_commonwords.append(group_commonword)
 
     #calculate similarities of two instances. Output similarity to list 'similarities' and common word to list 'commonwords'
     def _get_similarities(self, source, dest, words, similarities, commonwords):
@@ -171,10 +134,16 @@ class SenseCluster:
                      "been", "then", "with", "not", "will", "had", "not", "soon", "got", "never", "dont", "him", "up", "down",
                      "just", "than", "went", "himself", "herself", "itself", "themselves", "have", "has", "had", "except", 
                      "thought", "do", "does", "does", "doing", "done", "Mr", "Mrs", "others", "down", "should", "shall", 
-                     "whose", "now", "later", "seen", "too", "also", "will", "would"]
+                     "whose", "now", "later", "seen", "too", "also", "will", "would", "can", "could", "there", "here",
+                     "over", "being", "between", "may", "might", "only", "back", "under", "even", "because", "still",
+                     "my", "after"]
         prog = re.compile("<head>.*<head>")  #skip target word
-        new_list = []
+        prog.search()
+
         for word in list_of_words:
+
+            print(prog.search(word))
+
             if( (word.lower() not in blacklist) and not (prog.match(word)) ):
                 new_list.append(word)
         

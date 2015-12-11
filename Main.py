@@ -17,40 +17,48 @@ import shutil
 #delete output folder
 shutil.rmtree("out", ignore_errors=True)
 
-num_of_argv = len(sys.argv)
-inputpath = sys.argv[1]
-targetword = None
+#num_of_argv = len(sys.argv)
+#inputpath = sys.argv[1]
+#targetword = None
+inputpath="teamdata/orange.xml"
+targetword="model"
 
 #our program takes either two or 3 commands based on the number of target words in the input file
 #to run name_conflate pair - we will have 3 arguments: input_file-name targetword1 targetword2
 #to run noun/verb file - we have two arguments: input_file-name targetword
-if(num_of_argv == 3):
-    targetword = sys.argv[2]
-elif(num_of_argv == 4):
-    targetword = (sys.argv[2])[0] + "_" + (sys.argv[3])[0]
+#if(num_of_argv == 3):
+#    targetword = sys.argv[2]
+#elif(num_of_argv == 4):
+#    targetword = (sys.argv[2])[0] + "_" + (sys.argv[3])[0]
 
-print("===================Process start==================")
-print("input file: " + inputpath)
-print("target word: " + targetword)
+#print("===================Process start==================")
+#print("input file: " + inputpath)
+#print("target word: " + targetword)
 
 print("Parsing XML...")
 #parse XML to get all instances
 xmlparser = XMLParser()
 xmlparser.parse(inputpath, targetword)
 instances_raw = xmlparser.get_raw_text()
+
 #instances_raw contains the (context)entire text between context tags in xml file
-instances_clean = xmlparser.get_clean_text()
+instances_words = xmlparser.get_clean_text()
+for words in instances_words:
+    print words
 #instances_clean contains the text between context tags in xml file but this text is cleaned-> extra symbols are removed
-instances_data_old = xmlparser.get_instances_data()
+#instances_data_old = xmlparser.get_instances_data()
 #instances_data_old-> contains [instance id, senseid]. This list can be used to generate .key file for the target word in question.
 
-print( str(len(instances_data_old)) + " instances found.")
+#print( str(len(instances_data_old)) + " instances found.")
 
-print("Clustering instances...")
+#print("Clustering instances...")
 
 #cluster instances
 sense_cluster = SenseCluster()
-sense_cluster.print_instance(instances_clean)
+sense_cluster.cluster(instances_words)
+clusters = sense_cluster.get_clusters()
+dimensions = sense_cluster.get_dimensions()
+
 #sense_cluster.cluster(instances_clean)
 #groups = sense_cluster.get_groups() #all clusters
 #common_words = sense_cluster.get_commonwords() #common words for each cluster
@@ -77,7 +85,7 @@ sense_cluster.print_instance(instances_clean)
 #output senseval-2
 #Util.generate_SemEval2Format(instances_raw, groups, "./out/", targetword+"_Semeval2.xml");
 
-print("write key file of input to "+"/out/"+targetword+".old.key")
+#print("write key file of input to "+"/out/"+targetword+".old.key")
 #output original key file
 #Util.generate_key_file(instances_data_old , targetword, "./out/", targetword+".old.key")
 
