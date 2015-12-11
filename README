@@ -16,33 +16,36 @@ Input:  inputfile contains Instances of target word in semeval2 format
 output: dictionary for this target word
 		(lists out all the senses for the target word along with an example)
 		
-		input file : charged-verb-bomma008.xml
+		input file : orange-noun-bomma008.xml
 
-		Suppose our target word is 'charged' and our system has identified 3 clusters among the instances, output would be as follows.
+		Suppose our target word is 'orange' and our system has identified 3 clusters among the instances, output would be as follows.
 
 		Expected Output:
 		########
-		charged
-
-		Sense = 0 # corresponding to cluster 1
-
-		Definition: an action similar to accused
-
-		Example: Dallas police say a former Texas A&M wide receiver will be <head>charged</head> with murder for randomly hacking a jogger to death in a Dallas park Monday. 
-
-		Sense = 1 # corresponding to cluster 2
-
-		Definition: an action similar to demand for payment
-
-		Example: According to the circular, women customers, who typically get a subsidised rate, would be <head>charged</head> 20 basis points above the base rate, resulting in an actual interest rate of 9.5 per cent Monday onwards.
-
-
-		Sense = 3 # corresponding to cluster 2
-
-		Definition: an action similar to assign responsibility
-
-		Example: After Congress proposes an amendment, the Archivist of the United States, who heads the National Archives and Records Administration, is <head>charged</head> with responsibility for administering the ratification process under the provisions of 1 U.S.C. 106b.
-
+		sense id: 0
+		definition: refers to the property or quality similar to  vitamin AND/OR c
+		example:
+		As mentioned, vitamin C works as an antioxidant, and one of the most important functions of antioxidants is to prevent cancer. Antioxidants keep the DNA of healthy cells from mutating into cancerous cells, so antioxidants like vitamin C are the first line of defense for cancer and other serious diseases. Along with vitamin C, <head>orange</head> juice also contains the antioxidant hesperidin, which has been connected to reducing tumor growth and even stimulating apoptosis, or programmed cell death, in cancerous cells. Although research is ongoing, it has positively been linked to colon cancer prevention, but it is likely that hesperidin is effective in terms of many types of cancer.
+		
+		sense id: 1
+		definition: refers to an action similar to  county AND/OR california
+		example:
+		<head>orange</head> will continue to expand to the east, where it has a 60-square mile sphere of influence extending to the county line. Preliminary plans call for a variety of developments in the area around Irvine Lake, with much of the area to the north of the lake remaining as open space.
+		
+		sense id: 2
+		definition: refers to the property or quality similar to  juice AND/OR water
+		example:
+		<head>orange</head> juice helps improve blood circulation, avoiding the formation of clots, and therefore can prevent arteriosclerosis.
+		
+		sense id: 3
+		definition: refers to the property or quality similar to  juice AND/OR sugar
+		example:
+		Worried about all that sugar you’d be drinking, though? Well, the magnesium that comes in your OJ is actually essential for blood sugar regulation, too, and keeps blood glucose levels normalized. As well as potassium, another key nutrient found plentifully in <head>orange</head> juice. Potassium is involved in regulating both blood sugar and insulin levels. Potassium works by getting sugar into the cell, which regulates cellular metabolism and makes use of that sugar by using it as fuel. Potassium has other benefits, too. It determines cellular hydration, by keeping sodium in circulation, which regulates water retention and blood volume.
+		
+		sense id: 4
+		definition: refers to an action similar to  like AND/OR make
+		example:
+		But now because of the massive use of High Fructose Corn Syrup — which basically tastes like sugar but is cheaper to make — Fructose makes up a much higher percentage of our diet.  Fructose is in everything. Soft drinks. Candies. Crackers. Fructose, when you consume it in normal proportions, is fine.  But because people now are drinking 2 glasses of <head>orange</head> juice, then a soda with High Fructose Cornsyrup, and some crackers and chips (also with High Fructose Corn Syrup), and even bread that has it, fructose consumption is at an all-time high. In studies, high fructose consumption has been linked to alterations in fat levels, cholesterol changes, as well as other obvious changes that occur with a high energy intake like weight gain, metabolic disorder, and cardiovascular issues.
 
 *********************************
 Files and Authors
@@ -221,9 +224,9 @@ DETAILED EXPLANATION OF THE SOLUTION WITH EXAMPLES
 
 Reading the xml input files is done by XMLParser.py class. And the useful information stored include the following.
 	
-	instances_data = []      #store instance information including instance id, sense id and instance text
-    raw_text = []            #store raw text of instances without cleaning i.e text between <context> **** </context> tags in XML file.
-    clean_text = []          #store text of instances without punctuations and stopwords.
+    instances_data_old = [	       #store instance information including instance id, sense id and instance text
+    instances_text_raw = []            #store raw text of instances without cleaning i.e text between <context> **** </context> tags in XML file.
+    instances_text_clean = []          #store text of instances without punctuations and stopwords.
     
 
 Once we parse the XML input files and collect the required data, there are 3 main tasks in this project.
@@ -301,10 +304,8 @@ for this we are using a pool of 3 choices out of which one will be chosen at ran
 		collocatedWords = [[word1, word2, word2, word1, word3, word4, word5], ['word4','word1', 'word3',word3, word4] ]
 #       	topWords = [[word1, word2], [word3,word4]]
 #
-#      output: Definitions- a list
+#                output: Definitions- a list
 #          	 example : [refers to an action similar to word1 AND/OR word2, refers to the name of a place, entity or quality similar to word3 AND/OR word4]
-
-
 
 ----------------------------------------------------------------------------------------------------
 3. Picking an Example:
