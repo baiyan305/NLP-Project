@@ -1,9 +1,11 @@
-# author: Yan Bai
+# @author: Yan Bai
 # 
-# this class clusters instances and picks common words shared by instances in same cluster.
-# common words will be used to generate sense.
+# This class clusters instances. The idea of approach using here is from a paper named "Automatic
+# Word Sense Discrimination" by Hinrich Schutze. Our understanding is included in README file.
 #
-# the general idea of clustering is based on common words among instances.
+# Usage:
+#      1. First call cluster() function. Pass instances to cluster() function.
+#      2. After that call get_cluster() function to get clusters.
 
 from collections import Counter
 import scipy.cluster.hierarchy as hac
@@ -33,21 +35,24 @@ class SenseCluster:
 
     #cluster contexts
     def cluster(self, instances):
+        #get dimensions
         self.extract_dimensions(instances)
+        #get contexts vectors
         contexts_vectors = self.generate_context_vector(instances)
+        #clustering
         res = self.hierarchy_cluster(contexts_vectors)
 
         num_of_cluster = max(res)
 
+        #push clusters to list 'clusters'
         for i in range(0, num_of_cluster):
             self.clusters.append([])
-
         for index in range(0, len(res)):
             self.clusters[res[index]-1].append(index)
 
+        #create new instances data based on clustering
         for i in range(len(instances)):
             self.instances_data.append([])
-
         for i in range(len(self.clusters)):
             temp = self.clusters[i]
             for j in range(len(temp)):

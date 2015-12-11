@@ -1,24 +1,24 @@
-# author: Yan Bai
+# @author: Yan Bai
 #
 # this class extracts data from XML files and converts to required Python data structure.
-# data generated in this class will be used for SenseCluster.py and SenseGenerator.py
+# data generated in this class will be used for SenseCluster.py and ExampleGenerator.py
 
 import re
 
 class XMLParser:
 
-    instances_data = []         #store instance information including instance id, sense id and instance text
+    instances_data = []         #store instance information including instance id and sense id
     raw_text = []               #store raw text of instances
-    clean_text = []             #store text of instances without punctuation
-    global_targetword = None
+    clean_text = []             #store text of instances without punctuation and stopwords
+    global_targetword = None    #target word
 
     #return list of instances data.
     #
     #return data format:
     #[
-    #  [instance_id, sense_id, instance_text],
-    #  [0, 0, text_of_instance_0],
-    #  [1, 0, text_of_instance_1],
+    #  [instance_id, sense_id],
+    #  [0, 0],
+    #  [1, 0],
     #  ...
     #]
     def get_instances_data(self):
@@ -86,6 +86,7 @@ class XMLParser:
 
         return available_words
 
+    #extract target word from instance
     def extract_target_word(self):
         context_raw_text = self.raw_text[0]        #extract instance text
         m = re.search('<head>(.*)</head>', context_raw_text)
