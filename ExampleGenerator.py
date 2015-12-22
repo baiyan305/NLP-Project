@@ -13,8 +13,6 @@
 #
 #Firstly, the stop words are removed from the list of instances. We also tried to stem the words to increase the similarity coefficient between every two instances.
 #But since we had issues with installing NLTK, we had to skip that part. 
-# We also wanted to get better example by including the top n common words (where n is a normalized value which is 1/10th of the number of words between in the given input list.) and giving a score based on the frequency of those words in our instances 
-#But, as we had some issues in the code which could not be fixed on time we skip that part.
 # input: 1. clusters - list of lists
 #             example : [[1,3,7], [2,6,8]]
 #           instances - list of lists
@@ -74,34 +72,34 @@ class ExampleGenerator(object):
 				inkjuif=i
 		return temporary[inkjuif]
 
-	#This commented part is based on our idea which we could not implement due to some issues. 
+	
 	#The main idea is to better example generation by taking another metric of frequency of most common words
 	#Each instance is given a weight based on the the number of frequent words that the sentence has among the top most common words.
-#	def get_length(self,content):
-#		length=0
-#		for listitem in content:
-#			length=length+len(listitem)
-#		return length
+	def get_length(self,content):
+		length=0
+		for listitem in content:
+			length=length+len(listitem)
+		return length
 	#This function returns the top words that are common in our cluster
-#	def collect_topwords(self,content):
-#		mostcommonwords=[]
-#		for items in content:
-#			word_counter={}
-#			for word in items:
-#				if word in word_counter:
-#					word_counter[word]+=1
-#				else:
-#					word_counter[word]=1
-#			popular_words=sorted(word_counter,key=word_counter.get,reverse=True)
-#			normalizedcount=self.get_length(content)/10 #This is used to get the normalized count t select the number of common words based on length of instnce
-#			topn=popular_words[:normalizedcount]
-#			mostcommonwords.append(topn)
-#		return mostcommonwords
+	def collect_topwords(self,content):
+		mostcommonwords=[]
+		for items in content:
+			word_counter={}
+			for word in items:
+				if word in word_counter:
+					word_counter[word]+=1
+				else:
+					word_counter[word]=1
+			popular_words=sorted(word_counter,key=word_counter.get,reverse=True)
+			normalizedcount=self.get_length(content)/10 #This is used to get the normalized count t select the number of common words based on length of instnce
+			topn=popular_words[:normalizedcount]
+			mostcommonwords.append(topn)
+		return mostcommonwords
 	
 	#This function returns a frequency_score which is added to the score for each instance.
-#	def get_frequency_score(self,content,i):
-#		thematicwords=self.collect_topwords(content)
-#		return len(set(content[i]).intersection(thematicwords))/((len(content[i])+len(thematicwords))/2)
+	def get_frequency_score(self,content,i):
+		thematicwords=self.collect_topwords(content)
+		return len(set(content[i]).intersection(thematicwords))/((len(content[i])+len(thematicwords))/2)
 
         #This function generates the example by taking the following 
         #input:
